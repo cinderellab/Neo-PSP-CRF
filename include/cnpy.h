@@ -50,4 +50,25 @@ namespace cnpy {
             char val = *((char*)&rhs+byte); 
             lhs.push_back(val);
         }
-        ret
+        return lhs;
+    }
+
+    template<> std::vector<char>& operator+=(std::vector<char>& lhs, const std::string rhs); 
+    template<> std::vector<char>& operator+=(std::vector<char>& lhs, const char* rhs); 
+
+
+    template<typename T> std::string tostring(T i, int pad = 0, char padval = ' ') {
+        std::stringstream s;
+        s << i;
+        return s.str();
+    }
+
+    template<typename T> void npy_save(std::string fname, const T* data, const unsigned int* shape, const unsigned int ndims, std::string mode = "w") {
+        FILE* fp = NULL;
+
+        if(mode == "a") fp = fopen(fname.c_str(),"r+b");
+
+        if(fp) {
+            //file exists. we need to append to it. read the header, modify the array size
+            unsigned int word_size, tmp_dims;
+ 
