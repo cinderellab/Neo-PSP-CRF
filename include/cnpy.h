@@ -87,4 +87,24 @@ namespace cnpy {
 
             for(int i = 1; i < ndims; i++) {
                 if(shape[i] != tmp_shape[i]) {
-           
+                    std::cout<<"libnpy error: npy_save attempting to append misshaped data to "<<fname<<"\n";
+                    assert(shape[i] == tmp_shape[i]);
+                }
+            }
+            tmp_shape[0] += shape[0];
+
+            fseek(fp,0,SEEK_SET);
+            std::vector<char> header = create_npy_header(data,tmp_shape,ndims);
+            fwrite(&header[0],sizeof(char),header.size(),fp);
+            fseek(fp,0,SEEK_END);
+
+            delete[] tmp_shape;
+        }
+        else {
+            fp = fopen(fname.c_str(),"wb");
+            std::vector<char> header = create_npy_header(data,shape,ndims);
+            fwrite(&header[0],sizeof(char),header.size(),fp);
+        }
+
+        unsigned int nels = 1;
+        for(int i = 0;i < ndims;
