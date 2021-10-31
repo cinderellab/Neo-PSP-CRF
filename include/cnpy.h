@@ -71,4 +71,20 @@ namespace cnpy {
         if(fp) {
             //file exists. we need to append to it. read the header, modify the array size
             unsigned int word_size, tmp_dims;
- 
+            unsigned int* tmp_shape = 0;
+            bool fortran_order;
+            parse_npy_header(fp,word_size,tmp_shape,tmp_dims,fortran_order);
+            assert(!fortran_order);
+
+            if(word_size != sizeof(T)) {
+                std::cout<<"libnpy error: "<<fname<<" has word size "<<word_size<<" but npy_save appending data sized "<<sizeof(T)<<"\n";
+                assert( word_size == sizeof(T) );
+            }
+            if(tmp_dims != ndims) {
+                std::cout<<"libnpy error: npy_save attempting to append misdimensioned data to "<<fname<<"\n";
+                assert(tmp_dims == ndims);
+            }
+
+            for(int i = 1; i < ndims; i++) {
+                if(shape[i] != tmp_shape[i]) {
+           
