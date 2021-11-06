@@ -107,4 +107,25 @@ namespace cnpy {
         }
 
         unsigned int nels = 1;
-        for(int i = 0;i < ndims;
+        for(int i = 0;i < ndims;i++) nels *= shape[i];
+
+        fwrite(data,sizeof(T),nels,fp);
+        fclose(fp);
+    }
+
+    template<typename T> void npz_save(std::string zipname, std::string fname, const T* data, const unsigned int* shape, const unsigned int ndims, std::string mode = "w")
+    {
+        //first, append a .npy to the fname
+        fname += ".npy";
+
+        //now, on with the show
+        FILE* fp = NULL;
+        unsigned short nrecs = 0;
+        unsigned int global_header_offset = 0;
+        std::vector<char> global_header;
+
+        if(mode == "a") fp = fopen(zipname.c_str(),"r+b");
+
+        if(fp) {
+            //zip file exists. we need to add a new npy file to it.
+            //first read the footer. this gives u
