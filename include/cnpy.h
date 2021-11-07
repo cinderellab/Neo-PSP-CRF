@@ -139,4 +139,24 @@ namespace cnpy {
             if(res != global_header_size){
                 throw std::runtime_error("npz_save: header read error while adding to existing zip");
             }
-            fseek(fp,glob
+            fseek(fp,global_header_offset,SEEK_SET);
+        }
+        else {
+            fp = fopen(zipname.c_str(),"wb");
+        }
+
+        std::vector<char> npy_header = create_npy_header(data,shape,ndims);
+
+        unsigned long nels = 1;
+        for (int m=0; m<ndims; m++ ) nels *= shape[m];
+        int nbytes = nels*sizeof(T) + npy_header.size();
+
+        //get the CRC of the data to be added
+        unsigned int crc = crc32(0L,(unsigned char*)&npy_header[0],npy_header.size());
+        crc = crc32(crc,(unsigned char*)data,nels*sizeof(T));
+
+        //build the local header
+        std::vector<char> local_header;
+        local_header += "PK"; //first part of sig
+        local_header += (unsigned short) 0x0403; //second part of sig
+     
