@@ -159,4 +159,18 @@ namespace cnpy {
         std::vector<char> local_header;
         local_header += "PK"; //first part of sig
         local_header += (unsigned short) 0x0403; //second part of sig
-     
+        local_header += (unsigned short) 20; //min version to extract
+        local_header += (unsigned short) 0; //general purpose bit flag
+        local_header += (unsigned short) 0; //compression method
+        local_header += (unsigned short) 0; //file last mod time
+        local_header += (unsigned short) 0;     //file last mod date
+        local_header += (unsigned int) crc; //crc
+        local_header += (unsigned int) nbytes; //compressed size
+        local_header += (unsigned int) nbytes; //uncompressed size
+        local_header += (unsigned short) fname.size(); //fname length
+        local_header += (unsigned short) 0; //extra field length
+        local_header += fname;
+
+        //build global header
+        global_header += "PK"; //first part of sig
+  
