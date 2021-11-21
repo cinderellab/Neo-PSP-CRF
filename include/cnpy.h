@@ -211,4 +211,23 @@ namespace cnpy {
         dict += BigEndianTest();
         dict += map_type(typeid(T));
         dict += tostring(sizeof(T));
-        dict += "', 'fortran_order': False, 'shape':
+        dict += "', 'fortran_order': False, 'shape': (";
+        dict += tostring(shape[0]);
+        for(int i = 1;i < ndims;i++) {
+            dict += ", ";
+            dict += tostring(shape[i]);
+        }
+        if(ndims == 1) dict += ",";
+        dict += "), }";
+        //pad with spaces so that preamble+dict is modulo 16 bytes. preamble is 10 bytes. dict needs to end with \n
+        int remainder = 16 - (10 + dict.size()) % 16;
+        dict.insert(dict.end(),remainder,' ');
+        dict.back() = '\n';
+
+        std::vector<char> header;
+        header += (char) 0x93;
+        header += "NUMPY";
+        header += (char) 0x01; //major version of numpy format
+        header += (char) 0x00; //minor version of numpy format
+        header += (unsigned short) dict.size();
+        heade
