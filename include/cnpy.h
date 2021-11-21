@@ -173,4 +173,12 @@ namespace cnpy {
 
         //build global header
         global_header += "PK"; //first part of sig
-  
+        global_header += (unsigned short) 0x0201; //second part of sig
+        global_header += (unsigned short) 20; //version made by
+        global_header.insert(global_header.end(),local_header.begin()+4,local_header.begin()+30);
+        global_header += (unsigned short) 0; //file comment length
+        global_header += (unsigned short) 0; //disk number where file starts
+        global_header += (unsigned short) 0; //internal file attributes
+        global_header += (unsigned int) 0; //external file attributes
+        global_header += (unsigned int) global_header_offset; //relative offset of local file header, since it begins where the global header used to begin
+        global_header += fnam
