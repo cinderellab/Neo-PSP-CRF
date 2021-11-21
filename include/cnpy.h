@@ -194,3 +194,21 @@ namespace cnpy {
         footer += (unsigned int) global_header.size(); //nbytes of global headers
         footer += (unsigned int) (global_header_offset + nbytes + local_header.size()); //offset of start of global headers, since global header now starts after newly written array
         footer += (unsigned short) 0; //zip file comment length
+
+        //write everything      
+        fwrite(&local_header[0],sizeof(char),local_header.size(),fp);
+        fwrite(&npy_header[0],sizeof(char),npy_header.size(),fp);
+        fwrite(data,sizeof(T),nels,fp);
+        fwrite(&global_header[0],sizeof(char),global_header.size(),fp);
+        fwrite(&footer[0],sizeof(char),footer.size(),fp);
+        fclose(fp);
+    }
+
+    template<typename T> std::vector<char> create_npy_header(const T* data, const unsigned int* shape, const unsigned int ndims) {  
+
+        std::vector<char> dict;
+        dict += "{'descr': '";
+        dict += BigEndianTest();
+        dict += map_type(typeid(T));
+        dict += tostring(sizeof(T));
+        dict += "', 'fortran_order': False, 'shape':
