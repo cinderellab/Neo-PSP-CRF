@@ -181,4 +181,16 @@ namespace cnpy {
         global_header += (unsigned short) 0; //internal file attributes
         global_header += (unsigned int) 0; //external file attributes
         global_header += (unsigned int) global_header_offset; //relative offset of local file header, since it begins where the global header used to begin
-        global_header += fnam
+        global_header += fname;
+
+        //build footer
+        std::vector<char> footer;
+        footer += "PK"; //first part of sig
+        footer += (unsigned short) 0x0605; //second part of sig
+        footer += (unsigned short) 0; //number of this disk
+        footer += (unsigned short) 0; //disk where footer starts
+        footer += (unsigned short) (nrecs+1); //number of records on this disk
+        footer += (unsigned short) (nrecs+1); //total number of records
+        footer += (unsigned int) global_header.size(); //nbytes of global headers
+        footer += (unsigned int) (global_header_offset + nbytes + local_header.size()); //offset of start of global headers, since global header now starts after newly written array
+        footer += (unsigned short) 0; //zip file comment length
