@@ -230,4 +230,12 @@ namespace cnpy {
         header += (char) 0x01; //major version of numpy format
         header += (char) 0x00; //minor version of numpy format
         header += (unsigned short) dict.size();
-        heade
+        header.insert(header.end(),dict.begin(),dict.end());
+
+        return header;
+    }
+
+
+}
+
+#endif
