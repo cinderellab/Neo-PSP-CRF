@@ -20,4 +20,31 @@
     DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
     (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
     LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
-    ON ANY THEORY OF LIABILITY, WHETHER IN CONT
+    ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+    (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+    SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+#pragma once
+
+#include <vector>
+#include <cstdlib>
+
+using namespace std;
+
+class PairwisePotential{
+public:
+	virtual ~PairwisePotential();
+	virtual void apply( float * out_values, const float * in_values, float * tmp, int value_size ) const = 0;
+};
+
+
+class SemiMetricFunction{
+public:
+	virtual ~SemiMetricFunction();
+	// For two probabilities apply the semi metric transform: v_i = sum_j mu_ij u_j
+	virtual void apply( float * out_values, const float * in_values, int value_size ) const = 0;
+};
+
+
+cl
