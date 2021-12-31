@@ -47,4 +47,28 @@ public:
 };
 
 
-cl
+class DenseCRF{
+protected:
+	friend class BipartiteDenseCRF;
+	
+	// Number of variables and labels
+	int N_, M_;
+	float *unary_, *additional_unary_, *current_, *next_, *tmp_;
+	
+	// Store all pairwise potentials
+	std::vector<PairwisePotential*> pairwise_;
+	
+	// Run inference and return the pointer to the result
+	float* runInference( int n_iterations, float relax);
+	
+	// Auxillary functions 辅助函数
+	void expAndNormalize( float* out, const float* in, float scale = 1.0, float relax = 1.0 );
+	
+	// Don't copy this object, bad stuff will happen
+	DenseCRF( DenseCRF & o ){}
+public:
+	// Create a dense CRF model of size N with M labels
+	DenseCRF( int N, int M );
+	virtual ~DenseCRF();
+	// Add  a pairwise potential defined over some feature space
+	// The potential will have the form:    w*ex
