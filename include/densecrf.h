@@ -86,4 +86,23 @@ public:
 	// Set the unary potential for a specific variable
 	void setUnaryEnergy( int n, const float * unary );
 	
-	// Run inference and return the
+	// Run inference and return the probabilities
+	void inference( int n_iterations, float* result, float relax=1.0 );
+	
+	// Run MAP inference and return the map for each pixel
+	void map( int n_iterations, short int* result, float relax=1.0 );
+	
+	// Step by step inference
+	void startInference();
+	void stepInference( float relax = 1.0 );
+	void currentMap( short * result );
+	
+public: /* Debugging functions */
+	// Compute the unary energy of an assignment
+	void unaryEnergy( const short * ass, float * result );
+	
+	// Compute the pairwise energy of an assignment (half of each pairwise potential is added to each of it's endpoints)
+	void pairwiseEnergy( const short * ass, float * result, int term=-1 );
+};
+
+class DenseCRF2D:public DenseCRF
