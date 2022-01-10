@@ -120,4 +120,19 @@ public:
 	void addPairwiseGaussian_lh(vector<vector<float> > & Features, int Dims, float stddev1, float stddev2, float w, const SemiMetricFunction * function, bool onlyxy);	
 
 	// Add a Bilateral pairwise potential with spacial standard deviations sx, sy and color standard deviations sr,sg,sb
-	void addPairwiseBilateral( float sx, float sy, float sr, float sg, float sb, const unsigned char * im
+	void addPairwiseBilateral( float sx, float sy, float sr, float sg, float sb, const unsigned char * im, float w, const SemiMetricFunction * function=NULL );
+
+	void addPairwiseBilateral_lh ( vector<vector<float> > & Features, int Dims, float sx, float sy, float sL, float sA, float sB, float w, const SemiMetricFunction * function );
+	void addPairwiseBilateral_lh2( vector<vector<float> > & Features1, vector<vector<float> > & Features2, int Dims, float sx, float sy, float sL, float w, const SemiMetricFunction * function );	
+	// Set the unary potential for a specific variable
+	void setUnaryEnergy( int x, int y, const float * unary );
+	using DenseCRF::setUnaryEnergy;
+};
+
+// A dense CRF in a bipartite graph 二分图
+class BipartiteDenseCRF{
+protected:
+	// Two dense CRF's that are connected by a set of completely connected edges (in a bipartite graph)
+	DenseCRF* dense_crfs_[2];
+	
+	// Number of 
