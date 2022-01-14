@@ -135,4 +135,23 @@ protected:
 	// Two dense CRF's that are connected by a set of completely connected edges (in a bipartite graph)
 	DenseCRF* dense_crfs_[2];
 	
-	// Number of 
+	// Number of variables and labels
+	int N_[2], M_;
+	
+	// All bipartite pairwise potentials (all others are stored in each dense_crfs respectively)
+	std::vector<PairwisePotential*> pairwise_[2];
+	
+	// Don't copy this object, bad stuff will happen
+	BipartiteDenseCRF( BipartiteDenseCRF & o ){}
+	
+	// Run inference and return the pointer to the result
+	void runInference( int n_iterations, float ** prob, float relax);
+public:
+	// Create a dense CRF model of size N with M labels
+	BipartiteDenseCRF( int N1, int N2, int M );
+	~BipartiteDenseCRF();
+	
+	// Add  a pairwise potential defined over some feature space
+	// The potential will have the form:    w*exp(-0.5*|f_i - f_j|^2)
+	// The kernel shape should be captured by transforming the
+	// features before passi
