@@ -170,4 +170,27 @@ public:
 	DenseCRF& getCRF( int i );
 	const DenseCRF& getCRF( int i ) const;
 	
-	// Step by ste
+	// Step by step inference
+	void startInference();
+	void stepInference( float relax = 1.0 );
+	void currentMap( short * result );
+};
+
+
+
+// This function defines a simplified interface to the permutohedral lattice
+// We assume a filter standard deviation of 1
+class Permutohedral;
+class Filter{
+protected:
+    int n1_, o1_, n2_, o2_;
+    Permutohedral * permutohedral_;
+    // Don't copy
+    Filter( const Filter& filter ){}
+public:
+    // Use different source and target features
+    Filter( const float * source_features, int N_source, const float * target_features, int N_target, int feature_dim );
+    // Use the same source and target features
+    Filter( const float * features, int N, int feature_dim );
+    //
+   
