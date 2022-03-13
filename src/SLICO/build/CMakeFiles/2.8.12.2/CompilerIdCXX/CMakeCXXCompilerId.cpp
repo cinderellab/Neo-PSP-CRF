@@ -60,4 +60,25 @@
 #elif defined(__SUNPRO_CC)
 # define COMPILER_ID "SunPro"
 # if __SUNPRO_CC >= 0x5100
-  
+   /* __SUNPRO_CC = 0xVRRP */
+#  define COMPILER_VERSION_MAJOR HEX(__SUNPRO_CC>>12)
+#  define COMPILER_VERSION_MINOR HEX(__SUNPRO_CC>>4 & 0xFF)
+#  define COMPILER_VERSION_PATCH HEX(__SUNPRO_CC    & 0xF)
+# else
+   /* __SUNPRO_CC = 0xVRP */
+#  define COMPILER_VERSION_MAJOR HEX(__SUNPRO_CC>>8)
+#  define COMPILER_VERSION_MINOR HEX(__SUNPRO_CC>>4 & 0xF)
+#  define COMPILER_VERSION_PATCH HEX(__SUNPRO_CC    & 0xF)
+# endif
+
+#elif defined(__HP_aCC)
+# define COMPILER_ID "HP"
+  /* __HP_aCC = VVRRPP */
+# define COMPILER_VERSION_MAJOR DEC(__HP_aCC/10000)
+# define COMPILER_VERSION_MINOR DEC(__HP_aCC/100 % 100)
+# define COMPILER_VERSION_PATCH DEC(__HP_aCC     % 100)
+
+#elif defined(__DECCXX)
+# define COMPILER_ID "Compaq"
+  /* __DECCXX_VER = VVRRTPPPP */
+# define COMP
