@@ -39,4 +39,25 @@
 # define COMPILER_VERSION_MINOR DEC(__clang_minor__)
 # define COMPILER_VERSION_PATCH DEC(__clang_patchlevel__)
 
-#elif defin
+#elif defined(__BORLANDC__) && defined(__CODEGEARC_VERSION__)
+# define COMPILER_ID "Embarcadero"
+# define COMPILER_VERSION_MAJOR HEX(__CODEGEARC_VERSION__>>24 & 0x00FF)
+# define COMPILER_VERSION_MINOR HEX(__CODEGEARC_VERSION__>>16 & 0x00FF)
+# define COMPILER_VERSION_PATCH HEX(__CODEGEARC_VERSION__     & 0xFFFF)
+
+#elif defined(__BORLANDC__)
+# define COMPILER_ID "Borland"
+  /* __BORLANDC__ = 0xVRR */
+# define COMPILER_VERSION_MAJOR HEX(__BORLANDC__>>8)
+# define COMPILER_VERSION_MINOR HEX(__BORLANDC__ & 0xFF)
+
+#elif defined(__WATCOMC__)
+# define COMPILER_ID "Watcom"
+  /* __WATCOMC__ = VVRR */
+# define COMPILER_VERSION_MAJOR DEC(__WATCOMC__ / 100)
+# define COMPILER_VERSION_MINOR DEC(__WATCOMC__ % 100)
+
+#elif defined(__SUNPRO_CC)
+# define COMPILER_ID "SunPro"
+# if __SUNPRO_CC >= 0x5100
+  
