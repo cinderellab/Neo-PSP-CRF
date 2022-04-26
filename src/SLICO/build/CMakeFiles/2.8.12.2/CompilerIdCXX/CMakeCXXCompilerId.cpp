@@ -170,4 +170,21 @@
 # define COMPILER_ID "MIPSpro"
 # if defined(_SGI_COMPILER_VERSION)
   /* _SGI_COMPILER_VERSION = VRP */
-#  define COMPILER_VERSION_MAJOR DEC(_SGI_COMPILER_VERS
+#  define COMPILER_VERSION_MAJOR DEC(_SGI_COMPILER_VERSION/100)
+#  define COMPILER_VERSION_MINOR DEC(_SGI_COMPILER_VERSION/10 % 10)
+#  define COMPILER_VERSION_PATCH DEC(_SGI_COMPILER_VERSION    % 10)
+# else
+  /* _COMPILER_VERSION = VRP */
+#  define COMPILER_VERSION_MAJOR DEC(_COMPILER_VERSION/100)
+#  define COMPILER_VERSION_MINOR DEC(_COMPILER_VERSION/10 % 10)
+#  define COMPILER_VERSION_PATCH DEC(_COMPILER_VERSION    % 10)
+# endif
+
+/* This compiler is either not known or is too old to define an
+   identification macro.  Try to identify the platform and guess that
+   it is the native compiler.  */
+#elif defined(__sgi)
+# define COMPILER_ID "MIPSpro"
+
+#elif defined(__hpux) || defined(__hpua)
+# define COMPI
