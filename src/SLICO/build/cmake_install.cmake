@@ -35,4 +35,18 @@ ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   INCLUDE("/home/xduser/lihuan/SLICO/build/src/cmake_install.cmake")
-  INCLUDE("/home/xduser/lihuan/SLICO/build/lib
+  INCLUDE("/home/xduser/lihuan/SLICO/build/lib/cmake_install.cmake")
+  INCLUDE("/home/xduser/lihuan/SLICO/build/example/cmake_install.cmake")
+
+ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
+
+IF(CMAKE_INSTALL_COMPONENT)
+  SET(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
+ELSE(CMAKE_INSTALL_COMPONENT)
+  SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
+ENDIF(CMAKE_INSTALL_COMPONENT)
+
+FILE(WRITE "/home/xduser/lihuan/SLICO/build/${CMAKE_INSTALL_MANIFEST}" "")
+FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
+  FILE(APPEND "/home/xduser/lihuan/SLICO/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+ENDFOREACH(file)
