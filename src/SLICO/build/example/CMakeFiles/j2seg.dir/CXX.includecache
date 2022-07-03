@@ -1,0 +1,23 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/SLIC.h
+vector
+-
+string
+-
+algorithm
+-
+
+../include/jconfig.h
+
+../include/jerror.h
+
+../include/jmorecfg.h
+
+../include/jpeglib.h
