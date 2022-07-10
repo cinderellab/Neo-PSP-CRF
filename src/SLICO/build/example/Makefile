@@ -83,4 +83,24 @@ clean:
 clean/fast: clean
 .PHONY : clean/fast
 
-# Prepare 
+# Prepare targets for installation.
+preinstall: all
+	cd /home/xduser/lihuan/SLICO/build && $(MAKE) -f CMakeFiles/Makefile2 example/preinstall
+.PHONY : preinstall
+
+# Prepare targets for installation.
+preinstall/fast:
+	cd /home/xduser/lihuan/SLICO/build && $(MAKE) -f CMakeFiles/Makefile2 example/preinstall
+.PHONY : preinstall/fast
+
+# clear depends
+depend:
+	cd /home/xduser/lihuan/SLICO/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+.PHONY : depend
+
+# Convenience name for target.
+example/CMakeFiles/j2seg.dir/rule:
+	cd /home/xduser/lihuan/SLICO/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/j2seg.dir/rule
+.PHONY : example/CMakeFiles/j2seg.dir/rule
+
+# C
