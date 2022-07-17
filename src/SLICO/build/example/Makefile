@@ -103,4 +103,26 @@ example/CMakeFiles/j2seg.dir/rule:
 	cd /home/xduser/lihuan/SLICO/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/j2seg.dir/rule
 .PHONY : example/CMakeFiles/j2seg.dir/rule
 
-# C
+# Convenience name for target.
+j2seg: example/CMakeFiles/j2seg.dir/rule
+.PHONY : j2seg
+
+# fast build rule for target.
+j2seg/fast:
+	cd /home/xduser/lihuan/SLICO/build && $(MAKE) -f example/CMakeFiles/j2seg.dir/build.make example/CMakeFiles/j2seg.dir/build
+.PHONY : j2seg/fast
+
+j2seg.o: j2seg.cpp.o
+.PHONY : j2seg.o
+
+# target to build an object file
+j2seg.cpp.o:
+	cd /home/xduser/lihuan/SLICO/build && $(MAKE) -f example/CMakeFiles/j2seg.dir/build.make example/CMakeFiles/j2seg.dir/j2seg.cpp.o
+.PHONY : j2seg.cpp.o
+
+j2seg.i: j2seg.cpp.i
+.PHONY : j2seg.i
+
+# target to preprocess a source file
+j2seg.cpp.i:
+	cd /home/xduser/lihuan/SLICO/build && $(MAKE) -f example/CMakeFiles/j2seg.dir/build.make example/CMakeFiles/j2seg.dir/j
