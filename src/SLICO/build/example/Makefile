@@ -125,4 +125,32 @@ j2seg.i: j2seg.cpp.i
 
 # target to preprocess a source file
 j2seg.cpp.i:
-	cd /home/xduser/lihuan/SLICO/build && $(MAKE) -f example/CMakeFiles/j2seg.dir/build.make example/CMakeFiles/j2seg.dir/j
+	cd /home/xduser/lihuan/SLICO/build && $(MAKE) -f example/CMakeFiles/j2seg.dir/build.make example/CMakeFiles/j2seg.dir/j2seg.cpp.i
+.PHONY : j2seg.cpp.i
+
+j2seg.s: j2seg.cpp.s
+.PHONY : j2seg.s
+
+# target to generate assembly for a file
+j2seg.cpp.s:
+	cd /home/xduser/lihuan/SLICO/build && $(MAKE) -f example/CMakeFiles/j2seg.dir/build.make example/CMakeFiles/j2seg.dir/j2seg.cpp.s
+.PHONY : j2seg.cpp.s
+
+# Help Target
+help:
+	@echo "The following are some of the valid targets for this Makefile:"
+	@echo "... all (the default if no target is provided)"
+	@echo "... clean"
+	@echo "... depend"
+	@echo "... edit_cache"
+	@echo "... j2seg"
+	@echo "... rebuild_cache"
+	@echo "... j2seg.o"
+	@echo "... j2seg.i"
+	@echo "... j2seg.s"
+.PHONY : help
+
+
+
+#=============================================================================
+# Special targets to c
