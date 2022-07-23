@@ -1,0 +1,17 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/SLIC.h
+vector
+-
+string
+-
+algorithm
+-
+
+/home/xduser/lihuan/SL
