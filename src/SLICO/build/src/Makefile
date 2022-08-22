@@ -59,4 +59,21 @@ edit_cache/fast: edit_cache
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) 
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+.PHONY : rebuild_cache/fast
+
+# The main all target
+all: cmake_check_build_system
+	cd /home/xduser/lihuan/SLICO/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/xduser/lihuan/SLICO/build/CMakeFiles /home/xduser/lihuan/SLICO/build/src/CMakeFiles/progress.marks
+	cd /home/xduser/lihuan/SLICO/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xduser/lihuan/SLICO/build/CMakeFiles 0
+.PHONY : all
+
+# The main clean target
+clean:
+	cd /home/xduser/lihuan/SLICO/bui
