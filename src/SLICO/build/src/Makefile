@@ -76,4 +76,28 @@ all: cmake_check_build_system
 
 # The main clean target
 clean:
-	cd /home/xduser/lihuan/SLICO/bui
+	cd /home/xduser/lihuan/SLICO/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+.PHONY : clean
+
+# The main clean target
+clean/fast: clean
+.PHONY : clean/fast
+
+# Prepare targets for installation.
+preinstall: all
+	cd /home/xduser/lihuan/SLICO/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+.PHONY : preinstall
+
+# Prepare targets for installation.
+preinstall/fast:
+	cd /home/xduser/lihuan/SLICO/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+.PHONY : preinstall/fast
+
+# clear depends
+depend:
+	cd /home/xduser/lihuan/SLICO/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+.PHONY : depend
+
+# Convenience name for target.
+src/CMakeFiles/SLIC.dir/rule:
+	cd /home/xduser
