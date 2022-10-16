@@ -100,4 +100,29 @@ depend:
 
 # Convenience name for target.
 src/CMakeFiles/SLIC.dir/rule:
-	cd /home/xduser
+	cd /home/xduser/lihuan/SLICO/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/SLIC.dir/rule
+.PHONY : src/CMakeFiles/SLIC.dir/rule
+
+# Convenience name for target.
+SLIC: src/CMakeFiles/SLIC.dir/rule
+.PHONY : SLIC
+
+# fast build rule for target.
+SLIC/fast:
+	cd /home/xduser/lihuan/SLICO/build && $(MAKE) -f src/CMakeFiles/SLIC.dir/build.make src/CMakeFiles/SLIC.dir/build
+.PHONY : SLIC/fast
+
+SLIC.o: SLIC.cpp.o
+.PHONY : SLIC.o
+
+# target to build an object file
+SLIC.cpp.o:
+	cd /home/xduser/lihuan/SLICO/build && $(MAKE) -f src/CMakeFiles/SLIC.dir/build.make src/CMakeFiles/SLIC.dir/SLIC.cpp.o
+.PHONY : SLIC.cpp.o
+
+SLIC.i: SLIC.cpp.i
+.PHONY : SLIC.i
+
+# target to preprocess a source file
+SLIC.cpp.i:
+	cd /home/xduser/lihuan/SLICO/build && $(MAKE) -f src/CMakeFiles/SLIC.dir/build
