@@ -125,4 +125,28 @@ SLIC.i: SLIC.cpp.i
 
 # target to preprocess a source file
 SLIC.cpp.i:
-	cd /home/xduser/lihuan/SLICO/build && $(MAKE) -f src/CMakeFiles/SLIC.dir/build
+	cd /home/xduser/lihuan/SLICO/build && $(MAKE) -f src/CMakeFiles/SLIC.dir/build.make src/CMakeFiles/SLIC.dir/SLIC.cpp.i
+.PHONY : SLIC.cpp.i
+
+SLIC.s: SLIC.cpp.s
+.PHONY : SLIC.s
+
+# target to generate assembly for a file
+SLIC.cpp.s:
+	cd /home/xduser/lihuan/SLICO/build && $(MAKE) -f src/CMakeFiles/SLIC.dir/build.make src/CMakeFiles/SLIC.dir/SLIC.cpp.s
+.PHONY : SLIC.cpp.s
+
+path_split.o: path_split.cpp.o
+.PHONY : path_split.o
+
+# target to build an object file
+path_split.cpp.o:
+	cd /home/xduser/lihuan/SLICO/build && $(MAKE) -f src/CMakeFiles/SLIC.dir/build.make src/CMakeFiles/SLIC.dir/path_split.cpp.o
+.PHONY : path_split.cpp.o
+
+path_split.i: path_split.cpp.i
+.PHONY : path_split.i
+
+# target to preprocess a source file
+path_split.cpp.i:
+	cd /home/xduser/lihuan/SLICO/build && $(MAKE) -f src/CMakeFiles/SLIC.dir
