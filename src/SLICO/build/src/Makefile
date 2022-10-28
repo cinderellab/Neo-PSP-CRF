@@ -149,4 +149,34 @@ path_split.i: path_split.cpp.i
 
 # target to preprocess a source file
 path_split.cpp.i:
-	cd /home/xduser/lihuan/SLICO/build && $(MAKE) -f src/CMakeFiles/SLIC.dir
+	cd /home/xduser/lihuan/SLICO/build && $(MAKE) -f src/CMakeFiles/SLIC.dir/build.make src/CMakeFiles/SLIC.dir/path_split.cpp.i
+.PHONY : path_split.cpp.i
+
+path_split.s: path_split.cpp.s
+.PHONY : path_split.s
+
+# target to generate assembly for a file
+path_split.cpp.s:
+	cd /home/xduser/lihuan/SLICO/build && $(MAKE) -f src/CMakeFiles/SLIC.dir/build.make src/CMakeFiles/SLIC.dir/path_split.cpp.s
+.PHONY : path_split.cpp.s
+
+# Help Target
+help:
+	@echo "The following are some of the valid targets for this Makefile:"
+	@echo "... all (the default if no target is provided)"
+	@echo "... clean"
+	@echo "... depend"
+	@echo "... SLIC"
+	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... SLIC.o"
+	@echo "... SLIC.i"
+	@echo "... SLIC.s"
+	@echo "... path_split.o"
+	@echo "... path_split.i"
+	@echo "... path_split.s"
+.PHONY : help
+
+
+
+#=
