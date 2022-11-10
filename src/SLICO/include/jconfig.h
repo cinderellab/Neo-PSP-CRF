@@ -48,4 +48,7 @@ typedef unsigned char boolean;
 /* #undef NEED_SIGNAL_CATCHER */
 /* #undef DONT_USE_B_MODE */
 
-/* Define this if you want p
+/* Define this if you want percent-done progress reports from cjpeg/djpeg. */
+/* #undef PROGRESS_REPORT */
+
+#endif /* JPEG_CJPEG_DJPEG */
