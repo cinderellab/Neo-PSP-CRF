@@ -89,4 +89,15 @@ JMESSAGE(JERR_HUFF_MISSING_CODE, "Missing Huffman code table entry")
 JMESSAGE(JERR_IMAGE_TOO_BIG, "Maximum supported image dimension is %u pixels")
 JMESSAGE(JERR_INPUT_EMPTY, "Empty input file")
 JMESSAGE(JERR_INPUT_EOF, "Premature end of input file")
-JMESSAGE(JERR_
+JMESSAGE(JERR_MISMATCHED_QUANT_TABLE,
+	 "Cannot transcode due to multiple use of quantization table %d")
+JMESSAGE(JERR_MISSING_DATA, "Scan script does not transmit all data")
+JMESSAGE(JERR_MODE_CHANGE, "Invalid color quantization mode change")
+JMESSAGE(JERR_NOTIMPL, "Not implemented yet")
+JMESSAGE(JERR_NOT_COMPILED, "Requested feature was omitted at compile time")
+JMESSAGE(JERR_NO_ARITH_TABLE, "Arithmetic table 0x%02x was not defined")
+JMESSAGE(JERR_NO_BACKING_STORE, "Backing store not supported")
+JMESSAGE(JERR_NO_HUFF_TABLE, "Huffman table 0x%02x was not defined")
+JMESSAGE(JERR_NO_IMAGE, "JPEG datastream contains no image")
+JMESSAGE(JERR_NO_QUANT_TABLE, "Quantization table 0x%02x was not defined")
+JMESSAGE(JERR_NO_SOI, "Not a JPEG file: starts with 0x%02x 0x
