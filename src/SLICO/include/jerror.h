@@ -64,4 +64,17 @@ JMESSAGE(JERR_BAD_PROG_SCRIPT,
 	 "Invalid progressive parameters at scan script entry %d")
 JMESSAGE(JERR_BAD_SAMPLING, "Bogus sampling factors")
 JMESSAGE(JERR_BAD_SCAN_SCRIPT, "Invalid scan script at entry %d")
-JMESSAGE(JERR_BAD_STATE, "Improper call to JPEG library i
+JMESSAGE(JERR_BAD_STATE, "Improper call to JPEG library in state %d")
+JMESSAGE(JERR_BAD_STRUCT_SIZE,
+	 "JPEG parameter struct mismatch: library thinks size is %u, caller expects %u")
+JMESSAGE(JERR_BAD_VIRTUAL_ACCESS, "Bogus virtual array access")
+JMESSAGE(JERR_BUFFER_SIZE, "Buffer passed to JPEG library is too small")
+JMESSAGE(JERR_CANT_SUSPEND, "Suspension not allowed here")
+JMESSAGE(JERR_CCIR601_NOTIMPL, "CCIR601 sampling not implemented yet")
+JMESSAGE(JERR_COMPONENT_COUNT, "Too many color components: %d, max %d")
+JMESSAGE(JERR_CONVERSION_NOTIMPL, "Unsupported color conversion request")
+JMESSAGE(JERR_DAC_INDEX, "Bogus DAC index %d")
+JMESSAGE(JERR_DAC_VALUE, "Bogus DAC value 0x%x")
+JMESSAGE(JERR_DHT_INDEX, "Bogus DHT index %d")
+JMESSAGE(JERR_DQT_INDEX, "Bogus DQT index %d")
+JMESSAG
