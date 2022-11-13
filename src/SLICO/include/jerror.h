@@ -39,4 +39,16 @@ typedef enum {
 
 JMESSAGE(JMSG_NOMESSAGE, "Bogus message code %d") /* Must be first entry! */
 
-/* For maintenance convenience, list is alphabetical b
+/* For maintenance convenience, list is alphabetical by message code name */
+JMESSAGE(JERR_BAD_ALIGN_TYPE, "ALIGN_TYPE is wrong, please fix")
+JMESSAGE(JERR_BAD_ALLOC_CHUNK, "MAX_ALLOC_CHUNK is wrong, please fix")
+JMESSAGE(JERR_BAD_BUFFER_MODE, "Bogus buffer control mode")
+JMESSAGE(JERR_BAD_COMPONENT_ID, "Invalid component ID %d in SOS")
+JMESSAGE(JERR_BAD_CROP_SPEC, "Invalid crop request")
+JMESSAGE(JERR_BAD_DCT_COEF, "DCT coefficient out of range")
+JMESSAGE(JERR_BAD_DCTSIZE, "DCT scaled block size %dx%d not supported")
+JMESSAGE(JERR_BAD_DROP_SAMPLING,
+	 "Component index %d: mismatching sampling ratio %d:%d, %d:%d, %c")
+JMESSAGE(JERR_BAD_HUFF_TABLE, "Bogus Huffman table definition")
+JMESSAGE(JERR_BAD_IN_COLORSPACE, "Bogus input colorspace")
+JMESSAGE(JERR_BAD_J_COLORSP
