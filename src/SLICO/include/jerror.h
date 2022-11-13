@@ -100,4 +100,15 @@ JMESSAGE(JERR_NO_BACKING_STORE, "Backing store not supported")
 JMESSAGE(JERR_NO_HUFF_TABLE, "Huffman table 0x%02x was not defined")
 JMESSAGE(JERR_NO_IMAGE, "JPEG datastream contains no image")
 JMESSAGE(JERR_NO_QUANT_TABLE, "Quantization table 0x%02x was not defined")
-JMESSAGE(JERR_NO_SOI, "Not a JPEG file: starts with 0x%02x 0x
+JMESSAGE(JERR_NO_SOI, "Not a JPEG file: starts with 0x%02x 0x%02x")
+JMESSAGE(JERR_OUT_OF_MEMORY, "Insufficient memory (case %d)")
+JMESSAGE(JERR_QUANT_COMPONENTS,
+	 "Cannot quantize more than %d color components")
+JMESSAGE(JERR_QUANT_FEW_COLORS, "Cannot quantize to fewer than %d colors")
+JMESSAGE(JERR_QUANT_MANY_COLORS, "Cannot quantize to more than %d colors")
+JMESSAGE(JERR_SOF_BEFORE, "Invalid JPEG file structure: %s before SOF")
+JMESSAGE(JERR_SOF_DUPLICATE, "Invalid JPEG file structure: two SOF markers")
+JMESSAGE(JERR_SOF_NO_SOS, "Invalid JPEG file structure: missing SOS marker")
+JMESSAGE(JERR_SOF_UNSUPPORTED, "Unsupported JPEG process: SOF type 0x%02x")
+JMESSAGE(JERR_SOI_DUPLICATE, "Invalid JPEG file structure: two SOI markers")
+JMESSAGE(JERR_TFILE_CREATE, "Failed to create temporary file
