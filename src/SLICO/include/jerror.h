@@ -51,4 +51,17 @@ JMESSAGE(JERR_BAD_DROP_SAMPLING,
 	 "Component index %d: mismatching sampling ratio %d:%d, %d:%d, %c")
 JMESSAGE(JERR_BAD_HUFF_TABLE, "Bogus Huffman table definition")
 JMESSAGE(JERR_BAD_IN_COLORSPACE, "Bogus input colorspace")
-JMESSAGE(JERR_BAD_J_COLORSP
+JMESSAGE(JERR_BAD_J_COLORSPACE, "Bogus JPEG colorspace")
+JMESSAGE(JERR_BAD_LENGTH, "Bogus marker length")
+JMESSAGE(JERR_BAD_LIB_VERSION,
+	 "Wrong JPEG library version: library is %d, caller expects %d")
+JMESSAGE(JERR_BAD_MCU_SIZE, "Sampling factors too large for interleaved scan")
+JMESSAGE(JERR_BAD_POOL_ID, "Invalid memory pool code %d")
+JMESSAGE(JERR_BAD_PRECISION, "Unsupported JPEG data precision %d")
+JMESSAGE(JERR_BAD_PROGRESSION,
+	 "Invalid progressive parameters Ss=%d Se=%d Ah=%d Al=%d")
+JMESSAGE(JERR_BAD_PROG_SCRIPT,
+	 "Invalid progressive parameters at scan script entry %d")
+JMESSAGE(JERR_BAD_SAMPLING, "Bogus sampling factors")
+JMESSAGE(JERR_BAD_SCAN_SCRIPT, "Invalid scan script at entry %d")
+JMESSAGE(JERR_BAD_STATE, "Improper call to JPEG library i
