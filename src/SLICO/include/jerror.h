@@ -111,4 +111,18 @@ JMESSAGE(JERR_SOF_DUPLICATE, "Invalid JPEG file structure: two SOF markers")
 JMESSAGE(JERR_SOF_NO_SOS, "Invalid JPEG file structure: missing SOS marker")
 JMESSAGE(JERR_SOF_UNSUPPORTED, "Unsupported JPEG process: SOF type 0x%02x")
 JMESSAGE(JERR_SOI_DUPLICATE, "Invalid JPEG file structure: two SOI markers")
-JMESSAGE(JERR_TFILE_CREATE, "Failed to create temporary file
+JMESSAGE(JERR_TFILE_CREATE, "Failed to create temporary file %s")
+JMESSAGE(JERR_TFILE_READ, "Read failed on temporary file")
+JMESSAGE(JERR_TFILE_SEEK, "Seek failed on temporary file")
+JMESSAGE(JERR_TFILE_WRITE,
+	 "Write failed on temporary file --- out of disk space?")
+JMESSAGE(JERR_TOO_LITTLE_DATA, "Application transferred too few scanlines")
+JMESSAGE(JERR_UNKNOWN_MARKER, "Unsupported marker type 0x%02x")
+JMESSAGE(JERR_VIRTUAL_BUG, "Virtual array controller messed up")
+JMESSAGE(JERR_WIDTH_OVERFLOW, "Image too wide for this implementation")
+JMESSAGE(JERR_XMS_READ, "Read from XMS failed")
+JMESSAGE(JERR_XMS_WRITE, "Write to XMS failed")
+JMESSAGE(JMSG_COPYRIGHT, JCOPYRIGHT)
+JMESSAGE(JMSG_VERSION, JVERSION)
+JMESSAGE(JTRC_16BIT_TABLES,
+	 "Caution: quantization tables are too coarse for basel
