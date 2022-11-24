@@ -125,4 +125,17 @@ JMESSAGE(JERR_XMS_WRITE, "Write to XMS failed")
 JMESSAGE(JMSG_COPYRIGHT, JCOPYRIGHT)
 JMESSAGE(JMSG_VERSION, JVERSION)
 JMESSAGE(JTRC_16BIT_TABLES,
-	 "Caution: quantization tables are too coarse for basel
+	 "Caution: quantization tables are too coarse for baseline JPEG")
+JMESSAGE(JTRC_ADOBE,
+	 "Adobe APP14 marker: version %d, flags 0x%04x 0x%04x, transform %d")
+JMESSAGE(JTRC_APP0, "Unknown APP0 marker (not JFIF), length %u")
+JMESSAGE(JTRC_APP14, "Unknown APP14 marker (not Adobe), length %u")
+JMESSAGE(JTRC_DAC, "Define Arithmetic Table 0x%02x: 0x%02x")
+JMESSAGE(JTRC_DHT, "Define Huffman Table 0x%02x")
+JMESSAGE(JTRC_DQT, "Define Quantization Table %d  precision %d")
+JMESSAGE(JTRC_DRI, "Define Restart Interval %u")
+JMESSAGE(JTRC_EMS_CLOSE, "Freed EMS handle %u")
+JMESSAGE(JTRC_EMS_OPEN, "Obtained EMS handle %u")
+JMESSAGE(JTRC_EOI, "End Of Image")
+JMESSAGE(JTRC_HUFFBITS, "        %3d %3d %3d %3d %3d %3d %3d %3d")
+JMESSAGE(JTRC_JFIF, "JFIF APP0 marker: version %d.%02d, density %dx%d 
