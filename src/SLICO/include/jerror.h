@@ -138,4 +138,17 @@ JMESSAGE(JTRC_EMS_CLOSE, "Freed EMS handle %u")
 JMESSAGE(JTRC_EMS_OPEN, "Obtained EMS handle %u")
 JMESSAGE(JTRC_EOI, "End Of Image")
 JMESSAGE(JTRC_HUFFBITS, "        %3d %3d %3d %3d %3d %3d %3d %3d")
-JMESSAGE(JTRC_JFIF, "JFIF APP0 marker: version %d.%02d, density %dx%d 
+JMESSAGE(JTRC_JFIF, "JFIF APP0 marker: version %d.%02d, density %dx%d  %d")
+JMESSAGE(JTRC_JFIF_BADTHUMBNAILSIZE,
+	 "Warning: thumbnail image size does not match data length %u")
+JMESSAGE(JTRC_JFIF_EXTENSION,
+	 "JFIF extension marker: type 0x%02x, length %u")
+JMESSAGE(JTRC_JFIF_THUMBNAIL, "    with %d x %d thumbnail image")
+JMESSAGE(JTRC_MISC_MARKER, "Miscellaneous marker 0x%02x, length %u")
+JMESSAGE(JTRC_PARMLESS_MARKER, "Unexpected marker 0x%02x")
+JMESSAGE(JTRC_QUANTVALS, "        %4u %4u %4u %4u %4u %4u %4u %4u")
+JMESSAGE(JTRC_QUANT_3_NCOLORS, "Quantizing to %d = %d*%d*%d colors")
+JMESSAGE(JTRC_QUANT_NCOLORS, "Quantizing to %d colors")
+JMESSAGE(JTRC_QUANT_SELECTED, "Selected %d colors for quantization")
+JMESSAGE(JTRC_RECOVERY_ACTION, "At marker 0x%02x, recovery action %d")
+JMESSAGE(JTRC_RST, 
