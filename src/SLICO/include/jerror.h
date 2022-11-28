@@ -165,4 +165,18 @@ JMESSAGE(JTRC_TFILE_OPEN, "Opened temporary file %s")
 JMESSAGE(JTRC_THUMB_JPEG,
 	 "JFIF extension marker: JPEG-compressed thumbnail image, length %u")
 JMESSAGE(JTRC_THUMB_PALETTE,
-	 "JFIF extension marker: palette thu
+	 "JFIF extension marker: palette thumbnail image, length %u")
+JMESSAGE(JTRC_THUMB_RGB,
+	 "JFIF extension marker: RGB thumbnail image, length %u")
+JMESSAGE(JTRC_UNKNOWN_IDS,
+	 "Unrecognized component IDs %d %d %d, assuming YCbCr")
+JMESSAGE(JTRC_XMS_CLOSE, "Freed XMS handle %u")
+JMESSAGE(JTRC_XMS_OPEN, "Obtained XMS handle %u")
+JMESSAGE(JWRN_ADOBE_XFORM, "Unknown Adobe color transform code %d")
+JMESSAGE(JWRN_ARITH_BAD_CODE, "Corrupt JPEG data: bad arithmetic code")
+JMESSAGE(JWRN_BOGUS_PROGRESSION,
+	 "Inconsistent progression sequence for component %d coefficient %d")
+JMESSAGE(JWRN_EXTRANEOUS_DATA,
+	 "Corrupt JPEG data: %u extraneous bytes before marker 0x%02x")
+JMESSAGE(JWRN_HIT_MARKER, "Corrupt JPEG data: premature end of data segment")
+JMESSAGE(JWRN_HUFF_BAD_CODE,
