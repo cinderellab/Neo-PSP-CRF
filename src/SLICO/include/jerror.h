@@ -179,4 +179,28 @@ JMESSAGE(JWRN_BOGUS_PROGRESSION,
 JMESSAGE(JWRN_EXTRANEOUS_DATA,
 	 "Corrupt JPEG data: %u extraneous bytes before marker 0x%02x")
 JMESSAGE(JWRN_HIT_MARKER, "Corrupt JPEG data: premature end of data segment")
-JMESSAGE(JWRN_HUFF_BAD_CODE,
+JMESSAGE(JWRN_HUFF_BAD_CODE, "Corrupt JPEG data: bad Huffman code")
+JMESSAGE(JWRN_JFIF_MAJOR, "Warning: unknown JFIF revision number %d.%02d")
+JMESSAGE(JWRN_JPEG_EOF, "Premature end of JPEG file")
+JMESSAGE(JWRN_MUST_RESYNC,
+	 "Corrupt JPEG data: found marker 0x%02x instead of RST%d")
+JMESSAGE(JWRN_NOT_SEQUENTIAL, "Invalid SOS parameters for sequential JPEG")
+JMESSAGE(JWRN_TOO_MUCH_DATA, "Application transferred too many scanlines")
+
+#ifdef JMAKE_ENUM_LIST
+
+  JMSG_LASTMSGCODE
+} J_MESSAGE_CODE;
+
+#undef JMAKE_ENUM_LIST
+#endif /* JMAKE_ENUM_LIST */
+
+/* Zap JMESSAGE macro so that future re-inclusions do nothing by default */
+#undef JMESSAGE
+
+
+#ifndef JERROR_H
+#define JERROR_H
+
+/* Macros to simplify using the error and trace message stuff */
+/* The first parameter is 
