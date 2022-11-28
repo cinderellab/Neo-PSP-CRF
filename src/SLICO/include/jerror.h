@@ -273,4 +273,19 @@ JMESSAGE(JWRN_TOO_MUCH_DATA, "Application transferred too many scanlines")
   ((cinfo)->err->msg_code = (code), \
    (cinfo)->err->msg_parm.i[0] = (p1), \
    (cinfo)->err->msg_parm.i[1] = (p2), \
-   (*(cinfo)
+   (*(cinfo)->err->emit_message) ((j_common_ptr) (cinfo), (lvl)))
+#define TRACEMS3(cinfo,lvl,code,p1,p2,p3)  \
+  MAKESTMT(int * _mp = (cinfo)->err->msg_parm.i; \
+	   _mp[0] = (p1); _mp[1] = (p2); _mp[2] = (p3); \
+	   (cinfo)->err->msg_code = (code); \
+	   (*(cinfo)->err->emit_message) ((j_common_ptr) (cinfo), (lvl)); )
+#define TRACEMS4(cinfo,lvl,code,p1,p2,p3,p4)  \
+  MAKESTMT(int * _mp = (cinfo)->err->msg_parm.i; \
+	   _mp[0] = (p1); _mp[1] = (p2); _mp[2] = (p3); _mp[3] = (p4); \
+	   (cinfo)->err->msg_code = (code); \
+	   (*(cinfo)->err->emit_message) ((j_common_ptr) (cinfo), (lvl)); )
+#define TRACEMS5(cinfo,lvl,code,p1,p2,p3,p4,p5)  \
+  MAKESTMT(int * _mp = (cinfo)->err->msg_parm.i; \
+	   _mp[0] = (p1); _mp[1] = (p2); _mp[2] = (p3); _mp[3] = (p4); \
+	   _mp[4] = (p5); \
+	   (cinfo)->err->msg_code 
