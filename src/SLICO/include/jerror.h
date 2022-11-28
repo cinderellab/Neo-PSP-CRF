@@ -151,4 +151,18 @@ JMESSAGE(JTRC_QUANT_3_NCOLORS, "Quantizing to %d = %d*%d*%d colors")
 JMESSAGE(JTRC_QUANT_NCOLORS, "Quantizing to %d colors")
 JMESSAGE(JTRC_QUANT_SELECTED, "Selected %d colors for quantization")
 JMESSAGE(JTRC_RECOVERY_ACTION, "At marker 0x%02x, recovery action %d")
-JMESSAGE(JTRC_RST, 
+JMESSAGE(JTRC_RST, "RST%d")
+JMESSAGE(JTRC_SMOOTH_NOTIMPL,
+	 "Smoothing not supported with nonstandard sampling ratios")
+JMESSAGE(JTRC_SOF, "Start Of Frame 0x%02x: width=%u, height=%u, components=%d")
+JMESSAGE(JTRC_SOF_COMPONENT, "    Component %d: %dhx%dv q=%d")
+JMESSAGE(JTRC_SOI, "Start of Image")
+JMESSAGE(JTRC_SOS, "Start Of Scan: %d components")
+JMESSAGE(JTRC_SOS_COMPONENT, "    Component %d: dc=%d ac=%d")
+JMESSAGE(JTRC_SOS_PARAMS, "  Ss=%d, Se=%d, Ah=%d, Al=%d")
+JMESSAGE(JTRC_TFILE_CLOSE, "Closed temporary file %s")
+JMESSAGE(JTRC_TFILE_OPEN, "Opened temporary file %s")
+JMESSAGE(JTRC_THUMB_JPEG,
+	 "JFIF extension marker: JPEG-compressed thumbnail image, length %u")
+JMESSAGE(JTRC_THUMB_PALETTE,
+	 "JFIF extension marker: palette thu
