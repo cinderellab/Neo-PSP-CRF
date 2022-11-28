@@ -288,4 +288,17 @@ JMESSAGE(JWRN_TOO_MUCH_DATA, "Application transferred too many scanlines")
   MAKESTMT(int * _mp = (cinfo)->err->msg_parm.i; \
 	   _mp[0] = (p1); _mp[1] = (p2); _mp[2] = (p3); _mp[3] = (p4); \
 	   _mp[4] = (p5); \
-	   (cinfo)->err->msg_code 
+	   (cinfo)->err->msg_code = (code); \
+	   (*(cinfo)->err->emit_message) ((j_common_ptr) (cinfo), (lvl)); )
+#define TRACEMS8(cinfo,lvl,code,p1,p2,p3,p4,p5,p6,p7,p8)  \
+  MAKESTMT(int * _mp = (cinfo)->err->msg_parm.i; \
+	   _mp[0] = (p1); _mp[1] = (p2); _mp[2] = (p3); _mp[3] = (p4); \
+	   _mp[4] = (p5); _mp[5] = (p6); _mp[6] = (p7); _mp[7] = (p8); \
+	   (cinfo)->err->msg_code = (code); \
+	   (*(cinfo)->err->emit_message) ((j_common_ptr) (cinfo), (lvl)); )
+#define TRACEMSS(cinfo,lvl,code,str)  \
+  ((cinfo)->err->msg_code = (code), \
+   strncpy((cinfo)->err->msg_parm.s, (str), JMSG_STR_PARM_MAX), \
+   (*(cinfo)->err->emit_message) ((j_common_ptr) (cinfo), (lvl)))
+
+#endif /* JERROR_H */
