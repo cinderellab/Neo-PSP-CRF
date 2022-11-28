@@ -221,4 +221,22 @@ JMESSAGE(JWRN_TOO_MUCH_DATA, "Application transferred too many scanlines")
 #define ERREXIT3(cinfo,code,p1,p2,p3)  \
   ((cinfo)->err->msg_code = (code), \
    (cinfo)->err->msg_parm.i[0] = (p1), \
-   (cinfo)->err->msg_parm.i[1] = (p2),
+   (cinfo)->err->msg_parm.i[1] = (p2), \
+   (cinfo)->err->msg_parm.i[2] = (p3), \
+   (*(cinfo)->err->error_exit) ((j_common_ptr) (cinfo)))
+#define ERREXIT4(cinfo,code,p1,p2,p3,p4)  \
+  ((cinfo)->err->msg_code = (code), \
+   (cinfo)->err->msg_parm.i[0] = (p1), \
+   (cinfo)->err->msg_parm.i[1] = (p2), \
+   (cinfo)->err->msg_parm.i[2] = (p3), \
+   (cinfo)->err->msg_parm.i[3] = (p4), \
+   (*(cinfo)->err->error_exit) ((j_common_ptr) (cinfo)))
+#define ERREXIT6(cinfo,code,p1,p2,p3,p4,p5,p6)  \
+  ((cinfo)->err->msg_code = (code), \
+   (cinfo)->err->msg_parm.i[0] = (p1), \
+   (cinfo)->err->msg_parm.i[1] = (p2), \
+   (cinfo)->err->msg_parm.i[2] = (p3), \
+   (cinfo)->err->msg_parm.i[3] = (p4), \
+   (cinfo)->err->msg_parm.i[4] = (p5), \
+   (cinfo)->err->msg_parm.i[5] = (p6), \
+   (*(cinfo)->err
