@@ -20,4 +20,13 @@ Ah	include/jpeglib.h	/^  int Ss, Se, Ah, Al;		\/* progressive JPEG parameters fo
 Ah	include/jpeglib.h	/^  int Ss, Se, Ah, Al;		\/* progressive JPEG parameters for scan *\/$/;"	m	struct:jpeg_decompress_struct
 Al	include/jpeglib.h	/^  int Ah, Al;			\/* progressive JPEG successive approx. parms *\/$/;"	m	struct:__anon6
 Al	include/jpeglib.h	/^  int Ss, Se, Ah, Al;		\/* progressive JPEG parameters for scan *\/$/;"	m	struct:jpeg_compress_struct
-Al	include/jpeglib.h	/^  int Ss, Se, Ah, Al
+Al	include/jpeglib.h	/^  int Ss, Se, Ah, Al;		\/* progressive JPEG parameters for scan *\/$/;"	m	struct:jpeg_decompress_struct
+BITS_IN_JSAMPLE	include/jmorecfg.h	24;"	d
+BLOCK_SMOOTHING_SUPPORTED	include/jmorecfg.h	319;"	d
+BMP_SUPPORTED	include/jconfig.h	41;"	d
+CCIR601_sampling	include/jpeglib.h	/^  boolean CCIR601_sampling;	\/* TRUE=first samples are cosited *\/$/;"	m	struct:jpeg_compress_struct
+CCIR601_sampling	include/jpeglib.h	/^  boolean CCIR601_sampling;	\/* TRUE=first samples are cosited *\/$/;"	m	struct:jpeg_decompress_struct
+CENTERJSAMPLE	include/jmorecfg.h	75;"	d
+CENTERJSAMPLE	include/jmorecfg.h	89;"	d
+CMAKE_BINARY_DIR	build/Makefile	/^CMAKE_BINARY_DIR = \/home\/xduser\/LiHuan\/SLICO\/build$/;"	m
+CMAKE_BINARY_DIR	build/example/Makefile	/^CMAKE_BINARY_DIR 
