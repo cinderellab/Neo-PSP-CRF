@@ -29,4 +29,12 @@ CCIR601_sampling	include/jpeglib.h	/^  boolean CCIR601_sampling;	\/* TRUE=first 
 CENTERJSAMPLE	include/jmorecfg.h	75;"	d
 CENTERJSAMPLE	include/jmorecfg.h	89;"	d
 CMAKE_BINARY_DIR	build/Makefile	/^CMAKE_BINARY_DIR = \/home\/xduser\/LiHuan\/SLICO\/build$/;"	m
-CMAKE_BINARY_DIR	build/example/Makefile	/^CMAKE_BINARY_DIR 
+CMAKE_BINARY_DIR	build/example/Makefile	/^CMAKE_BINARY_DIR = \/home\/xduser\/LiHuan\/SLICO\/build$/;"	m
+CMAKE_BINARY_DIR	build/lib/Makefile	/^CMAKE_BINARY_DIR = \/home\/xduser\/LiHuan\/SLICO\/build$/;"	m
+CMAKE_BINARY_DIR	build/src/Makefile	/^CMAKE_BINARY_DIR = \/home\/xduser\/LiHuan\/SLICO\/build$/;"	m
+CMAKE_COMMAND	build/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMMAND	build/example/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMMAND	build/lib/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMMAND	build/src/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_SOURCE_DIR	build/Makefile	/^CMAKE_SOURCE_DIR = \/home\/xduser\/LiHuan\/SLICO$/;"	m
+CMAKE_SOURCE_DIR	build/example/Makefile	/^CMAKE_SOURCE_DIR = \/home\/xdu
