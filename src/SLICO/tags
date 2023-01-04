@@ -85,4 +85,18 @@ COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	65;"	d	file:
 COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	68;"	d	file:
 COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	74;"	d	file:
 COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	77;"	d	file:
-COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	80
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	80;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	9;"	d	file:
+C_ARITH_CODING_SUPPORTED	include/jmorecfg.h	297;"	d
+C_MAX_BLOCKS_IN_MCU	include/jpeglib.h	64;"	d
+C_MULTISCAN_FILES_SUPPORTED	include/jmorecfg.h	298;"	d
+C_PROGRESSIVE_SUPPORTED	include/jmorecfg.h	299;"	d
+DCTSIZE	include/jpeglib.h	50;"	d
+DCTSIZE2	include/jpeglib.h	51;"	d
+DCT_FLOAT_SUPPORTED	include/jmorecfg.h	293;"	d
+DCT_IFAST_SUPPORTED	include/jmorecfg.h	292;"	d
+DCT_ISLOW_SUPPORTED	include/jmorecfg.h	291;"	d
+DCT_SCALING_SUPPORTED	include/jmorecfg.h	300;"	d
+DCT_h_scaled_size	include/jpeglib.h	/^  int DCT_h_scaled_size;$/;"	m	struct:__anon5
+DCT_v_scaled_size	include/jpeglib.h	/^  int DCT_v_scaled_size;$/;"	m	struct:__anon5
+D
