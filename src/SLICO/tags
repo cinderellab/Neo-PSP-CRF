@@ -144,4 +144,14 @@ HAVE_UNSIGNED_SHORT	include/jconfig.h	7;"	d
 IDCT_SCALING_SUPPORTED	include/jmorecfg.h	317;"	d
 ID_VOID_MAIN	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	6;"	d	file:
 INLINE	include/jconfig.h	32;"	d
-INLINE	include/jmorecfg.h	356;"
+INLINE	include/jmorecfg.h	356;"	d
+INLINE	include/jmorecfg.h	359;"	d
+INPUT_SMOOTHING_SUPPORTED	include/jmorecfg.h	310;"	d
+INT16	include/jmorecfg.h	/^typedef short INT16;$/;"	t
+INT32	include/jmorecfg.h	/^typedef long INT32;$/;"	t
+JBLOCK	include/jpeglib.h	/^typedef JCOEF JBLOCK[DCTSIZE2];	\/* one block of coefficients *\/$/;"	t
+JBLOCKARRAY	include/jpeglib.h	/^typedef JBLOCKROW *JBLOCKARRAY;		\/* a 2-D array of coefficient blocks *\/$/;"	t
+JBLOCKIMAGE	include/jpeglib.h	/^typedef JBLOCKARRAY *JBLOCKIMAGE;	\/* a 3-D array of coefficient blocks *\/$/;"	t
+JBLOCKROW	include/jpeglib.h	/^typedef JBLOCK FAR *JBLOCKROW;	\/* pointer to one row of coefficient blocks *\/$/;"	t
+JCOEF	include/jmorecfg.h	/^typedef short JCOEF;$/;"	t
+JCOEFPTR	include/jpeglib.h	/^typedef JCOEF FAR 
