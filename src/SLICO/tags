@@ -179,4 +179,11 @@ JFIF_minor_version	include/jpeglib.h	/^  UINT8 JFIF_minor_version;$/;"	m	struct:
 JFIF_minor_version	include/jpeglib.h	/^  UINT8 JFIF_minor_version;$/;"	m	struct:jpeg_decompress_struct
 JHUFF_TBL	include/jpeglib.h	/^} JHUFF_TBL;$/;"	t	typeref:struct:__anon4
 JMAKE_ENUM_LIST	include/jerror.h	195;"	d
-JMAKE_ENUM_LIST	include/jerror.h	25;"
+JMAKE_ENUM_LIST	include/jerror.h	25;"	d
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_ALIGN_TYPE, "ALIGN_TYPE is wrong, please fix")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_ALLOC_CHUNK, "MAX_ALLOC_CHUNK is wrong, please fix")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_BUFFER_MODE, "Bogus buffer control mode")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_COMPONENT_ID, "Invalid component ID %d in SOS")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_CROP_SPEC, "Invalid crop request")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_DCTSIZE, "DCT scaled block size %dx%d not supported")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_DCT_COEF, "DCT coefficient out of range")$/;"	e	en
