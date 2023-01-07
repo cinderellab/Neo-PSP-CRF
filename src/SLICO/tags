@@ -154,4 +154,12 @@ JBLOCKARRAY	include/jpeglib.h	/^typedef JBLOCKROW *JBLOCKARRAY;		\/* a 2-D array
 JBLOCKIMAGE	include/jpeglib.h	/^typedef JBLOCKARRAY *JBLOCKIMAGE;	\/* a 3-D array of coefficient blocks *\/$/;"	t
 JBLOCKROW	include/jpeglib.h	/^typedef JBLOCK FAR *JBLOCKROW;	\/* pointer to one row of coefficient blocks *\/$/;"	t
 JCOEF	include/jmorecfg.h	/^typedef short JCOEF;$/;"	t
-JCOEFPTR	include/jpeglib.h	/^typedef JCOEF FAR 
+JCOEFPTR	include/jpeglib.h	/^typedef JCOEF FAR *JCOEFPTR;	\/* useful in a couple of places *\/$/;"	t
+JCS_CMYK	include/jpeglib.h	/^	JCS_CMYK,		\/* C\/M\/Y\/K *\/$/;"	e	enum:__anon7
+JCS_GRAYSCALE	include/jpeglib.h	/^	JCS_GRAYSCALE,		\/* monochrome *\/$/;"	e	enum:__anon7
+JCS_RGB	include/jpeglib.h	/^	JCS_RGB,		\/* red\/green\/blue *\/$/;"	e	enum:__anon7
+JCS_UNKNOWN	include/jpeglib.h	/^	JCS_UNKNOWN,		\/* error\/unspecified *\/$/;"	e	enum:__anon7
+JCS_YCCK	include/jpeglib.h	/^	JCS_YCCK		\/* Y\/Cb\/Cr\/K *\/$/;"	e	enum:__anon7
+JCS_YCbCr	include/jpeglib.h	/^	JCS_YCbCr,		\/* Y\/Cb\/Cr (also known as YUV) *\/$/;"	e	enum:__anon7
+JCT_NONE	include/jpeglib.h	/^	JCT_NONE           = 0,$/;"	e	enum:__anon8
+JCT_SUBTRACT_GREEN	include/jpeglib.h	/^	JCT_SUBTRACT_GREEN = 1$/;"	e	enu
