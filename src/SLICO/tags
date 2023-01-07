@@ -171,4 +171,12 @@ JDCT_ISLOW	include/jpeglib.h	/^	JDCT_ISLOW,		\/* slow but accurate integer algor
 JDIMENSION	include/jmorecfg.h	/^typedef unsigned int JDIMENSION;$/;"	t
 JDITHER_FS	include/jpeglib.h	/^	JDITHER_FS		\/* Floyd-Steinberg error diffusion dither *\/$/;"	e	enum:__anon10
 JDITHER_NONE	include/jpeglib.h	/^	JDITHER_NONE,		\/* no dithering *\/$/;"	e	enum:__anon10
-JDITHER_ORDERED	include/jpeglib.h	/^	JDITHER
+JDITHER_ORDERED	include/jpeglib.h	/^	JDITHER_ORDERED,	\/* simple ordered dither *\/$/;"	e	enum:__anon10
+JERROR_H	include/jerror.h	203;"	d
+JFIF_major_version	include/jpeglib.h	/^  UINT8 JFIF_major_version;	\/* JFIF version number *\/$/;"	m	struct:jpeg_decompress_struct
+JFIF_major_version	include/jpeglib.h	/^  UINT8 JFIF_major_version;	\/* What to write for the JFIF version number *\/$/;"	m	struct:jpeg_compress_struct
+JFIF_minor_version	include/jpeglib.h	/^  UINT8 JFIF_minor_version;$/;"	m	struct:jpeg_compress_struct
+JFIF_minor_version	include/jpeglib.h	/^  UINT8 JFIF_minor_version;$/;"	m	struct:jpeg_decompress_struct
+JHUFF_TBL	include/jpeglib.h	/^} JHUFF_TBL;$/;"	t	typeref:struct:__anon4
+JMAKE_ENUM_LIST	include/jerror.h	195;"	d
+JMAKE_ENUM_LIST	include/jerror.h	25;"
