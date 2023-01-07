@@ -130,4 +130,18 @@ GETJSAMPLE	include/jmorecfg.h	61;"	d
 GETJSAMPLE	include/jmorecfg.h	67;"	d
 GETJSAMPLE	include/jmorecfg.h	69;"	d
 GETJSAMPLE	include/jmorecfg.h	86;"	d
-GIF_SUPPOR
+GIF_SUPPORTED	include/jconfig.h	42;"	d
+GLOBAL	include/jmorecfg.h	195;"	d
+GetLABXYSeeds_ForGivenK	src/SLIC.cpp	/^void SLIC::GetLABXYSeeds_ForGivenK($/;"	f	class:SLIC
+GetLABXYSeeds_ForGivenStepSize	src/SLIC.cpp	/^void SLIC::GetLABXYSeeds_ForGivenStepSize($/;"	f	class:SLIC
+HAVE_BOOLEAN	include/jconfig.h	26;"	d
+HAVE_LOCALE_H	include/jconfig.h	13;"	d
+HAVE_PROTOTYPES	include/jconfig.h	5;"	d
+HAVE_STDDEF_H	include/jconfig.h	11;"	d
+HAVE_STDLIB_H	include/jconfig.h	12;"	d
+HAVE_UNSIGNED_CHAR	include/jconfig.h	6;"	d
+HAVE_UNSIGNED_SHORT	include/jconfig.h	7;"	d
+IDCT_SCALING_SUPPORTED	include/jmorecfg.h	317;"	d
+ID_VOID_MAIN	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	6;"	d	file:
+INLINE	include/jconfig.h	32;"	d
+INLINE	include/jmorecfg.h	356;"
