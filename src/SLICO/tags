@@ -99,4 +99,17 @@ DCT_ISLOW_SUPPORTED	include/jmorecfg.h	291;"	d
 DCT_SCALING_SUPPORTED	include/jmorecfg.h	300;"	d
 DCT_h_scaled_size	include/jpeglib.h	/^  int DCT_h_scaled_size;$/;"	m	struct:__anon5
 DCT_v_scaled_size	include/jpeglib.h	/^  int DCT_v_scaled_size;$/;"	m	struct:__anon5
-D
+D_ARITH_CODING_SUPPORTED	include/jmorecfg.h	314;"	d
+D_MAX_BLOCKS_IN_MCU	include/jpeglib.h	66;"	d
+D_MULTISCAN_FILES_SUPPORTED	include/jmorecfg.h	315;"	d
+D_PROGRESSIVE_SUPPORTED	include/jmorecfg.h	316;"	d
+DetectLabEdges	src/SLIC.cpp	/^void SLIC::DetectLabEdges($/;"	f	class:SLIC
+DoRGBtoLABConversion	src/SLIC.cpp	/^void SLIC::DoRGBtoLABConversion($/;"	f	class:SLIC
+DrawContoursAroundSegments	src/SLIC.cpp	/^void SLIC::DrawContoursAroundSegments($/;"	f	class:SLIC
+DrawContoursAroundSegmentsTwoColors	src/SLIC.cpp	/^void SLIC::DrawContoursAroundSegmentsTwoColors($/;"	f	class:SLIC
+ENTROPY_OPT_SUPPORTED	include/jmorecfg.h	301;"	d
+ERREXIT	include/jerror.h	209;"	d
+ERREXIT1	include/jerror.h	212;"	d
+ERREXIT2	include/jerror.h	216;"	d
+ERREXIT3	include/jerror.h	221;"	d
+ERREXIT4	inc
