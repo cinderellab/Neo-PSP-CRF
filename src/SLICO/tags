@@ -112,4 +112,22 @@ ERREXIT	include/jerror.h	209;"	d
 ERREXIT1	include/jerror.h	212;"	d
 ERREXIT2	include/jerror.h	216;"	d
 ERREXIT3	include/jerror.h	221;"	d
-ERREXIT4	inc
+ERREXIT4	include/jerror.h	227;"	d
+ERREXIT6	include/jerror.h	234;"	d
+ERREXITS	include/jerror.h	243;"	d
+EXTERN	include/jmorecfg.h	197;"	d
+EnforceLabelConnectivity	src/SLIC.cpp	/^void SLIC::EnforceLabelConnectivity($/;"	f	class:SLIC
+FALSE	include/jmorecfg.h	/^typedef enum { FALSE = 0, TRUE = 1 } boolean;$/;"	e	enum:__anon1
+FALSE	include/jmorecfg.h	257;"	d
+FAR	include/jmorecfg.h	241;"	d
+FAR	include/jmorecfg.h	243;"	d
+FAST_FLOAT	include/jmorecfg.h	384;"	d
+FAST_FLOAT	include/jmorecfg.h	386;"	d
+GETJOCTET	include/jmorecfg.h	112;"	d
+GETJOCTET	include/jmorecfg.h	118;"	d
+GETJOCTET	include/jmorecfg.h	120;"	d
+GETJSAMPLE	include/jmorecfg.h	61;"	d
+GETJSAMPLE	include/jmorecfg.h	67;"	d
+GETJSAMPLE	include/jmorecfg.h	69;"	d
+GETJSAMPLE	include/jmorecfg.h	86;"	d
+GIF_SUPPOR
