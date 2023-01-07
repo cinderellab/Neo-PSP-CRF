@@ -186,4 +186,12 @@ JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_BUFFER_MODE, "Bogus buffer control
 JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_COMPONENT_ID, "Invalid component ID %d in SOS")$/;"	e	enum:__anon2
 JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_CROP_SPEC, "Invalid crop request")$/;"	e	enum:__anon2
 JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_DCTSIZE, "DCT scaled block size %dx%d not supported")$/;"	e	enum:__anon2
-JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_DCT_COEF, "DCT coefficient out of range")$/;"	e	en
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_DCT_COEF, "DCT coefficient out of range")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_DROP_SAMPLING,$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_HUFF_TABLE, "Bogus Huffman table definition")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_IN_COLORSPACE, "Bogus input colorspace")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_J_COLORSPACE, "Bogus JPEG colorspace")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_LENGTH, "Bogus marker length")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_LIB_VERSION,$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_MCU_SIZE, "Sampling factors too large for interleaved scan")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_POOL_ID, "Invalid memory pool code %d")$/;
