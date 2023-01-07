@@ -162,4 +162,13 @@ JCS_UNKNOWN	include/jpeglib.h	/^	JCS_UNKNOWN,		\/* error\/unspecified *\/$/;"	e	
 JCS_YCCK	include/jpeglib.h	/^	JCS_YCCK		\/* Y\/Cb\/Cr\/K *\/$/;"	e	enum:__anon7
 JCS_YCbCr	include/jpeglib.h	/^	JCS_YCbCr,		\/* Y\/Cb\/Cr (also known as YUV) *\/$/;"	e	enum:__anon7
 JCT_NONE	include/jpeglib.h	/^	JCT_NONE           = 0,$/;"	e	enum:__anon8
-JCT_SUBTRACT_GREEN	include/jpeglib.h	/^	JCT_SUBTRACT_GREEN = 1$/;"	e	enu
+JCT_SUBTRACT_GREEN	include/jpeglib.h	/^	JCT_SUBTRACT_GREEN = 1$/;"	e	enum:__anon8
+JDCT_DEFAULT	include/jpeglib.h	240;"	d
+JDCT_FASTEST	include/jpeglib.h	243;"	d
+JDCT_FLOAT	include/jpeglib.h	/^	JDCT_FLOAT		\/* floating-point: accurate, fast on fast HW *\/$/;"	e	enum:__anon9
+JDCT_IFAST	include/jpeglib.h	/^	JDCT_IFAST,		\/* faster, less accurate integer method *\/$/;"	e	enum:__anon9
+JDCT_ISLOW	include/jpeglib.h	/^	JDCT_ISLOW,		\/* slow but accurate integer algorithm *\/$/;"	e	enum:__anon9
+JDIMENSION	include/jmorecfg.h	/^typedef unsigned int JDIMENSION;$/;"	t
+JDITHER_FS	include/jpeglib.h	/^	JDITHER_FS		\/* Floyd-Steinberg error diffusion dither *\/$/;"	e	enum:__anon10
+JDITHER_NONE	include/jpeglib.h	/^	JDITHER_NONE,		\/* no dithering *\/$/;"	e	enum:__anon10
+JDITHER_ORDERED	include/jpeglib.h	/^	JDITHER
