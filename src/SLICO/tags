@@ -194,4 +194,12 @@ JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_J_COLORSPACE, "Bogus JPEG colorspa
 JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_LENGTH, "Bogus marker length")$/;"	e	enum:__anon2
 JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_LIB_VERSION,$/;"	e	enum:__anon2
 JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_MCU_SIZE, "Sampling factors too large for interleaved scan")$/;"	e	enum:__anon2
-JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_POOL_ID, "Invalid memory pool code %d")$/;
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_POOL_ID, "Invalid memory pool code %d")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_PRECISION, "Unsupported JPEG data precision %d")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_PROGRESSION,$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_PROG_SCRIPT,$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_SAMPLING, "Bogus sampling factors")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_SCAN_SCRIPT, "Invalid scan script at entry %d")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_STATE, "Improper call to JPEG library in state %d")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_STRUCT_SIZE,$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_VIRTUAL_ACCESS, 
