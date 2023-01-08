@@ -202,4 +202,10 @@ JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_SAMPLING, "Bogus sampling factors"
 JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_SCAN_SCRIPT, "Invalid scan script at entry %d")$/;"	e	enum:__anon2
 JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_STATE, "Improper call to JPEG library in state %d")$/;"	e	enum:__anon2
 JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_STRUCT_SIZE,$/;"	e	enum:__anon2
-JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_VIRTUAL_ACCESS, 
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BAD_VIRTUAL_ACCESS, "Bogus virtual array access")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_BUFFER_SIZE, "Buffer passed to JPEG library is too small")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_CANT_SUSPEND, "Suspension not allowed here")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_CCIR601_NOTIMPL, "CCIR601 sampling not implemented yet")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_COMPONENT_COUNT, "Too many color components: %d, max %d")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_CONVERSION_NOTIMPL, "Unsupported color conversion request")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_DAC_INDEX, "B
