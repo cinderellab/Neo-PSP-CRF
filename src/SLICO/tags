@@ -242,4 +242,11 @@ JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_QUANT_MANY_COLORS, "Cannot quantize to
 JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_SOF_BEFORE, "Invalid JPEG file structure: %s before SOF")$/;"	e	enum:__anon2
 JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_SOF_DUPLICATE, "Invalid JPEG file structure: two SOF markers")$/;"	e	enum:__anon2
 JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_SOF_NO_SOS, "Invalid JPEG file structure: missing SOS marker")$/;"	e	enum:__anon2
-JMESSAGE	include/jerror.h	/^JMESSAGE(JERR
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_SOF_UNSUPPORTED, "Unsupported JPEG process: SOF type 0x%02x")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_SOI_DUPLICATE, "Invalid JPEG file structure: two SOI markers")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_TFILE_CREATE, "Failed to create temporary file %s")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_TFILE_READ, "Read failed on temporary file")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_TFILE_SEEK, "Seek failed on temporary file")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_TFILE_WRITE,$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_TOO_LITTLE_DATA, "Application transferred too few scanlines")$/;"	e	enum:__anon2
+JMESSAGE	incl
