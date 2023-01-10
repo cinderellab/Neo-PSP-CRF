@@ -208,4 +208,12 @@ JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_CANT_SUSPEND, "Suspension not allowed 
 JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_CCIR601_NOTIMPL, "CCIR601 sampling not implemented yet")$/;"	e	enum:__anon2
 JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_COMPONENT_COUNT, "Too many color components: %d, max %d")$/;"	e	enum:__anon2
 JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_CONVERSION_NOTIMPL, "Unsupported color conversion request")$/;"	e	enum:__anon2
-JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_DAC_INDEX, "B
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_DAC_INDEX, "Bogus DAC index %d")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_DAC_VALUE, "Bogus DAC value 0x%x")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_DHT_INDEX, "Bogus DHT index %d")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_DQT_INDEX, "Bogus DQT index %d")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_EMPTY_IMAGE, "Empty JPEG image (DNL not supported)")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_EMS_READ, "Read from EMS failed")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_EMS_WRITE, "Write to EMS failed")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_EOI_EXPECTED, "Didn't expect more than one scan")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMES
