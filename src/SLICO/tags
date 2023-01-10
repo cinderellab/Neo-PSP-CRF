@@ -222,4 +222,11 @@ JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_FRACT_SAMPLE_NOTIMPL, "Fractional samp
 JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_HUFF_CLEN_OVERFLOW, "Huffman code size table overflow")$/;"	e	enum:__anon2
 JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_HUFF_MISSING_CODE, "Missing Huffman code table entry")$/;"	e	enum:__anon2
 JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_IMAGE_TOO_BIG, "Maximum supported image dimension is %u pixels")$/;"	e	enum:__anon2
-JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_INP
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_INPUT_EMPTY, "Empty input file")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_INPUT_EOF, "Premature end of input file")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_MISMATCHED_QUANT_TABLE,$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_MISSING_DATA, "Scan script does not transmit all data")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_MODE_CHANGE, "Invalid color quantization mode change")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_NOTIMPL, "Not implemented yet")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_NOT_COMPILED, "Requested feature was omitted at compile time")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_NO_ARITH_TABLE, "Arithmetic table 0
