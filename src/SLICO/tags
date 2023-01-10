@@ -216,4 +216,10 @@ JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_EMPTY_IMAGE, "Empty JPEG image (DNL no
 JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_EMS_READ, "Read from EMS failed")$/;"	e	enum:__anon2
 JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_EMS_WRITE, "Write to EMS failed")$/;"	e	enum:__anon2
 JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_EOI_EXPECTED, "Didn't expect more than one scan")$/;"	e	enum:__anon2
-JMESSAGE	include/jerror.h	/^JMES
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_FILE_READ, "Input file read error")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_FILE_WRITE, "Output file write error --- out of disk space?")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_FRACT_SAMPLE_NOTIMPL, "Fractional sampling not implemented yet")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_HUFF_CLEN_OVERFLOW, "Huffman code size table overflow")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_HUFF_MISSING_CODE, "Missing Huffman code table entry")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_IMAGE_TOO_BIG, "Maximum supported image dimension is %u pixels")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_INP
