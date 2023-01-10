@@ -249,4 +249,10 @@ JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_TFILE_READ, "Read failed on temporary 
 JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_TFILE_SEEK, "Seek failed on temporary file")$/;"	e	enum:__anon2
 JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_TFILE_WRITE,$/;"	e	enum:__anon2
 JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_TOO_LITTLE_DATA, "Application transferred too few scanlines")$/;"	e	enum:__anon2
-JMESSAGE	incl
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_UNKNOWN_MARKER, "Unsupported marker type 0x%02x")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_VIRTUAL_BUG, "Virtual array controller messed up")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_WIDTH_OVERFLOW, "Image too wide for this implementation")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_XMS_READ, "Read from XMS failed")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_XMS_WRITE, "Write to XMS failed")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JMSG_COPYRIGHT, JCOPYRIGHT)$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JMSG_NOMESSAGE, "Bogus message code %d") \/* Must be first e
