@@ -235,4 +235,11 @@ JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_NO_HUFF_TABLE, "Huffman table 0x%02x w
 JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_NO_IMAGE, "JPEG datastream contains no image")$/;"	e	enum:__anon2
 JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_NO_QUANT_TABLE, "Quantization table 0x%02x was not defined")$/;"	e	enum:__anon2
 JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_NO_SOI, "Not a JPEG file: starts with 0x%02x 0x%02x")$/;"	e	enum:__anon2
-JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_OUT_OF_MEMORY, "Insufficient memory (case %d)")$/;"	e	enum:__a
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_OUT_OF_MEMORY, "Insufficient memory (case %d)")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_QUANT_COMPONENTS,$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_QUANT_FEW_COLORS, "Cannot quantize to fewer than %d colors")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_QUANT_MANY_COLORS, "Cannot quantize to more than %d colors")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_SOF_BEFORE, "Invalid JPEG file structure: %s before SOF")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_SOF_DUPLICATE, "Invalid JPEG file structure: two SOF markers")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_SOF_NO_SOS, "Invalid JPEG file structure: missing SOS marker")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JERR
