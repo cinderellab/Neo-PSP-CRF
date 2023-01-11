@@ -255,4 +255,12 @@ JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_WIDTH_OVERFLOW, "Image too wide for th
 JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_XMS_READ, "Read from XMS failed")$/;"	e	enum:__anon2
 JMESSAGE	include/jerror.h	/^JMESSAGE(JERR_XMS_WRITE, "Write to XMS failed")$/;"	e	enum:__anon2
 JMESSAGE	include/jerror.h	/^JMESSAGE(JMSG_COPYRIGHT, JCOPYRIGHT)$/;"	e	enum:__anon2
-JMESSAGE	include/jerror.h	/^JMESSAGE(JMSG_NOMESSAGE, "Bogus message code %d") \/* Must be first e
+JMESSAGE	include/jerror.h	/^JMESSAGE(JMSG_NOMESSAGE, "Bogus message code %d") \/* Must be first entry! *\/$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JMSG_VERSION, JVERSION)$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_16BIT_TABLES,$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_ADOBE,$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_APP0, "Unknown APP0 marker (not JFIF), length %u")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_APP14, "Unknown APP14 marker (not Adobe), length %u")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_DAC, "Define Arithmetic Table 0x%02x: 0x%02x")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_DHT, "Define Huffman Table 0x%02x")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_DQT, "Define Quantization Table
