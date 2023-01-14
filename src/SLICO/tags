@@ -278,4 +278,11 @@ JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_PARMLESS_MARKER, "Unexpected marker 0x
 JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_QUANTVALS, "        %4u %4u %4u %4u %4u %4u %4u %4u")$/;"	e	enum:__anon2
 JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_QUANT_3_NCOLORS, "Quantizing to %d = %d*%d*%d colors")$/;"	e	enum:__anon2
 JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_QUANT_NCOLORS, "Quantizing to %d colors")$/;"	e	enum:__anon2
-JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_QUANT_SELECTED, "Selected %d colors for quantization")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_RECOVERY_ACTION, "At marker 0x%02x, recovery action %d")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_RST, "RST%d")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_SMOOTH_NOTIMPL,$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_SOF, "Start Of Frame 0x%02x: width=%u, height=%u, components=%d")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_SOF_COMPONENT, "    Component %d: %dhx%dv q=%d")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_SOI, "Start of Image")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_SOS, "Start Of Scan: %d components")$/;"	e	enum
