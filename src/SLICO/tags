@@ -271,4 +271,11 @@ JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_EOI, "End Of Image")$/;"	e	enum:__anon
 JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_HUFFBITS, "        %3d %3d %3d %3d %3d %3d %3d %3d")$/;"	e	enum:__anon2
 JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_JFIF, "JFIF APP0 marker: version %d.%02d, density %dx%d  %d")$/;"	e	enum:__anon2
 JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_JFIF_BADTHUMBNAILSIZE,$/;"	e	enum:__anon2
-JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_JFIF_EXTENSION,$/;"	e	enum:__ano
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_JFIF_EXTENSION,$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_JFIF_THUMBNAIL, "    with %d x %d thumbnail image")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_MISC_MARKER, "Miscellaneous marker 0x%02x, length %u")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_PARMLESS_MARKER, "Unexpected marker 0x%02x")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_QUANTVALS, "        %4u %4u %4u %4u %4u %4u %4u %4u")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_QUANT_3_NCOLORS, "Quantizing to %d = %d*%d*%d colors")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_QUANT_NCOLORS, "Quantizing to %d colors")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_
