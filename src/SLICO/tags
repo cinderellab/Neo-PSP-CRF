@@ -263,4 +263,12 @@ JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_APP0, "Unknown APP0 marker (not JFIF),
 JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_APP14, "Unknown APP14 marker (not Adobe), length %u")$/;"	e	enum:__anon2
 JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_DAC, "Define Arithmetic Table 0x%02x: 0x%02x")$/;"	e	enum:__anon2
 JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_DHT, "Define Huffman Table 0x%02x")$/;"	e	enum:__anon2
-JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_DQT, "Define Quantization Table
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_DQT, "Define Quantization Table %d  precision %d")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_DRI, "Define Restart Interval %u")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_EMS_CLOSE, "Freed EMS handle %u")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_EMS_OPEN, "Obtained EMS handle %u")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_EOI, "End Of Image")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_HUFFBITS, "        %3d %3d %3d %3d %3d %3d %3d %3d")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_JFIF, "JFIF APP0 marker: version %d.%02d, density %dx%d  %d")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_JFIF_BADTHUMBNAILSIZE,$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_JFIF_EXTENSION,$/;"	e	enum:__ano
