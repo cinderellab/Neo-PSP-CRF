@@ -285,4 +285,13 @@ JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_SMOOTH_NOTIMPL,$/;"	e	enum:__anon2
 JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_SOF, "Start Of Frame 0x%02x: width=%u, height=%u, components=%d")$/;"	e	enum:__anon2
 JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_SOF_COMPONENT, "    Component %d: %dhx%dv q=%d")$/;"	e	enum:__anon2
 JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_SOI, "Start of Image")$/;"	e	enum:__anon2
-JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_SOS, "Start Of Scan: %d components")$/;"	e	enum
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_SOS, "Start Of Scan: %d components")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_SOS_COMPONENT, "    Component %d: dc=%d ac=%d")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_SOS_PARAMS, "  Ss=%d, Se=%d, Ah=%d, Al=%d")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_TFILE_CLOSE, "Closed temporary file %s")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_TFILE_OPEN, "Opened temporary file %s")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_THUMB_JPEG,$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_THUMB_PALETTE,$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_THUMB_RGB,$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JTRC_UNKNOWN_IDS,$/;"	e	enum:__anon2
+JMESSAGE	include/jerror
