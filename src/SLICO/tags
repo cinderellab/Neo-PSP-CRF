@@ -326,4 +326,20 @@ JPEG_HEADER_OK	include/jpeglib.h	1036;"	d
 JPEG_HEADER_TABLES_ONLY	include/jpeglib.h	1037;"	d
 JPEG_INTERNAL_OPTIONS	include/jmorecfg.h	275;"	d
 JPEG_LIB_VERSION	include/jpeglib.h	40;"	d
-JPEG_LIB_VERS
+JPEG_LIB_VERSION_MAJOR	include/jpeglib.h	41;"	d
+JPEG_LIB_VERSION_MINOR	include/jpeglib.h	42;"	d
+JPEG_MAX_DIMENSION	include/jmorecfg.h	180;"	d
+JPEG_QUALITY	example/j2seg.cpp	15;"	d	file:
+JPEG_REACHED_EOI	include/jpeglib.h	1067;"	d
+JPEG_REACHED_SOS	include/jpeglib.h	1066;"	d
+JPEG_ROW_COMPLETED	include/jpeglib.h	1068;"	d
+JPEG_RST0	include/jpeglib.h	1116;"	d
+JPEG_SCAN_COMPLETED	include/jpeglib.h	1069;"	d
+JPEG_SUSPENDED	include/jpeglib.h	1035;"	d
+JPOOL_IMAGE	include/jpeglib.h	801;"	d
+JPOOL_NUMPOOLS	include/jpeglib.h	802;"	d
+JPOOL_PERMANENT	include/jpeglib.h	800;"	d
+JPP	include/jpeglib.h	870;"	d
+JPP	include/jpeglib.h	872;"	d
+JQUANT_TBL	include/jpeglib.h	/^} JQUANT_TBL;$/;"	t	typeref:struct:__anon3
+JSAMPARRAY	include/jpeglib.h	/^typedef JSAMPROW *JSAMPARR
