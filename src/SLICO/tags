@@ -301,4 +301,13 @@ JMESSAGE	include/jerror.h	/^JMESSAGE(JWRN_ARITH_BAD_CODE, "Corrupt JPEG data: ba
 JMESSAGE	include/jerror.h	/^JMESSAGE(JWRN_BOGUS_PROGRESSION,$/;"	e	enum:__anon2
 JMESSAGE	include/jerror.h	/^JMESSAGE(JWRN_EXTRANEOUS_DATA,$/;"	e	enum:__anon2
 JMESSAGE	include/jerror.h	/^JMESSAGE(JWRN_HIT_MARKER, "Corrupt JPEG data: premature end of data segment")$/;"	e	enum:__anon2
-JMESSAGE	include/jerror.h	/^JMESSAGE(JWRN_HUFF_BAD_CODE, "Co
+JMESSAGE	include/jerror.h	/^JMESSAGE(JWRN_HUFF_BAD_CODE, "Corrupt JPEG data: bad Huffman code")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JWRN_JFIF_MAJOR, "Warning: unknown JFIF revision number %d.%02d")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JWRN_JPEG_EOF, "Premature end of JPEG file")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JWRN_MUST_RESYNC,$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JWRN_NOT_SEQUENTIAL, "Invalid SOS parameters for sequential JPEG")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	/^JMESSAGE(JWRN_TOO_MUCH_DATA, "Application transferred too many scanlines")$/;"	e	enum:__anon2
+JMESSAGE	include/jerror.h	199;"	d
+JMESSAGE	include/jerror.h	28;"	d
+JMESSAGE	include/jerror.h	36;"	d
+JMETHOD	include/jmorecfg
