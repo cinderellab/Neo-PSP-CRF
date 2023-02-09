@@ -310,4 +310,20 @@ JMESSAGE	include/jerror.h	/^JMESSAGE(JWRN_TOO_MUCH_DATA, "Application transferre
 JMESSAGE	include/jerror.h	199;"	d
 JMESSAGE	include/jerror.h	28;"	d
 JMESSAGE	include/jerror.h	36;"	d
-JMETHOD	include/jmorecfg
+JMETHOD	include/jmorecfg.h	207;"	d
+JMETHOD	include/jmorecfg.h	209;"	d
+JMETHOD	include/jpeglib.h	/^typedef JMETHOD(boolean, jpeg_marker_parser_method, (j_decompress_ptr cinfo));$/;"	t
+JMSG_LASTMSGCODE	include/jerror.h	/^  JMSG_LASTMSGCODE$/;"	e	enum:__anon2
+JMSG_LENGTH_MAX	include/jpeglib.h	704;"	d
+JMSG_STR_PARM_MAX	include/jpeglib.h	712;"	d
+JOCTET	include/jmorecfg.h	/^typedef char JOCTET;$/;"	t
+JOCTET	include/jmorecfg.h	/^typedef unsigned char JOCTET;$/;"	t
+JPEGLIB_H	include/jpeglib.h	15;"	d
+JPEG_APP0	include/jpeglib.h	1118;"	d
+JPEG_COM	include/jpeglib.h	1119;"	d
+JPEG_EOI	include/jpeglib.h	1117;"	d
+JPEG_HEADER_OK	include/jpeglib.h	1036;"	d
+JPEG_HEADER_TABLES_ONLY	include/jpeglib.h	1037;"	d
+JPEG_INTERNAL_OPTIONS	include/jmorecfg.h	275;"	d
+JPEG_LIB_VERSION	include/jpeglib.h	40;"	d
+JPEG_LIB_VERS
