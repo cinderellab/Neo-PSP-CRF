@@ -342,4 +342,13 @@ JPOOL_PERMANENT	include/jpeglib.h	800;"	d
 JPP	include/jpeglib.h	870;"	d
 JPP	include/jpeglib.h	872;"	d
 JQUANT_TBL	include/jpeglib.h	/^} JQUANT_TBL;$/;"	t	typeref:struct:__anon3
-JSAMPARRAY	include/jpeglib.h	/^typedef JSAMPROW *JSAMPARR
+JSAMPARRAY	include/jpeglib.h	/^typedef JSAMPROW *JSAMPARRAY;	\/* ptr to some rows (a 2-D sample array) *\/$/;"	t
+JSAMPIMAGE	include/jpeglib.h	/^typedef JSAMPARRAY *JSAMPIMAGE;	\/* a 3-D sample array: top index is color *\/$/;"	t
+JSAMPLE	include/jmorecfg.h	/^typedef char JSAMPLE;$/;"	t
+JSAMPLE	include/jmorecfg.h	/^typedef short JSAMPLE;$/;"	t
+JSAMPLE	include/jmorecfg.h	/^typedef unsigned char JSAMPLE;$/;"	t
+JSAMPROW	include/jpeglib.h	/^typedef JSAMPLE FAR *JSAMPROW;	\/* ptr to one image row of pixel samples. *\/$/;"	t
+J_COLOR_SPACE	include/jpeglib.h	/^} J_COLOR_SPACE;$/;"	t	typeref:enum:__anon7
+J_COLOR_TRANSFORM	include/jpeglib.h	/^} J_COLOR_TRANSFORM;$/;"	t	typeref:enum:__anon8
+J_DCT_METHOD	include/jpeglib.h	/^} J_DCT_METHOD;$/;"	t	typeref:enum:__anon9
+J_DITHER_MODE	include/jp
