@@ -368,4 +368,16 @@ MCU_rows_in_scan	include/jpeglib.h	/^  JDIMENSION MCU_rows_in_scan;	\/* # of MCU
 MCU_rows_in_scan	include/jpeglib.h	/^  JDIMENSION MCU_rows_in_scan;	\/* # of MCU rows in the image *\/$/;"	m	struct:jpeg_decompress_struct
 MCU_sample_width	include/jpeglib.h	/^  int MCU_sample_width;	\/* MCU width in samples: MCU_width * DCT_h_scaled_size *\/$/;"	m	struct:__anon5
 MCU_width	include/jpeglib.h	/^  int MCU_width;		\/* number of blocks per MCU, horizontally *\/$/;"	m	struct:__anon5
-MCUs_per_row	include/jpeglib.h	/^  JDIMENSION MCUs_per_row;	\/* # of MCUs across the image *\/$/;"	m	struct:jpeg_compress_stru
+MCUs_per_row	include/jpeglib.h	/^  JDIMENSION MCUs_per_row;	\/* # of MCUs across the image *\/$/;"	m	struct:jpeg_compress_struct
+MCUs_per_row	include/jpeglib.h	/^  JDIMENSION MCUs_per_row;	\/* # of MCUs across the image *\/$/;"	m	struct:jpeg_decompress_struct
+METHODDEF	include/jmorecfg.h	191;"	d
+MULTIPLIER	include/jmorecfg.h	370;"	d
+NUM_ARITH_TBLS	include/jpeglib.h	54;"	d
+NUM_HUFF_TBLS	include/jpeglib.h	53;"	d
+NUM_QUANT_TBLS	include/jpeglib.h	52;"	d
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	104;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	107;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	110;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	113;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	116;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	119;"	d	fil
