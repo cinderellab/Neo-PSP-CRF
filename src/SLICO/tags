@@ -351,4 +351,16 @@ JSAMPROW	include/jpeglib.h	/^typedef JSAMPLE FAR *JSAMPROW;	\/* ptr to one image
 J_COLOR_SPACE	include/jpeglib.h	/^} J_COLOR_SPACE;$/;"	t	typeref:enum:__anon7
 J_COLOR_TRANSFORM	include/jpeglib.h	/^} J_COLOR_TRANSFORM;$/;"	t	typeref:enum:__anon8
 J_DCT_METHOD	include/jpeglib.h	/^} J_DCT_METHOD;$/;"	t	typeref:enum:__anon9
-J_DITHER_MODE	include/jp
+J_DITHER_MODE	include/jpeglib.h	/^} J_DITHER_MODE;$/;"	t	typeref:enum:__anon10
+J_MESSAGE_CODE	include/jerror.h	/^} J_MESSAGE_CODE;$/;"	t	typeref:enum:__anon2
+LOCAL	include/jmorecfg.h	193;"	d
+MAKESTMT	include/jerror.h	248;"	d
+MAXJSAMPLE	include/jmorecfg.h	74;"	d
+MAXJSAMPLE	include/jmorecfg.h	88;"	d
+MAX_COMPONENTS	include/jmorecfg.h	36;"	d
+MAX_COMPS_IN_SCAN	include/jpeglib.h	55;"	d
+MAX_SAMP_FACTOR	include/jpeglib.h	56;"	d
+MCU_blocks	include/jpeglib.h	/^  int MCU_blocks;		\/* MCU_width * MCU_height *\/$/;"	m	struct:__anon5
+MCU_height	include/jpeglib.h	/^  int MCU_height;		\/* number of blocks per MCU, vertically *\/$/;"	m	struct:__anon5
+MCU_membership	include/jpeglib.h	/^  int MCU_membership[C_MAX_BLOCKS_IN_MCU];$/;"	m	struct:jpeg_compress_struct
+MCU_membership	inc
