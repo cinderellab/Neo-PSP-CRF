@@ -430,4 +430,15 @@ PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	98;"	d	file:
 PPM_SUPPORTED	include/jconfig.h	43;"	d
 PUT_2B	example/j2seg.cpp	7;"	d	file:
 PUT_4B	example/j2seg.cpp	10;"	d	file:
-PerformSLICO_ForGivenK	src/SLIC.cpp	/^void SLIC::PerformSLICO_ForGivenK($/;"	f	class:SL
+PerformSLICO_ForGivenK	src/SLIC.cpp	/^void SLIC::PerformSLICO_ForGivenK($/;"	f	class:SLIC
+PerformSLICO_ForGivenStepSize	src/SLIC.cpp	/^void SLIC::PerformSLICO_ForGivenStepSize($/;"	f	class:SLIC
+PerformSuperpixelSegmentation_VariableSandM	src/SLIC.cpp	/^void SLIC::PerformSuperpixelSegmentation_VariableSandM($/;"	f	class:SLIC
+PerturbSeeds	src/SLIC.cpp	/^void SLIC::PerturbSeeds($/;"	f	class:SLIC
+QUANT_1PASS_SUPPORTED	include/jmorecfg.h	322;"	d
+QUANT_2PASS_SUPPORTED	include/jmorecfg.h	323;"	d
+RGB2LAB	src/SLIC.cpp	/^void SLIC::RGB2LAB(const int& sR, const int& sG, const int& sB, double& lval, double& aval, double& bval)$/;"	f	class:SLIC
+RGB2XYZ	src/SLIC.cpp	/^void SLIC::RGB2XYZ($/;"	f	class:SLIC
+RGB_BLUE	include/jmorecfg.h	343;"	d
+RGB_GREEN	include/jmorecfg.h	342;"	d
+RGB_PIXELSIZE	include/jmorecfg.h	344;"	d
+RGB_RED	include/jmorecfg.
