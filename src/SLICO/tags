@@ -478,4 +478,15 @@ TRUE	include/jmorecfg.h	260;"	d
 UINT16	include/jmorecfg.h	/^typedef unsigned int UINT16;$/;"	t
 UINT16	include/jmorecfg.h	/^typedef unsigned short UINT16;$/;"	t
 UINT8	include/jmorecfg.h	/^typedef char UINT8;$/;"	t
-UINT8	include/jmorecfg.h	/^typedef short U
+UINT8	include/jmorecfg.h	/^typedef short UINT8;$/;"	t
+UINT8	include/jmorecfg.h	/^typedef unsigned char UINT8;$/;"	t
+UPSAMPLE_MERGING_SUPPORTED	include/jmorecfg.h	321;"	d
+UPSAMPLE_SCALING_SUPPORTED	include/jmorecfg.h	320;"	d
+WARNMS	include/jerror.h	251;"	d
+WARNMS1	include/jerror.h	254;"	d
+WARNMS2	include/jerror.h	258;"	d
+X_density	include/jpeglib.h	/^  UINT16 X_density;		\/* Horizontal pixel density *\/$/;"	m	struct:jpeg_compress_struct
+X_density	include/jpeglib.h	/^  UINT16 X_density;		\/* Horizontal pixel density *\/$/;"	m	struct:jpeg_decompress_struct
+Y_density	include/jpeglib.h	/^  UINT16 Y_density;		\/* Vertical pixel density *\/$/;"	m	struct:jpeg_compress_struct
+Y_density	include/jpeglib.h	/^  UINT16 Y_density;		\/* Vertical pixel density *\/$/;"	m	struct:jpeg_decompress_struct
+_MAX_FNA
