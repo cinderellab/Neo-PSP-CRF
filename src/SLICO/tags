@@ -506,4 +506,11 @@ arith_dc_L	include/jpeglib.h	/^  UINT8 arith_dc_L[NUM_ARITH_TBLS]; \/* L values 
 arith_dc_L	include/jpeglib.h	/^  UINT8 arith_dc_L[NUM_ARITH_TBLS]; \/* L values for DC arith-coding tables *\/$/;"	m	struct:jpeg_decompress_struct
 arith_dc_U	include/jpeglib.h	/^  UINT8 arith_dc_U[NUM_ARITH_TBLS]; \/* U values for DC arith-coding tables *\/$/;"	m	struct:jpeg_compress_struct
 arith_dc_U	include/jpeglib.h	/^  UINT8 arith_dc_U[NUM_ARITH_TBLS]; \/* U values for DC arith-coding tables *\/$/;"	m	struct:jpeg_decompress_struct
-bits	include/jpeglib.h	/^  UINT8 bits[17];		\/* bits[k] = # of symbols with codes of *\/$/;"	m
+bits	include/jpeglib.h	/^  UINT8 bits[17];		\/* bits[k] = # of symbols with codes of *\/$/;"	m	struct:__anon4
+block_size	include/jpeglib.h	/^  int block_size;		\/* the basic DCT block size: 1..16 *\/$/;"	m	struct:jpeg_compress_struct
+block_size	include/jpeglib.h	/^  int block_size;		\/* the basic DCT block size: 1..16 *\/$/;"	m	struct:jpeg_decompress_struct
+blocks_in_MCU	include/jpeglib.h	/^  int blocks_in_MCU;		\/* # of DCT blocks per MCU *\/$/;"	m	struct:jpeg_compress_struct
+blocks_in_MCU	include/jpeglib.h	/^  int blocks_in_MCU;		\/* # of DCT blocks per MCU *\/$/;"	m	struct:jpeg_decompress_struct
+boolean	include/jconfig.h	/^typedef unsigned char boolean;$/;"	t
+boolean	include/jmorecfg.h	/^typedef enum { FALSE = 0, TRUE = 1 } boolean;$/;"	t	typeref:enum:__anon1
+buffered_image	include/jpeglib.h	/^  boolean buffered_image;	\/* TRUE=mult
