@@ -463,4 +463,19 @@ Se	include/jpeglib.h	/^  int Ss, Se, Ah, Al;		\/* progressive JPEG parameters fo
 Se	include/jpeglib.h	/^  int Ss, Se;			\/* progressive JPEG spectral selection parms *\/$/;"	m	struct:__anon6
 Ss	include/jpeglib.h	/^  int Ss, Se, Ah, Al;		\/* progressive JPEG parameters for scan *\/$/;"	m	struct:jpeg_compress_struct
 Ss	include/jpeglib.h	/^  int Ss, Se, Ah, Al;		\/* progressive JPEG parameters for scan *\/$/;"	m	struct:jpeg_decompress_struct
-Ss	include/jpeglib.
+Ss	include/jpeglib.h	/^  int Ss, Se;			\/* progressive JPEG spectral selection parms *\/$/;"	m	struct:__anon6
+TARGA_SUPPORTED	include/jconfig.h	45;"	d
+TRACEMS	include/jerror.h	265;"	d
+TRACEMS1	include/jerror.h	268;"	d
+TRACEMS2	include/jerror.h	272;"	d
+TRACEMS3	include/jerror.h	277;"	d
+TRACEMS4	include/jerror.h	282;"	d
+TRACEMS5	include/jerror.h	287;"	d
+TRACEMS8	include/jerror.h	293;"	d
+TRACEMSS	include/jerror.h	299;"	d
+TRUE	include/jmorecfg.h	/^typedef enum { FALSE = 0, TRUE = 1 } boolean;$/;"	e	enum:__anon1
+TRUE	include/jmorecfg.h	260;"	d
+UINT16	include/jmorecfg.h	/^typedef unsigned int UINT16;$/;"	t
+UINT16	include/jmorecfg.h	/^typedef unsigned short UINT16;$/;"	t
+UINT8	include/jmorecfg.h	/^typedef char UINT8;$/;"	t
+UINT8	include/jmorecfg.h	/^typedef short U
