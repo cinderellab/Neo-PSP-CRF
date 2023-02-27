@@ -441,4 +441,18 @@ RGB2XYZ	src/SLIC.cpp	/^void SLIC::RGB2XYZ($/;"	f	class:SLIC
 RGB_BLUE	include/jmorecfg.h	343;"	d
 RGB_GREEN	include/jmorecfg.h	342;"	d
 RGB_PIXELSIZE	include/jmorecfg.h	344;"	d
-RGB_RED	include/jmorecfg.
+RGB_RED	include/jmorecfg.h	341;"	d
+RM	build/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+RM	build/example/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+RM	build/lib/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+RM	build/src/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+SAVE_MARKERS_SUPPORTED	include/jmorecfg.h	318;"	d
+SHELL	build/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	build/example/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	build/lib/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	build/src/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SLIC	include/SLIC.h	/^class SLIC  $/;"	c
+SLIC	src/SLIC.cpp	/^SLIC::SLIC()$/;"	f	class:SLIC
+SUFFIXES	build/Makefile	/^SUFFIXES =$/;"	m
+SUFFIXES	build/example/Makefile	/^SUFFIXES =$/;"	m
+SUFFIXES	build/lib/Makefi
