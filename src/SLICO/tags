@@ -455,4 +455,12 @@ SLIC	include/SLIC.h	/^class SLIC  $/;"	c
 SLIC	src/SLIC.cpp	/^SLIC::SLIC()$/;"	f	class:SLIC
 SUFFIXES	build/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	build/example/Makefile	/^SUFFIXES =$/;"	m
-SUFFIXES	build/lib/Makefi
+SUFFIXES	build/lib/Makefile	/^SUFFIXES =$/;"	m
+SUFFIXES	build/src/Makefile	/^SUFFIXES =$/;"	m
+SaveSuperpixelLabels	src/SLIC.cpp	/^void SLIC::SaveSuperpixelLabels($/;"	f	class:SLIC
+Se	include/jpeglib.h	/^  int Ss, Se, Ah, Al;		\/* progressive JPEG parameters for scan *\/$/;"	m	struct:jpeg_compress_struct
+Se	include/jpeglib.h	/^  int Ss, Se, Ah, Al;		\/* progressive JPEG parameters for scan *\/$/;"	m	struct:jpeg_decompress_struct
+Se	include/jpeglib.h	/^  int Ss, Se;			\/* progressive JPEG spectral selection parms *\/$/;"	m	struct:__anon6
+Ss	include/jpeglib.h	/^  int Ss, Se, Ah, Al;		\/* progressive JPEG parameters for scan *\/$/;"	m	struct:jpeg_compress_struct
+Ss	include/jpeglib.h	/^  int Ss, Se, Ah, Al;		\/* progressive JPEG parameters for scan *\/$/;"	m	struct:jpeg_decompress_struct
+Ss	include/jpeglib.
