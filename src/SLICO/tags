@@ -513,4 +513,9 @@ blocks_in_MCU	include/jpeglib.h	/^  int blocks_in_MCU;		\/* # of DCT blocks per 
 blocks_in_MCU	include/jpeglib.h	/^  int blocks_in_MCU;		\/* # of DCT blocks per MCU *\/$/;"	m	struct:jpeg_decompress_struct
 boolean	include/jconfig.h	/^typedef unsigned char boolean;$/;"	t
 boolean	include/jmorecfg.h	/^typedef enum { FALSE = 0, TRUE = 1 } boolean;$/;"	t	typeref:enum:__anon1
-buffered_image	include/jpeglib.h	/^  boolean buffered_image;	\/* TRUE=mult
+buffered_image	include/jpeglib.h	/^  boolean buffered_image;	\/* TRUE=multiple output passes *\/$/;"	m	struct:jpeg_decompress_struct
+bytes_in_buffer	include/jpeglib.h	/^  size_t bytes_in_buffer;	\/* # of bytes remaining in buffer *\/$/;"	m	struct:jpeg_source_mgr
+cconvert	include/jpeglib.h	/^  struct jpeg_color_converter * cconvert;$/;"	m	struct:jpeg_compress_struct	typeref:struct:jpeg_compress_struct::jpeg_color_converter
+cconvert	include/jpeglib.h	/^  struct jpeg_color_deconverter * cconvert;$/;"	m	struct:jpeg_decompress_struct	typeref:struct:jpeg_decompress_struct::jpeg_color_deconverter
+coef	include/jpeglib.h	/^  struct jpeg_c_coef_controller * coef;$/;"	m	struct:jpeg_compress_struct	typeref:struct:jpeg_compress_struct::jpeg_c_coef_controller
+coef	include/jpeglib.h	/^  struct jpeg_d_coef_controller * coef;$/;"	m	struc
