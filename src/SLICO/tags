@@ -496,4 +496,9 @@ _splitpath	src/path_split.cpp	/^void _splitpath(const char *path, char *drive, c
 ac_huff_tbl_ptrs	include/jpeglib.h	/^  JHUFF_TBL * ac_huff_tbl_ptrs[NUM_HUFF_TBLS];$/;"	m	struct:jpeg_compress_struct
 ac_huff_tbl_ptrs	include/jpeglib.h	/^  JHUFF_TBL * ac_huff_tbl_ptrs[NUM_HUFF_TBLS];$/;"	m	struct:jpeg_decompress_struct
 ac_tbl_no	include/jpeglib.h	/^  int ac_tbl_no;		\/* AC entropy table selector (0..3) *\/$/;"	m	struct:__anon5
-actual_number_of_colors	include/jpeglib.h	/^  int actual_number_of_colors;	\/* number of 
+actual_number_of_colors	include/jpeglib.h	/^  int actual_number_of_colors;	\/* number of entries in use *\/$/;"	m	struct:jpeg_decompress_struct
+addon_message_table	include/jpeglib.h	/^  const char * const * addon_message_table; \/* Non-library errors *\/$/;"	m	struct:jpeg_error_mgr
+arith_ac_K	include/jpeglib.h	/^  UINT8 arith_ac_K[NUM_ARITH_TBLS]; \/* Kx values for AC arith-coding tables *\/$/;"	m	struct:jpeg_compress_struct
+arith_ac_K	include/jpeglib.h	/^  UINT8 arith_ac_K[NUM_ARITH_TBLS]; \/* Kx values for AC arith-coding tables *\/$/;"	m	struct:jpeg_decompress_struct
+arith_code	include/jpeglib.h	/^  boolean arith_code;		\/* TRUE=arithmetic coding, FALSE=Huffman *\/$/;"	m	struct:jpeg_compress_struct
+arith_code	include/jpeglib.h	/^  boolean arith_code;		\/* TRUE=arithmetic coding, FALSE=Huffman 
