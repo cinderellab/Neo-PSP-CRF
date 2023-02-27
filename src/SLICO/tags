@@ -489,4 +489,11 @@ X_density	include/jpeglib.h	/^  UINT16 X_density;		\/* Horizontal pixel density 
 X_density	include/jpeglib.h	/^  UINT16 X_density;		\/* Horizontal pixel density *\/$/;"	m	struct:jpeg_decompress_struct
 Y_density	include/jpeglib.h	/^  UINT16 Y_density;		\/* Vertical pixel density *\/$/;"	m	struct:jpeg_compress_struct
 Y_density	include/jpeglib.h	/^  UINT16 Y_density;		\/* Vertical pixel density *\/$/;"	m	struct:jpeg_decompress_struct
-_MAX_FNA
+_MAX_FNAME	src/SLIC.cpp	32;"	d	file:
+_SLIC_H_INCLUDED_	include/SLIC.h	25;"	d
+_split_whole_name	src/path_split.cpp	/^static void _split_whole_name( char *whole_name, char *fname, char *ext)$/;"	f	file:
+_splitpath	src/path_split.cpp	/^void _splitpath(const char *path, char *drive, char *dir, char *fname, char *ext)$/;"	f
+ac_huff_tbl_ptrs	include/jpeglib.h	/^  JHUFF_TBL * ac_huff_tbl_ptrs[NUM_HUFF_TBLS];$/;"	m	struct:jpeg_compress_struct
+ac_huff_tbl_ptrs	include/jpeglib.h	/^  JHUFF_TBL * ac_huff_tbl_ptrs[NUM_HUFF_TBLS];$/;"	m	struct:jpeg_decompress_struct
+ac_tbl_no	include/jpeglib.h	/^  int ac_tbl_no;		\/* AC entropy table selector (0..3) *\/$/;"	m	struct:__anon5
+actual_number_of_colors	include/jpeglib.h	/^  int actual_number_of_colors;	\/* number of 
