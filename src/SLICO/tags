@@ -524,4 +524,10 @@ color_transform	include/jpeglib.h	/^  J_COLOR_TRANSFORM color_transform;$/;"	m	s
 color_transform	include/jpeglib.h	/^  J_COLOR_TRANSFORM color_transform;$/;"	m	struct:jpeg_decompress_struct
 colormap	include/jpeglib.h	/^  JSAMPARRAY colormap;		\/* The color map as a 2-D pixel array *\/$/;"	m	struct:jpeg_decompress_struct
 comp_info	include/jpeglib.h	/^  jpeg_component_info * comp_info;$/;"	m	struct:jpeg_compress_struct
-comp_info	include/jpeglib.h	/^  jpeg_component_info * comp_info;
+comp_info	include/jpeglib.h	/^  jpeg_component_info * comp_info;$/;"	m	struct:jpeg_decompress_struct
+completed_passes	include/jpeglib.h	/^  int completed_passes;		\/* passes completed so far *\/$/;"	m	struct:jpeg_progress_mgr
+component_id	include/jpeglib.h	/^  int component_id;		\/* identifier for this component (0..255) *\/$/;"	m	struct:__anon5
+component_index	include/jpeglib.h	/^  int component_index;		\/* its index in SOF or cinfo->comp_info[] *\/$/;"	m	struct:__anon5
+component_index	include/jpeglib.h	/^  int component_index[MAX_COMPS_IN_SCAN]; \/* their SOF\/comp_info[] indexes *\/$/;"	m	struct:__anon6
+component_needed	include/jpeglib.h	/^  boolean component_needed;	\/* do we need the value of this component? *\/$/;"	m	struct:__anon5
+comps_in_scan	include/jpeglib.h	/^  int comps_in_scan;		\/* # of JPE
