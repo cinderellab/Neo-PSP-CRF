@@ -530,4 +530,10 @@ component_id	include/jpeglib.h	/^  int component_id;		\/* identifier for this co
 component_index	include/jpeglib.h	/^  int component_index;		\/* its index in SOF or cinfo->comp_info[] *\/$/;"	m	struct:__anon5
 component_index	include/jpeglib.h	/^  int component_index[MAX_COMPS_IN_SCAN]; \/* their SOF\/comp_info[] indexes *\/$/;"	m	struct:__anon6
 component_needed	include/jpeglib.h	/^  boolean component_needed;	\/* do we need the value of this component? *\/$/;"	m	struct:__anon5
-comps_in_scan	include/jpeglib.h	/^  int comps_in_scan;		\/* # of JPE
+comps_in_scan	include/jpeglib.h	/^  int comps_in_scan;		\/* # of JPEG components in this scan *\/$/;"	m	struct:jpeg_compress_struct
+comps_in_scan	include/jpeglib.h	/^  int comps_in_scan;		\/* # of JPEG components in this scan *\/$/;"	m	struct:jpeg_decompress_struct
+comps_in_scan	include/jpeglib.h	/^  int comps_in_scan;		\/* number of components encoded in this scan *\/$/;"	m	struct:__anon6
+cquantize	include/jpeglib.h	/^  struct jpeg_color_quantizer * cquantize;$/;"	m	struct:jpeg_decompress_struct	typeref:struct:jpeg_decompress_struct::jpeg_color_quantizer
+cur_comp_info	include/jpeglib.h	/^  jpeg_component_info * cur_comp_info[MAX_COMPS_IN_SCAN];$/;"	m	struct:jpeg_compress_struct
+cur_comp_info	include/jpeglib.h	/^  jpeg_component_info * cur_comp_info[MAX_COMPS_IN_SCAN];$/;"	m	struct:jpeg_decompress_struct
+data	include/j
