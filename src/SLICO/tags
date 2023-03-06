@@ -536,4 +536,9 @@ comps_in_scan	include/jpeglib.h	/^  int comps_in_scan;		\/* number of components
 cquantize	include/jpeglib.h	/^  struct jpeg_color_quantizer * cquantize;$/;"	m	struct:jpeg_decompress_struct	typeref:struct:jpeg_decompress_struct::jpeg_color_quantizer
 cur_comp_info	include/jpeglib.h	/^  jpeg_component_info * cur_comp_info[MAX_COMPS_IN_SCAN];$/;"	m	struct:jpeg_compress_struct
 cur_comp_info	include/jpeglib.h	/^  jpeg_component_info * cur_comp_info[MAX_COMPS_IN_SCAN];$/;"	m	struct:jpeg_decompress_struct
-data	include/j
+data	include/jpeglib.h	/^  JOCTET FAR * data;		\/* the data contained in the marker *\/$/;"	m	struct:jpeg_marker_struct
+data_length	include/jpeglib.h	/^  unsigned int data_length;	\/* # bytes of data saved at data[] *\/$/;"	m	struct:jpeg_marker_struct
+data_precision	include/jpeglib.h	/^  int data_precision;		\/* bits of precision in image data *\/$/;"	m	struct:jpeg_compress_struct
+data_precision	include/jpeglib.h	/^  int data_precision;		\/* bits of precision in image data *\/$/;"	m	struct:jpeg_decompress_struct
+dc_huff_tbl_ptrs	include/jpeglib.h	/^  JHUFF_TBL * dc_huff_tbl_ptrs[NUM_HUFF_TBLS];$/;"	m	struct:jpeg_compress_struct
+dc_huff_tbl_ptrs	include/jpeglib.h	/^  JHUFF_TBL * dc_huff_tbl_ptrs[NUM_HUFF_TBLS];$/;"	m	struct:jpeg_deco
