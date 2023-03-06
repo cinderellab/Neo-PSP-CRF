@@ -548,4 +548,9 @@ dct_method	include/jpeglib.h	/^  J_DCT_METHOD dct_method;	\/* IDCT algorithm sel
 dct_table	include/jpeglib.h	/^  void * dct_table;$/;"	m	struct:__anon5
 density_unit	include/jpeglib.h	/^  UINT8 density_unit;		\/* JFIF code for pixel size units *\/$/;"	m	struct:jpeg_compress_struct
 density_unit	include/jpeglib.h	/^  UINT8 density_unit;		\/* JFIF code for pixel size units *\/$/;"	m	struct:jpeg_decompress_struct
-desired_number_of_colors	includ
+desired_number_of_colors	include/jpeglib.h	/^  int desired_number_of_colors;	\/* max # colors to use in created colormap *\/$/;"	m	struct:jpeg_decompress_struct
+dest	include/jpeglib.h	/^  struct jpeg_destination_mgr * dest;$/;"	m	struct:jpeg_compress_struct	typeref:struct:jpeg_compress_struct::jpeg_destination_mgr
+dither_mode	include/jpeglib.h	/^  J_DITHER_MODE dither_mode;	\/* type of color dithering to use *\/$/;"	m	struct:jpeg_decompress_struct
+do_block_smoothing	include/jpeglib.h	/^  boolean do_block_smoothing;	\/* TRUE=apply interblock smoothing *\/$/;"	m	struct:jpeg_decompress_struct
+do_fancy_downsampling	include/jpeglib.h	/^  boolean do_fancy_downsampling; \/* TRUE=apply fancy downsampling *\/$/;"	m	struct:jpeg_compress_struct
+do_fancy_upsampling	include/jpeglib.h	/
