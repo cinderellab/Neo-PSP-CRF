@@ -566,4 +566,11 @@ dummy	include/jpeglib.h	/^struct jpeg_color_quantizer { long dummy; };$/;"	m	str
 dummy	include/jpeglib.h	/^struct jpeg_comp_master { long dummy; };$/;"	m	struct:jpeg_comp_master
 dummy	include/jpeglib.h	/^struct jpeg_d_coef_controller { long dummy; };$/;"	m	struct:jpeg_d_coef_controller
 dummy	include/jpeglib.h	/^struct jpeg_d_main_controller { long dummy; };$/;"	m	struct:jpeg_d_main_controller
-dummy	include/jpeglib.h	/^struc
+dummy	include/jpeglib.h	/^struct jpeg_d_post_controller { long dummy; };$/;"	m	struct:jpeg_d_post_controller
+dummy	include/jpeglib.h	/^struct jpeg_decomp_master { long dummy; };$/;"	m	struct:jpeg_decomp_master
+dummy	include/jpeglib.h	/^struct jpeg_downsampler { long dummy; };$/;"	m	struct:jpeg_downsampler
+dummy	include/jpeglib.h	/^struct jpeg_entropy_decoder { long dummy; };$/;"	m	struct:jpeg_entropy_decoder
+dummy	include/jpeglib.h	/^struct jpeg_entropy_encoder { long dummy; };$/;"	m	struct:jpeg_entropy_encoder
+dummy	include/jpeglib.h	/^struct jpeg_forward_dct { long dummy; };$/;"	m	struct:jpeg_forward_dct
+dummy	include/jpeglib.h	/^struct jpeg_input_controller { long dummy; };$/;"	m	struct:jpeg_input_controller
+dummy	include/jpeglib.h	
