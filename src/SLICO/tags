@@ -573,4 +573,12 @@ dummy	include/jpeglib.h	/^struct jpeg_entropy_decoder { long dummy; };$/;"	m	str
 dummy	include/jpeglib.h	/^struct jpeg_entropy_encoder { long dummy; };$/;"	m	struct:jpeg_entropy_encoder
 dummy	include/jpeglib.h	/^struct jpeg_forward_dct { long dummy; };$/;"	m	struct:jpeg_forward_dct
 dummy	include/jpeglib.h	/^struct jpeg_input_controller { long dummy; };$/;"	m	struct:jpeg_input_controller
-dummy	include/jpeglib.h	
+dummy	include/jpeglib.h	/^struct jpeg_inverse_dct { long dummy; };$/;"	m	struct:jpeg_inverse_dct
+dummy	include/jpeglib.h	/^struct jpeg_marker_reader { long dummy; };$/;"	m	struct:jpeg_marker_reader
+dummy	include/jpeglib.h	/^struct jpeg_marker_writer { long dummy; };$/;"	m	struct:jpeg_marker_writer
+dummy	include/jpeglib.h	/^struct jpeg_upsampler { long dummy; };$/;"	m	struct:jpeg_upsampler
+dummy	include/jpeglib.h	/^struct jvirt_barray_control { long dummy; };$/;"	m	struct:jvirt_barray_control
+dummy	include/jpeglib.h	/^struct jvirt_sarray_control { long dummy; };$/;"	m	struct:jvirt_sarray_control
+dx10	src/SLIC.cpp	/^const int dx10[10] = {-1,  0,  1,  0, -1,  1,  1, -1,  0, 0};$/;"	v
+dx4	src/SLIC.cpp	/^const int dx4[4] = {-1,  0,  1,  0};$/;"	v
+dy10	src/SLIC.cpp	/^const int dy10[10] = { 0, -1,  0,  1, -
