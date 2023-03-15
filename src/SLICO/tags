@@ -581,4 +581,10 @@ dummy	include/jpeglib.h	/^struct jvirt_barray_control { long dummy; };$/;"	m	str
 dummy	include/jpeglib.h	/^struct jvirt_sarray_control { long dummy; };$/;"	m	struct:jvirt_sarray_control
 dx10	src/SLIC.cpp	/^const int dx10[10] = {-1,  0,  1,  0, -1,  1,  1, -1,  0, 0};$/;"	v
 dx4	src/SLIC.cpp	/^const int dx4[4] = {-1,  0,  1,  0};$/;"	v
-dy10	src/SLIC.cpp	/^const int dy10[10] = { 0, -1,  0,  1, -
+dy10	src/SLIC.cpp	/^const int dy10[10] = { 0, -1,  0,  1, -1, -1,  1,  1,  0, 0};$/;"	v
+dy4	src/SLIC.cpp	/^const int dy4[4] = { 0, -1,  0,  1};$/;"	v
+dz10	src/SLIC.cpp	/^const int dz10[10] = { 0,  0,  0,  0,  0,  0,  0,  0, -1, 1};$/;"	v
+enable_1pass_quant	include/jpeglib.h	/^  boolean enable_1pass_quant;	\/* enable future use of 1-pass quantizer *\/$/;"	m	struct:jpeg_decompress_struct
+enable_2pass_quant	include/jpeglib.h	/^  boolean enable_2pass_quant;	\/* enable future use of 2-pass quantizer *\/$/;"	m	struct:jpeg_decompress_struct
+enable_external_quant	include/jpeglib.h	/^  boolean enable_external_quant;\/* enable future use of external colormap *\/$/;"	m	struct:jpeg_decompress_struct
+entropy	include/jpeglib.h	/^  struct jpeg_entropy_decoder * entropy;$/;"	m	struct:jpeg_deco
