@@ -592,4 +592,10 @@ entropy	include/jpeglib.h	/^  struct jpeg_entropy_encoder * entropy;$/;"	m	struc
 fdct	include/jpeglib.h	/^  struct jpeg_forward_dct * fdct;$/;"	m	struct:jpeg_compress_struct	typeref:struct:jpeg_compress_struct::jpeg_forward_dct
 first_addon_message	include/jpeglib.h	/^  int first_addon_message;	\/* code for first string in addon table *\/$/;"	m	struct:jpeg_error_mgr
 free_in_buffer	include/jpeglib.h	/^  size_t free_in_buffer;	\/* # of byte spaces remaining in buffer *\/$/;"	m	struct:jpeg_destination_mgr
-h_samp_factor	include/jpeglib.h	/^  int h_samp_factor;		\/
+h_samp_factor	include/jpeglib.h	/^  int h_samp_factor;		\/* horizontal sampling factor (1..4) *\/$/;"	m	struct:__anon5
+height_in_blocks	include/jpeglib.h	/^  JDIMENSION height_in_blocks;$/;"	m	struct:__anon5
+huffval	include/jpeglib.h	/^  UINT8 huffval[256];		\/* The symbols, in order of incr code length *\/$/;"	m	struct:__anon4
+i	include/jpeglib.h	/^    int i[8];$/;"	m	union:jpeg_error_mgr::__anon11
+idct	include/jpeglib.h	/^  struct jpeg_inverse_dct * idct;$/;"	m	struct:jpeg_decompress_struct	typeref:struct:jpeg_decompress_struct::jpeg_inverse_dct
+image_height	include/jpeglib.h	/^  JDIMENSION image_height;	\/* input image height *\/$/;"	m	struct:jpeg_compress_struct
+image_height	include/jpeglib.h	/^  JDIMENSION image_height;	\/* nominal image height *\/$/;"	m	struct:jpeg_decomp
