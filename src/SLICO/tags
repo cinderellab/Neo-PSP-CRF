@@ -610,4 +610,9 @@ info_platform	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^char const* info
 info_platform	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
 input_components	include/jpeglib.h	/^  int input_components;		\/* # of color components in input image *\/$/;"	m	struct:jpeg_compress_struct
 input_gamma	include/jpeglib.h	/^  double input_gamma;		\/* image gamma of input image *\/$/;"	m	struct:jpeg_compress_struct
-input_iMCU_row	includ
+input_iMCU_row	include/jpeglib.h	/^  JDIMENSION input_iMCU_row;	\/* Number of iMCU rows completed *\/$/;"	m	struct:jpeg_decompress_struct
+input_scan_number	include/jpeglib.h	/^  int input_scan_number;	\/* Number of SOS markers seen so far *\/$/;"	m	struct:jpeg_decompress_struct
+inputctl	include/jpeglib.h	/^  struct jpeg_input_controller * inputctl;$/;"	m	struct:jpeg_decompress_struct	typeref:struct:jpeg_decompress_struct::jpeg_input_controller
+is_baseline	include/jpeglib.h	/^  boolean is_baseline;		\/* TRUE if Baseline SOF0 encountered *\/$/;"	m	struct:jpeg_decompress_struct
+j_common_ptr	include/jpeglib.h	/^typedef struct jpeg_common_struct * j_common_ptr;$/;"	t	typeref:struct:jpeg_common_struct
+j_compress_ptr	include/jpeglib.h	/^typedef
