@@ -615,4 +615,15 @@ input_scan_number	include/jpeglib.h	/^  int input_scan_number;	\/* Number of SOS
 inputctl	include/jpeglib.h	/^  struct jpeg_input_controller * inputctl;$/;"	m	struct:jpeg_decompress_struct	typeref:struct:jpeg_decompress_struct::jpeg_input_controller
 is_baseline	include/jpeglib.h	/^  boolean is_baseline;		\/* TRUE if Baseline SOF0 encountered *\/$/;"	m	struct:jpeg_decompress_struct
 j_common_ptr	include/jpeglib.h	/^typedef struct jpeg_common_struct * j_common_ptr;$/;"	t	typeref:struct:jpeg_common_struct
-j_compress_ptr	include/jpeglib.h	/^typedef
+j_compress_ptr	include/jpeglib.h	/^typedef struct jpeg_compress_struct * j_compress_ptr;$/;"	t	typeref:struct:jpeg_compress_struct
+j_decompress_ptr	include/jpeglib.h	/^typedef struct jpeg_decompress_struct * j_decompress_ptr;$/;"	t	typeref:struct:jpeg_decompress_struct
+jpeg_CreateCompress	include/jpeglib.h	885;"	d
+jpeg_CreateDecompress	include/jpeglib.h	886;"	d
+jpeg_abort	include/jpeglib.h	934;"	d
+jpeg_abort_compress	include/jpeglib.h	932;"	d
+jpeg_abort_decompress	include/jpeglib.h	933;"	d
+jpeg_add_quant_table	include/jpeglib.h	899;"	d
+jpeg_alloc_huff_table	include/jpeglib.h	904;"	d
+jpeg_alloc_quant_table	include/jpeglib.h	903;"	d
+jpeg_c_coef_controller	include/jpeglib.h	/^struct jpeg_c_coef_controller { long dummy; };$/;"	s
+jpeg_c_main_controller	include/jpeglib.h	/^struct jpeg_c_main_controller { long
