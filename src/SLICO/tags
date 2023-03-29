@@ -626,4 +626,12 @@ jpeg_add_quant_table	include/jpeglib.h	899;"	d
 jpeg_alloc_huff_table	include/jpeglib.h	904;"	d
 jpeg_alloc_quant_table	include/jpeglib.h	903;"	d
 jpeg_c_coef_controller	include/jpeglib.h	/^struct jpeg_c_coef_controller { long dummy; };$/;"	s
-jpeg_c_main_controller	include/jpeglib.h	/^struct jpeg_c_main_controller { long
+jpeg_c_main_controller	include/jpeglib.h	/^struct jpeg_c_main_controller { long dummy; };$/;"	s
+jpeg_c_prep_controller	include/jpeglib.h	/^struct jpeg_c_prep_controller { long dummy; };$/;"	s
+jpeg_calc_jpeg_dimensions	include/jpeglib.h	908;"	d
+jpeg_calc_output_dimensions	include/jpeglib.h	926;"	d
+jpeg_color_converter	include/jpeglib.h	/^struct jpeg_color_converter { long dummy; };$/;"	s
+jpeg_color_deconverter	include/jpeglib.h	/^struct jpeg_color_deconverter { long dummy; };$/;"	s
+jpeg_color_quantizer	include/jpeglib.h	/^struct jpeg_color_quantizer { long dummy; };$/;"	s
+jpeg_color_space	include/jpeglib.h	/^  J_COLOR_SPACE jpeg_color_space; \/* colorspace of JPEG image *\/$/;"	m	struct:jpeg_compress_struct
+jpeg_color_space	include/jpeglib.h	/^  J_COLOR_SPACE jpeg_color_space; \/* colorspace of JPEG 
