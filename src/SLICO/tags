@@ -634,4 +634,11 @@ jpeg_color_converter	include/jpeglib.h	/^struct jpeg_color_converter { long dumm
 jpeg_color_deconverter	include/jpeglib.h	/^struct jpeg_color_deconverter { long dummy; };$/;"	s
 jpeg_color_quantizer	include/jpeglib.h	/^struct jpeg_color_quantizer { long dummy; };$/;"	s
 jpeg_color_space	include/jpeglib.h	/^  J_COLOR_SPACE jpeg_color_space; \/* colorspace of JPEG image *\/$/;"	m	struct:jpeg_compress_struct
-jpeg_color_space	include/jpeglib.h	/^  J_COLOR_SPACE jpeg_color_space; \/* colorspace of JPEG 
+jpeg_color_space	include/jpeglib.h	/^  J_COLOR_SPACE jpeg_color_space; \/* colorspace of JPEG image *\/$/;"	m	struct:jpeg_decompress_struct
+jpeg_common_fields	include/jpeglib.h	/^  jpeg_common_fields;		\/* Fields common to both master struct types *\/$/;"	m	struct:jpeg_common_struct
+jpeg_common_fields	include/jpeglib.h	/^  jpeg_common_fields;		\/* Fields shared with jpeg_compress_struct *\/$/;"	m	struct:jpeg_decompress_struct
+jpeg_common_fields	include/jpeglib.h	/^  jpeg_common_fields;		\/* Fields shared with jpeg_decompress_struct *\/$/;"	m	struct:jpeg_compress_struct
+jpeg_common_fields	include/jpeglib.h	257;"	d
+jpeg_common_struct	include/jpeglib.h	/^struct jpeg_common_struct {$/;"	s
+jpeg_comp_master	include/jpeglib.h	/^struct jpeg_comp_master { long dummy; };$/;"	s
+jpeg_component_info	include/jpeglib.h	/^} jpeg_component_info;$/;"	t	typeref:struct:__anon5
