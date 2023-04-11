@@ -653,3 +653,15 @@ jpeg_d_main_controller	include/jpeglib.h	/^struct jpeg_d_main_controller { long 
 jpeg_d_post_controller	include/jpeglib.h	/^struct jpeg_d_post_controller { long dummy; };$/;"	s
 jpeg_decomp_master	include/jpeglib.h	/^struct jpeg_decomp_master { long dummy; };$/;"	s
 jpeg_decompress_struct	include/jpeglib.h	/^struct jpeg_decompress_struct {$/;"	s
+jpeg_default_colorspace	include/jpeglib.h	895;"	d
+jpeg_default_qtables	include/jpeglib.h	898;"	d
+jpeg_destination_mgr	include/jpeglib.h	/^struct jpeg_destination_mgr {$/;"	s
+jpeg_destroy	include/jpeglib.h	935;"	d
+jpeg_destroy_compress	include/jpeglib.h	887;"	d
+jpeg_destroy_decompress	include/jpeglib.h	888;"	d
+jpeg_downsampler	include/jpeglib.h	/^struct jpeg_downsampler { long dummy; };$/;"	s
+jpeg_entropy_decoder	include/jpeglib.h	/^struct jpeg_entropy_decoder { long dummy; };$/;"	s
+jpeg_entropy_encoder	include/jpeglib.h	/^struct jpeg_entropy_encoder { long dummy; };$/;"	s
+jpeg_error_mgr	include/jpeglib.h	/^struct jpeg_error_mgr {$/;"	s
+jpeg_finish_compress	include/jpeglib.h	907;"	d
+jpeg_finish_decompress	include/jpeglib.h	917;"	d
