@@ -665,3 +665,13 @@ jpeg_entropy_encoder	include/jpeglib.h	/^struct jpeg_entropy_encoder { long dumm
 jpeg_error_mgr	include/jpeglib.h	/^struct jpeg_error_mgr {$/;"	s
 jpeg_finish_compress	include/jpeglib.h	907;"	d
 jpeg_finish_decompress	include/jpeglib.h	917;"	d
+jpeg_finish_output	include/jpeglib.h	921;"	d
+jpeg_forward_dct	include/jpeglib.h	/^struct jpeg_forward_dct { long dummy; };$/;"	s
+jpeg_has_multiple_scans	include/jpeglib.h	919;"	d
+jpeg_height	include/jpeglib.h	/^  JDIMENSION jpeg_height;	\/* scaled JPEG image height *\/$/;"	m	struct:jpeg_compress_struct
+jpeg_input_complete	include/jpeglib.h	922;"	d
+jpeg_input_controller	include/jpeglib.h	/^struct jpeg_input_controller { long dummy; };$/;"	s
+jpeg_inverse_dct	include/jpeglib.h	/^struct jpeg_inverse_dct { long dummy; };$/;"	s
+jpeg_marker_reader	include/jpeglib.h	/^struct jpeg_marker_reader { long dummy; };$/;"	s
+jpeg_marker_struct	include/jpeglib.h	/^struct jpeg_marker_struct {$/;"	s
+jpeg_marker_writer	include/jpeglib.h	/^struct jpe
