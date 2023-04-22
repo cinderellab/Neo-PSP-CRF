@@ -674,4 +674,17 @@ jpeg_input_controller	include/jpeglib.h	/^struct jpeg_input_controller { long du
 jpeg_inverse_dct	include/jpeglib.h	/^struct jpeg_inverse_dct { long dummy; };$/;"	s
 jpeg_marker_reader	include/jpeglib.h	/^struct jpeg_marker_reader { long dummy; };$/;"	s
 jpeg_marker_struct	include/jpeglib.h	/^struct jpeg_marker_struct {$/;"	s
-jpeg_marker_writer	include/jpeglib.h	/^struct jpe
+jpeg_marker_writer	include/jpeglib.h	/^struct jpeg_marker_writer { long dummy; };$/;"	s
+jpeg_mem_dest	include/jpeglib.h	891;"	d
+jpeg_mem_src	include/jpeglib.h	892;"	d
+jpeg_memory_mgr	include/jpeglib.h	/^struct jpeg_memory_mgr {$/;"	s
+jpeg_message_table	include/jpeglib.h	/^  const char * const * jpeg_message_table; \/* Library errors *\/$/;"	m	struct:jpeg_error_mgr
+jpeg_new_colormap	include/jpeglib.h	923;"	d
+jpeg_progress_mgr	include/jpeglib.h	/^struct jpeg_progress_mgr {$/;"	s
+jpeg_quality_scaling	include/jpeglib.h	900;"	d
+jpeg_read_coefficients	include/jpeglib.h	929;"	d
+jpeg_read_header	include/jpeglib.h	914;"	d
+jpeg_read_raw_data	include/jpeglib.h	918;"	d
+jpeg_read_scanlines	include/jpeglib.h	916;"	d
+jpeg_resync_to_restart	include/jpeglib.h	936;"	d
+jpeg_save_markers	include/jpeglib.h	927;
