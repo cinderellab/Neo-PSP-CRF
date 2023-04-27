@@ -687,4 +687,17 @@ jpeg_read_header	include/jpeglib.h	914;"	d
 jpeg_read_raw_data	include/jpeglib.h	918;"	d
 jpeg_read_scanlines	include/jpeglib.h	916;"	d
 jpeg_resync_to_restart	include/jpeglib.h	936;"	d
-jpeg_save_markers	include/jpeglib.h	927;
+jpeg_save_markers	include/jpeglib.h	927;"	d
+jpeg_saved_marker_ptr	include/jpeglib.h	/^typedef struct jpeg_marker_struct FAR * jpeg_saved_marker_ptr;$/;"	t	typeref:struct:FAR
+jpeg_scan_info	include/jpeglib.h	/^} jpeg_scan_info;$/;"	t	typeref:struct:__anon6
+jpeg_set_colorspace	include/jpeglib.h	894;"	d
+jpeg_set_defaults	include/jpeglib.h	893;"	d
+jpeg_set_linear_quality	include/jpeglib.h	897;"	d
+jpeg_set_marker_processor	include/jpeglib.h	928;"	d
+jpeg_set_quality	include/jpeglib.h	896;"	d
+jpeg_simple_progression	include/jpeglib.h	901;"	d
+jpeg_source_mgr	include/jpeglib.h	/^struct jpeg_source_mgr {$/;"	s
+jpeg_start_compress	include/jpeglib.h	905;"	d
+jpeg_start_decompress	include/jpeglib.h	915;"	d
+jpeg_start_output	include/jpeglib.h	920;"	d
+jpeg_std_error	inc
