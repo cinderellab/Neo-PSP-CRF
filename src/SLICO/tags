@@ -713,4 +713,10 @@ jpeg_write_marker	include/jpeglib.h	910;"	d
 jpeg_write_raw_data	include/jpeglib.h	909;"	d
 jpeg_write_scanlines	include/jpeglib.h	906;"	d
 jpeg_write_tables	include/jpeglib.h	913;"	d
-jvirt_barray_control	include/jpeglib.h	/^struct jvirt_barray_control { long dummy; };$/;"	
+jvirt_barray_control	include/jpeglib.h	/^struct jvirt_barray_control { long dummy; };$/;"	s
+jvirt_barray_ptr	include/jpeglib.h	/^typedef struct jvirt_barray_control * jvirt_barray_ptr;$/;"	t	typeref:struct:jvirt_barray_control
+jvirt_sarray_control	include/jpeglib.h	/^struct jvirt_sarray_control { long dummy; };$/;"	s
+jvirt_sarray_ptr	include/jpeglib.h	/^typedef struct jvirt_sarray_control * jvirt_sarray_ptr;$/;"	t	typeref:struct:jvirt_sarray_control
+last_addon_message	include/jpeglib.h	/^  int last_addon_message;	\/* code for last string in addon table *\/$/;"	m	struct:jpeg_error_mgr
+last_col_width	include/jpeglib.h	/^  int last_col_width;		\/* # of non-dummy blocks across in last MCU *\/$/;"	m	struct:__anon5
+last_jpeg_message	include/jpeglib.h	/^  int last_jpeg_message;    \/* Table contains strings 0..last_jpeg_message
