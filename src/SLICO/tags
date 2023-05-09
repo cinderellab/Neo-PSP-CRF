@@ -719,4 +719,12 @@ jvirt_sarray_control	include/jpeglib.h	/^struct jvirt_sarray_control { long dumm
 jvirt_sarray_ptr	include/jpeglib.h	/^typedef struct jvirt_sarray_control * jvirt_sarray_ptr;$/;"	t	typeref:struct:jvirt_sarray_control
 last_addon_message	include/jpeglib.h	/^  int last_addon_message;	\/* code for last string in addon table *\/$/;"	m	struct:jpeg_error_mgr
 last_col_width	include/jpeglib.h	/^  int last_col_width;		\/* # of non-dummy blocks across in last MCU *\/$/;"	m	struct:__anon5
-last_jpeg_message	include/jpeglib.h	/^  int last_jpeg_message;    \/* Table contains strings 0..last_jpeg_message
+last_jpeg_message	include/jpeglib.h	/^  int last_jpeg_message;    \/* Table contains strings 0..last_jpeg_message *\/$/;"	m	struct:jpeg_error_mgr
+last_row_height	include/jpeglib.h	/^  int last_row_height;		\/* # of non-dummy blocks down in last MCU *\/$/;"	m	struct:__anon5
+lim_Se	include/jpeglib.h	/^  int lim_Se;			\/* min( Se, DCTSIZE2-1 ) *\/$/;"	m	struct:jpeg_compress_struct
+lim_Se	include/jpeglib.h	/^  int lim_Se;			\/* min( Se, DCTSIZE2-1 ) for entropy decode *\/$/;"	m	struct:jpeg_decompress_struct
+m_avec	include/SLIC.h	/^	double*									m_avec;$/;"	m	class:SLIC
+m_avecvec	include/SLIC.h	/^	double**								m_avecvec;$/;"	m	class:SLIC
+m_bvec	include/SLIC.h	/^	double*									m_bvec;$/;"	m	class:SLIC
+m_bvecvec	include/SLIC.h	/^	double**								m_bvecvec;$/;"	m	class:SLIC
+m_depth	include/SLIC.h	/^	int
