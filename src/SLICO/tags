@@ -736,4 +736,9 @@ main	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^int main(int argc, char* 
 main	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f
 main	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f
 main	example/j2seg.cpp	/^int main(int argc, char* argv[])$/;"	f
-main	include/jpeglib.h	/^  struct jpeg_c_main_controller * main;$/;"	m	struct:jpeg_compress_struc
+main	include/jpeglib.h	/^  struct jpeg_c_main_controller * main;$/;"	m	struct:jpeg_compress_struct	typeref:struct:jpeg_compress_struct::jpeg_c_main_controller
+main	include/jpeglib.h	/^  struct jpeg_d_main_controller * main;$/;"	m	struct:jpeg_decompress_struct	typeref:struct:jpeg_decompress_struct::jpeg_d_main_controller
+marker	include/jpeglib.h	/^  UINT8 marker;			\/* marker code: JPEG_COM, or JPEG_APP0+n *\/$/;"	m	struct:jpeg_marker_struct
+marker	include/jpeglib.h	/^  struct jpeg_marker_reader * marker;$/;"	m	struct:jpeg_decompress_struct	typeref:struct:jpeg_decompress_struct::jpeg_marker_reader
+marker	include/jpeglib.h	/^  struct jpeg_marker_writer * marker;$/;"	m	struct:jpeg_compress_struct	typeref:struct:jpeg_compress_struct::jpeg_marker_writer
+marker_list	include/jpeglib.h	/^  jpeg_saved_marker_ptr marker_list; \/
