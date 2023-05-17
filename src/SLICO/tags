@@ -752,4 +752,10 @@ max_v_samp_factor	include/jpeglib.h	/^  int max_v_samp_factor;	\/* largest v_sam
 max_v_samp_factor	include/jpeglib.h	/^  int max_v_samp_factor;	\/* largest v_samp_factor *\/$/;"	m	struct:jpeg_decompress_struct
 min_DCT_h_scaled_size	include/jpeglib.h	/^  int min_DCT_h_scaled_size;	\/* smallest DCT_h_scaled_size of any component *\/$/;"	m	struct:jpeg_compress_struct
 min_DCT_h_scaled_size	include/jpeglib.h	/^  int min_DCT_h_scaled_size;	\/* smallest DCT_h_scaled_size of any component *\/$/;"	m	struct:jpeg_decompress_struct
-min_DCT_v_scaled_size	include/jpeglib.h	/^  int min_DCT_v_scaled_size;	\/* smallest DCT_v_scaled_size of any compo
+min_DCT_v_scaled_size	include/jpeglib.h	/^  int min_DCT_v_scaled_size;	\/* smallest DCT_v_scaled_size of any component *\/$/;"	m	struct:jpeg_compress_struct
+min_DCT_v_scaled_size	include/jpeglib.h	/^  int min_DCT_v_scaled_size;	\/* smallest DCT_v_scaled_size of any component *\/$/;"	m	struct:jpeg_decompress_struct
+msg_code	include/jpeglib.h	/^  int msg_code;$/;"	m	struct:jpeg_error_mgr
+msg_parm	include/jpeglib.h	/^  } msg_parm;$/;"	m	struct:jpeg_error_mgr	typeref:union:jpeg_error_mgr::__anon11
+natural_order	include/jpeglib.h	/^  const int * natural_order;	\/* natural-order position array *\/$/;"	m	struct:jpeg_compress_struct
+natural_order	include/jpeglib.h	/^  const int * natural_order; \/* natural-order position array for entropy decode *\/$/;"	m	struct:jpeg_decompress_struct
+next	include/jpeglib.h	/^  jpeg_saved_marker_ptr next;	\/* next in list, or NULL *\/$
