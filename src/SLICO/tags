@@ -747,4 +747,9 @@ master	include/jpeglib.h	/^  struct jpeg_decomp_master * master;$/;"	m	struct:jp
 max_alloc_chunk	include/jpeglib.h	/^  long max_alloc_chunk;$/;"	m	struct:jpeg_memory_mgr
 max_h_samp_factor	include/jpeglib.h	/^  int max_h_samp_factor;	\/* largest h_samp_factor *\/$/;"	m	struct:jpeg_compress_struct
 max_h_samp_factor	include/jpeglib.h	/^  int max_h_samp_factor;	\/* largest h_samp_factor *\/$/;"	m	struct:jpeg_decompress_struct
-max_memory_t
+max_memory_to_use	include/jpeglib.h	/^  long max_memory_to_use;$/;"	m	struct:jpeg_memory_mgr
+max_v_samp_factor	include/jpeglib.h	/^  int max_v_samp_factor;	\/* largest v_samp_factor *\/$/;"	m	struct:jpeg_compress_struct
+max_v_samp_factor	include/jpeglib.h	/^  int max_v_samp_factor;	\/* largest v_samp_factor *\/$/;"	m	struct:jpeg_decompress_struct
+min_DCT_h_scaled_size	include/jpeglib.h	/^  int min_DCT_h_scaled_size;	\/* smallest DCT_h_scaled_size of any component *\/$/;"	m	struct:jpeg_compress_struct
+min_DCT_h_scaled_size	include/jpeglib.h	/^  int min_DCT_h_scaled_size;	\/* smallest DCT_h_scaled_size of any component *\/$/;"	m	struct:jpeg_decompress_struct
+min_DCT_v_scaled_size	include/jpeglib.h	/^  int min_DCT_v_scaled_size;	\/* smallest DCT_v_scaled_size of any compo
