@@ -758,4 +758,10 @@ msg_code	include/jpeglib.h	/^  int msg_code;$/;"	m	struct:jpeg_error_mgr
 msg_parm	include/jpeglib.h	/^  } msg_parm;$/;"	m	struct:jpeg_error_mgr	typeref:union:jpeg_error_mgr::__anon11
 natural_order	include/jpeglib.h	/^  const int * natural_order;	\/* natural-order position array *\/$/;"	m	struct:jpeg_compress_struct
 natural_order	include/jpeglib.h	/^  const int * natural_order; \/* natural-order position array for entropy decode *\/$/;"	m	struct:jpeg_decompress_struct
-next	include/jpeglib.h	/^  jpeg_saved_marker_ptr next;	\/* next in list, or NULL *\/$
+next	include/jpeglib.h	/^  jpeg_saved_marker_ptr next;	\/* next in list, or NULL *\/$/;"	m	struct:jpeg_marker_struct
+next_input_byte	include/jpeglib.h	/^  const JOCTET * next_input_byte; \/* => next byte to read from buffer *\/$/;"	m	struct:jpeg_source_mgr
+next_output_byte	include/jpeglib.h	/^  JOCTET * next_output_byte;	\/* => next byte to write in buffer *\/$/;"	m	struct:jpeg_destination_mgr
+next_scanline	include/jpeglib.h	/^  JDIMENSION next_scanline;	\/* 0 .. image_height-1  *\/$/;"	m	struct:jpeg_compress_struct
+noreturn_t	include/jmorecfg.h	/^typedef void noreturn_t;$/;"	t
+num_components	include/jpeglib.h	/^  int num_components;		\/* # of color components in JPEG image *\/$/;"	m	struct:jpeg_compress_struct
+num_components	include/jpeglib.h	/^  int num_components;		\/* # of color components in JPEG image *\/$/;"	m	struct:jpeg_d
