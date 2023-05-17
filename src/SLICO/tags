@@ -741,4 +741,10 @@ main	include/jpeglib.h	/^  struct jpeg_d_main_controller * main;$/;"	m	struct:jp
 marker	include/jpeglib.h	/^  UINT8 marker;			\/* marker code: JPEG_COM, or JPEG_APP0+n *\/$/;"	m	struct:jpeg_marker_struct
 marker	include/jpeglib.h	/^  struct jpeg_marker_reader * marker;$/;"	m	struct:jpeg_decompress_struct	typeref:struct:jpeg_decompress_struct::jpeg_marker_reader
 marker	include/jpeglib.h	/^  struct jpeg_marker_writer * marker;$/;"	m	struct:jpeg_compress_struct	typeref:struct:jpeg_compress_struct::jpeg_marker_writer
-marker_list	include/jpeglib.h	/^  jpeg_saved_marker_ptr marker_list; \/
+marker_list	include/jpeglib.h	/^  jpeg_saved_marker_ptr marker_list; \/* Head of list of saved markers *\/$/;"	m	struct:jpeg_decompress_struct
+master	include/jpeglib.h	/^  struct jpeg_comp_master * master;$/;"	m	struct:jpeg_compress_struct	typeref:struct:jpeg_compress_struct::jpeg_comp_master
+master	include/jpeglib.h	/^  struct jpeg_decomp_master * master;$/;"	m	struct:jpeg_decompress_struct	typeref:struct:jpeg_decompress_struct::jpeg_decomp_master
+max_alloc_chunk	include/jpeglib.h	/^  long max_alloc_chunk;$/;"	m	struct:jpeg_memory_mgr
+max_h_samp_factor	include/jpeglib.h	/^  int max_h_samp_factor;	\/* largest h_samp_factor *\/$/;"	m	struct:jpeg_compress_struct
+max_h_samp_factor	include/jpeglib.h	/^  int max_h_samp_factor;	\/* largest h_samp_factor *\/$/;"	m	struct:jpeg_decompress_struct
+max_memory_t
