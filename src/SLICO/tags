@@ -792,4 +792,10 @@ quant_tbl_ptrs	include/jpeglib.h	/^  JQUANT_TBL * quant_tbl_ptrs[NUM_QUANT_TBLS]
 quantize_colors	include/jpeglib.h	/^  boolean quantize_colors;	\/* TRUE=colormapped output wanted *\/$/;"	m	struct:jpeg_decompress_struct
 quantval	include/jpeglib.h	/^  UINT16 quantval[DCTSIZE2];	\/* quantization step for each coefficient *\/$/;"	m	struct:__anon3
 raw_data_in	include/jpeglib.h	/^  boolean raw_data_in;		\/* TRUE=caller supplies downsampled data *\/$/;"	m	struct:jpeg_compress_struct
-raw_data_out	include/jpeglib.h	/^  boolean raw_data_out;		\/* TRUE=downsampled data wanted *\/$/;"	m	struct:jpeg_decompr
+raw_data_out	include/jpeglib.h	/^  boolean raw_data_out;		\/* TRUE=downsampled data wanted *\/$/;"	m	struct:jpeg_decompress_struct
+read_jpeg_file	example/j2seg.cpp	/^int read_jpeg_file(const char *input_filename, const char *output_filename, int & height, int & width)$/;"	f
+readbmp	example/j2seg.cpp	/^void readbmp(char *filename, unsigned char * image_buffer, int h, int w)$/;"	f
+rec_outbuf_height	include/jpeglib.h	/^  int rec_outbuf_height;	\/* min recommended height of scanline buffer *\/$/;"	m	struct:jpeg_decompress_struct
+restart_in_rows	include/jpeglib.h	/^  int restart_in_rows;		\/* if > 0, MCU rows per restart interval *\/$/;"	m	struct:jpeg_compress_struct
+restart_interval	include/jpeglib.h	/^  unsigned int restart_interval; \/* MCUs per restart interval, or 0 for no restart *\/$/;"	m	struct:jpeg_decompress_struct
+restart_interval	i
