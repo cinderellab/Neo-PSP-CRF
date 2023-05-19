@@ -787,4 +787,9 @@ progressive_mode	include/jpeglib.h	/^  boolean progressive_mode;	\/* TRUE if sca
 q_scale_factor	include/jpeglib.h	/^  int q_scale_factor[NUM_QUANT_TBLS];$/;"	m	struct:jpeg_compress_struct
 quant_table	include/jpeglib.h	/^  JQUANT_TBL * quant_table;$/;"	m	struct:__anon5
 quant_tbl_no	include/jpeglib.h	/^  int quant_tbl_no;		\/* quantization table selector (0..3) *\/$/;"	m	struct:__anon5
-quant_tbl_ptr
+quant_tbl_ptrs	include/jpeglib.h	/^  JQUANT_TBL * quant_tbl_ptrs[NUM_QUANT_TBLS];$/;"	m	struct:jpeg_compress_struct
+quant_tbl_ptrs	include/jpeglib.h	/^  JQUANT_TBL * quant_tbl_ptrs[NUM_QUANT_TBLS];$/;"	m	struct:jpeg_decompress_struct
+quantize_colors	include/jpeglib.h	/^  boolean quantize_colors;	\/* TRUE=colormapped output wanted *\/$/;"	m	struct:jpeg_decompress_struct
+quantval	include/jpeglib.h	/^  UINT16 quantval[DCTSIZE2];	\/* quantization step for each coefficient *\/$/;"	m	struct:__anon3
+raw_data_in	include/jpeglib.h	/^  boolean raw_data_in;		\/* TRUE=caller supplies downsampled data *\/$/;"	m	struct:jpeg_compress_struct
+raw_data_out	include/jpeglib.h	/^  boolean raw_data_out;		\/* TRUE=downsampled data wanted *\/$/;"	m	struct:jpeg_decompr
