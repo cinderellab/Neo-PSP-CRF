@@ -798,4 +798,9 @@ readbmp	example/j2seg.cpp	/^void readbmp(char *filename, unsigned char * image_b
 rec_outbuf_height	include/jpeglib.h	/^  int rec_outbuf_height;	\/* min recommended height of scanline buffer *\/$/;"	m	struct:jpeg_decompress_struct
 restart_in_rows	include/jpeglib.h	/^  int restart_in_rows;		\/* if > 0, MCU rows per restart interval *\/$/;"	m	struct:jpeg_compress_struct
 restart_interval	include/jpeglib.h	/^  unsigned int restart_interval; \/* MCUs per restart interval, or 0 for no restart *\/$/;"	m	struct:jpeg_decompress_struct
-restart_interval	i
+restart_interval	include/jpeglib.h	/^  unsigned int restart_interval; \/* MCUs per restart, or 0 for no restart *\/$/;"	m	struct:jpeg_compress_struct
+s	include/jpeglib.h	/^    char s[JMSG_STR_PARM_MAX];$/;"	m	union:jpeg_error_mgr::__anon11
+sample_range_limit	include/jpeglib.h	/^  JSAMPLE * sample_range_limit; \/* table for fast range-limiting *\/$/;"	m	struct:jpeg_decompress_struct
+saw_Adobe_marker	include/jpeglib.h	/^  boolean saw_Adobe_marker;	\/* TRUE iff an Adobe APP14 marker was found *\/$/;"	m	struct:jpeg_decompress_struct
+saw_JFIF_marker	include/jpeglib.h	/^  boolean saw_JFIF_marker;	\/* TRUE iff a JFIF APP0 marker was found *\/$/;"	m	struct:jpeg_decompress_struct
+scale_denom	include/jpeglib.h	/^  unsigned int scale_n
