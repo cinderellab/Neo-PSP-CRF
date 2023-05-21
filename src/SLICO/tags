@@ -820,4 +820,10 @@ total_passes	include/jpeglib.h	/^  int total_passes;		\/* total number of passes
 trace_level	include/jpeglib.h	/^  int trace_level;		\/* max msg_level that will be displayed *\/$/;"	m	struct:jpeg_error_mgr
 two_pass_quantize	include/jpeglib.h	/^  boolean two_pass_quantize;	\/* TRUE=use two-pass color quantization *\/$/;"	m	struct:jpeg_decompress_struct
 unread_marker	include/jpeglib.h	/^  int unread_marker;$/;"	m	struct:jpeg_decompress_struct
-upsample	include/jpeglib.h	/^  struct jpeg
+upsample	include/jpeglib.h	/^  struct jpeg_upsampler * upsample;$/;"	m	struct:jpeg_decompress_struct	typeref:struct:jpeg_decompress_struct::jpeg_upsampler
+v_samp_factor	include/jpeglib.h	/^  int v_samp_factor;		\/* vertical sampling factor (1..4) *\/$/;"	m	struct:__anon5
+width_in_blocks	include/jpeglib.h	/^  JDIMENSION width_in_blocks;$/;"	m	struct:__anon5
+write_Adobe_marker	include/jpeglib.h	/^  boolean write_Adobe_marker;	\/* should an Adobe marker be written? *\/$/;"	m	struct:jpeg_compress_struct
+write_JFIF_header	include/jpeglib.h	/^  boolean write_JFIF_header;	\/* should a JFIF marker be written? *\/$/;"	m	struct:jpeg_compress_struct
+write_bmp_header	example/j2seg.cpp	/^void write_bmp_header(j_decompress_ptr cinfo, FILE *output_file)$/;"	f
+write_jpeg
