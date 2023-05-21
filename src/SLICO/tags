@@ -826,4 +826,6 @@ width_in_blocks	include/jpeglib.h	/^  JDIMENSION width_in_blocks;$/;"	m	struct:_
 write_Adobe_marker	include/jpeglib.h	/^  boolean write_Adobe_marker;	\/* should an Adobe marker be written? *\/$/;"	m	struct:jpeg_compress_struct
 write_JFIF_header	include/jpeglib.h	/^  boolean write_JFIF_header;	\/* should a JFIF marker be written? *\/$/;"	m	struct:jpeg_compress_struct
 write_bmp_header	example/j2seg.cpp	/^void write_bmp_header(j_decompress_ptr cinfo, FILE *output_file)$/;"	f
-write_jpeg
+write_jpeg_file	example/j2seg.cpp	/^int write_jpeg_file(char * filename, unsigned char * image_buffer, int w, int h, int quality)$/;"	f
+write_pixel_data	example/j2seg.cpp	/^ void write_pixel_data(j_decompress_ptr cinfo, unsigned char *output_buffer, FILE *output_file)$/;"	f
+~SLIC	src/SLIC.cpp	/^SLIC::~SLIC()$/;"	f	class:SLIC
