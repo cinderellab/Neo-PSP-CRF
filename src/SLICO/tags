@@ -814,4 +814,10 @@ sent_table	include/jpeglib.h	/^  boolean sent_table;		\/* TRUE when table has be
 sent_table	include/jpeglib.h	/^  boolean sent_table;		\/* TRUE when table has been output *\/$/;"	m	struct:__anon4
 smoothing_factor	include/jpeglib.h	/^  int smoothing_factor;		\/* 1..100, or 0 for no input smoothing *\/$/;"	m	struct:jpeg_compress_struct
 src	include/jpeglib.h	/^  struct jpeg_source_mgr * src;$/;"	m	struct:jpeg_decompress_struct	typeref:struct:jpeg_decompress_struct::jpeg_source_mgr
-total_iMCU_rows	include/jpeglib.h	/^  JDIMENSION total_iMCU_rows;
+total_iMCU_rows	include/jpeglib.h	/^  JDIMENSION total_iMCU_rows;	\/* # of iMCU rows in image *\/$/;"	m	struct:jpeg_decompress_struct
+total_iMCU_rows	include/jpeglib.h	/^  JDIMENSION total_iMCU_rows;	\/* # of iMCU rows to be input to coef ctlr *\/$/;"	m	struct:jpeg_compress_struct
+total_passes	include/jpeglib.h	/^  int total_passes;		\/* total number of passes expected *\/$/;"	m	struct:jpeg_progress_mgr
+trace_level	include/jpeglib.h	/^  int trace_level;		\/* max msg_level that will be displayed *\/$/;"	m	struct:jpeg_error_mgr
+two_pass_quantize	include/jpeglib.h	/^  boolean two_pass_quantize;	\/* TRUE=use two-pass color quantization *\/$/;"	m	struct:jpeg_decompress_struct
+unread_marker	include/jpeglib.h	/^  int unread_marker;$/;"	m	struct:jpeg_decompress_struct
+upsample	include/jpeglib.h	/^  struct jpeg
