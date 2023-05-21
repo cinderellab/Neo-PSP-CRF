@@ -808,4 +808,10 @@ scale_denom	include/jpeglib.h	/^  unsigned int scale_num, scale_denom; \/* fract
 scale_num	include/jpeglib.h	/^  unsigned int scale_num, scale_denom; \/* fraction by which to scale image *\/$/;"	m	struct:jpeg_compress_struct
 scale_num	include/jpeglib.h	/^  unsigned int scale_num, scale_denom; \/* fraction by which to scale image *\/$/;"	m	struct:jpeg_decompress_struct
 scan_info	include/jpeglib.h	/^  const jpeg_scan_info * scan_info; \/* script for multi-scan file, or NULL *\/$/;"	m	struct:jpeg_compress_struct
-script_space	include/jpeglib.h	/^  jpeg_scan_info * script_space; 
+script_space	include/jpeglib.h	/^  jpeg_scan_info * script_space; \/* workspace for jpeg_simple_progression *\/$/;"	m	struct:jpeg_compress_struct
+script_space_size	include/jpeglib.h	/^  int script_space_size;$/;"	m	struct:jpeg_compress_struct
+sent_table	include/jpeglib.h	/^  boolean sent_table;		\/* TRUE when table has been output *\/$/;"	m	struct:__anon3
+sent_table	include/jpeglib.h	/^  boolean sent_table;		\/* TRUE when table has been output *\/$/;"	m	struct:__anon4
+smoothing_factor	include/jpeglib.h	/^  int smoothing_factor;		\/* 1..100, or 0 for no input smoothing *\/$/;"	m	struct:jpeg_compress_struct
+src	include/jpeglib.h	/^  struct jpeg_source_mgr * src;$/;"	m	struct:jpeg_decompress_struct	typeref:struct:jpeg_decompress_struct::jpeg_source_mgr
+total_iMCU_rows	include/jpeglib.h	/^  JDIMENSION total_iMCU_rows;
