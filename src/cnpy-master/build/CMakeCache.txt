@@ -113,4 +113,29 @@ CMAKE_NM:FILEPATH=/usr/bin/nm
 CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 
 //Path to a program.
-CMAKE_OBJDUMP:FILEPATH=
+CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
+
+//Value Computed by CMake
+CMAKE_PROJECT_NAME:STATIC=CNPY
+
+//Path to a program.
+CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
+
+//Flags used by the linker during the creation of dll's.
+CMAKE_SHARED_LINKER_FLAGS:STRING=' '
+
+//Flags used by the linker during debug builds.
+CMAKE_SHARED_LINKER_FLAGS_DEBUG:STRING=
+
+//Flags used by the linker during release minsize builds.
+CMAKE_SHARED_LINKER_FLAGS_MINSIZEREL:STRING=
+
+//Flags used by the linker during release builds.
+CMAKE_SHARED_LINKER_FLAGS_RELEASE:STRING=
+
+//Flags used by the linker during Release with Debug Info builds.
+CMAKE_SHARED_LINKER_FLAGS_RELWITHDEBINFO:STRING=
+
+//If set, runtime paths are not added when installing shared libraries,
+// but are added when building.
+CMAKE_SKIP_
