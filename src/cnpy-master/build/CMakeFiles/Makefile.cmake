@@ -40,4 +40,28 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-2.8/Modules/MultiArchCross.cmake"
   "/usr/share/cmake-2.8/Modules/Platform/Linux-CXX.cmake"
   "/usr/share/cmake-2.8/Modules/Platform/Linux-GNU-C.cmake"
-  "/usr/share/cmake-2.8/Modules/Plat
+  "/usr/share/cmake-2.8/Modules/Platform/Linux-GNU-CXX.cmake"
+  "/usr/share/cmake-2.8/Modules/Platform/Linux-GNU.cmake"
+  "/usr/share/cmake-2.8/Modules/Platform/Linux.cmake"
+  "/usr/share/cmake-2.8/Modules/Platform/UnixPaths.cmake"
+  )
+
+# The corresponding makefile is:
+SET(CMAKE_MAKEFILE_OUTPUTS
+  "Makefile"
+  "CMakeFiles/cmake.check_cache"
+  )
+
+# Byproducts of CMake generate step:
+SET(CMAKE_MAKEFILE_PRODUCTS
+  "CMakeFiles/2.8.12.2/CMakeSystem.cmake"
+  "CMakeFiles/2.8.12.2/CMakeCCompiler.cmake"
+  "CMakeFiles/2.8.12.2/CMakeCXXCompiler.cmake"
+  "CMakeFiles/2.8.12.2/CMakeCCompiler.cmake"
+  "CMakeFiles/2.8.12.2/CMakeCXXCompiler.cmake"
+  "CMakeFiles/CMakeDirectoryInformation.cmake"
+  )
+
+# Dependency information for all targets:
+SET(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/cnpy.d
