@@ -69,4 +69,27 @@ all: CMakeFiles/cnpy.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/cnpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xduser/
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xduser/lihuan/cnpy-master/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/cnpy.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xduser/lihuan/cnpy-master/build/CMakeFiles 0
+.PHONY : CMakeFiles/cnpy.dir/rule
+
+# Convenience name for target.
+cnpy: CMakeFiles/cnpy.dir/rule
+.PHONY : cnpy
+
+# clean rule for target.
+CMakeFiles/cnpy.dir/clean:
+	$(MAKE) -f CMakeFiles/cnpy.dir/build.make CMakeFiles/cnpy.dir/clean
+.PHONY : CMakeFiles/cnpy.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/cnpy.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/cnpy-static.dir
+
+# All Build rule for target.
+CMakeFiles/cnpy-static.dir/all:
+	$(MAKE) -f CMakeFiles/
