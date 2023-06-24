@@ -49,4 +49,24 @@ EQUALS = =
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/xduser/lihuan/cnpy-master
 
-# The top-level build directory on which CMake was run
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/xduser/lihuan/cnpy-master/build
+
+#=============================================================================
+# Target rules for target CMakeFiles/cnpy.dir
+
+# All Build rule for target.
+CMakeFiles/cnpy.dir/all:
+	$(MAKE) -f CMakeFiles/cnpy.dir/build.make CMakeFiles/cnpy.dir/depend
+	$(MAKE) -f CMakeFiles/cnpy.dir/build.make CMakeFiles/cnpy.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/xduser/lihuan/cnpy-master/build/CMakeFiles  1
+	@echo "Built target cnpy"
+.PHONY : CMakeFiles/cnpy.dir/all
+
+# Include target in all.
+all: CMakeFiles/cnpy.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/cnpy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xduser/
