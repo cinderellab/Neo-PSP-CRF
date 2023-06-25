@@ -106,4 +106,26 @@ all: CMakeFiles/cnpy-static.dir/all
 CMakeFiles/cnpy-static.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xduser/lihuan/cnpy-master/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/cnpy-static.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xduser/lihuan/cnpy-master/build/CMakeF
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xduser/lihuan/cnpy-master/build/CMakeFiles 0
+.PHONY : CMakeFiles/cnpy-static.dir/rule
+
+# Convenience name for target.
+cnpy-static: CMakeFiles/cnpy-static.dir/rule
+.PHONY : cnpy-static
+
+# clean rule for target.
+CMakeFiles/cnpy-static.dir/clean:
+	$(MAKE) -f CMakeFiles/cnpy-static.dir/build.make CMakeFiles/cnpy-static.dir/clean
+.PHONY : CMakeFiles/cnpy-static.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/cnpy-static.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/example1.dir
+
+# All Build rule for target.
+CMakeFiles/example1.dir/all: CMakeFiles/cnpy.dir/all
+	$(MAKE) -f CMakeFiles/example1.dir/build.make CMakeFiles/example1.dir/depend
+	$(MAKE) -f CMakeFiles/example1.dir/build.make CMakeFiles/example1.dir/
