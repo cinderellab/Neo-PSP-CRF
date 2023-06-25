@@ -92,4 +92,18 @@ clean: CMakeFiles/cnpy.dir/clean
 
 # All Build rule for target.
 CMakeFiles/cnpy-static.dir/all:
-	$(MAKE) -f CMakeFiles/
+	$(MAKE) -f CMakeFiles/cnpy-static.dir/build.make CMakeFiles/cnpy-static.dir/depend
+	$(MAKE) -f CMakeFiles/cnpy-static.dir/build.make CMakeFiles/cnpy-static.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/xduser/lihuan/cnpy-master/build/CMakeFiles  2
+	@echo "Built target cnpy-static"
+.PHONY : CMakeFiles/cnpy-static.dir/all
+
+# Include target in all.
+all: CMakeFiles/cnpy-static.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/cnpy-static.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xduser/lihuan/cnpy-master/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/cnpy-static.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xduser/lihuan/cnpy-master/build/CMakeF
