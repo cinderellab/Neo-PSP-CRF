@@ -128,4 +128,25 @@ clean: CMakeFiles/cnpy-static.dir/clean
 # All Build rule for target.
 CMakeFiles/example1.dir/all: CMakeFiles/cnpy.dir/all
 	$(MAKE) -f CMakeFiles/example1.dir/build.make CMakeFiles/example1.dir/depend
-	$(MAKE) -f CMakeFiles/example1.dir/build.make CMakeFiles/example1.dir/
+	$(MAKE) -f CMakeFiles/example1.dir/build.make CMakeFiles/example1.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/xduser/lihuan/cnpy-master/build/CMakeFiles  3
+	@echo "Built target example1"
+.PHONY : CMakeFiles/example1.dir/all
+
+# Include target in all.
+all: CMakeFiles/example1.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/example1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xduser/lihuan/cnpy-master/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/example1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xduser/lihuan/cnpy-master/build/CMakeFiles 0
+.PHONY : CMakeFiles/example1.dir/rule
+
+# Convenience name for target.
+example1: CMakeFiles/example1.dir/rule
+.PHONY : example1
+
+# clean rule for target.
+CM
