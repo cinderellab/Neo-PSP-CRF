@@ -149,4 +149,21 @@ example1: CMakeFiles/example1.dir/rule
 .PHONY : example1
 
 # clean rule for target.
-CM
+CMakeFiles/example1.dir/clean:
+	$(MAKE) -f CMakeFiles/example1.dir/build.make CMakeFiles/example1.dir/clean
+.PHONY : CMakeFiles/example1.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/example1.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Special targets to cleanup operation of make.
+
+# Special rule to run CMake to check the build system integrity.
+# No rule that depends on this can have commands that come from listfiles
+# because they might be regenerated.
+cmake_check_build_system:
+	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+.PHONY : cmake_check_build_system
+
