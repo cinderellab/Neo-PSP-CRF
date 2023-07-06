@@ -1,0 +1,12 @@
+# The set of languages for which implicit dependencies are needed:
+SET(CMAKE_DEPENDS_LANGUAGES
+  "CXX"
+  )
+# The set of files for implicit dependencies of each language:
+SET(CMAKE_DEPENDS_CHECK_CXX
+  "/home/xduser/lihuan/cnpy-master/cnpy.cpp" "/home/xduser/lihuan/cnpy-master/build/CMakeFiles/cnpy-static.dir/cnpy.cpp.o"
+  )
+SET(CMAKE_CXX_COMPILER_ID "GNU")
+
+# Targets to which this target links.
+SE
