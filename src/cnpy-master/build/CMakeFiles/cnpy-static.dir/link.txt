@@ -1,0 +1,1 @@
+/usr/bin/ar cr libcnpy.a  CMakeFiles/cnpy-static
