@@ -57,4 +57,21 @@ CMakeFiles/cnpy.dir/cnpy.cpp.o: ../cnpy.cpp
 
 CMakeFiles/cnpy.dir/cnpy.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cnpy.dir/cnpy.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/xduser/lihuan/cnpy-mast
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/xduser/lihuan/cnpy-master/cnpy.cpp > CMakeFiles/cnpy.dir/cnpy.cpp.i
+
+CMakeFiles/cnpy.dir/cnpy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cnpy.dir/cnpy.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/xduser/lihuan/cnpy-master/cnpy.cpp -o CMakeFiles/cnpy.dir/cnpy.cpp.s
+
+CMakeFiles/cnpy.dir/cnpy.cpp.o.requires:
+.PHONY : CMakeFiles/cnpy.dir/cnpy.cpp.o.requires
+
+CMakeFiles/cnpy.dir/cnpy.cpp.o.provides: CMakeFiles/cnpy.dir/cnpy.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cnpy.dir/build.make CMakeFiles/cnpy.dir/cnpy.cpp.o.provides.build
+.PHONY : CMakeFiles/cnpy.dir/cnpy.cpp.o.provides
+
+CMakeFiles/cnpy.dir/cnpy.cpp.o.provides.build: CMakeFiles/cnpy.dir/cnpy.cpp.o
+
+# Object files for target cnpy
+cnpy_OBJECTS = \
+"CMakeFiles/cn
