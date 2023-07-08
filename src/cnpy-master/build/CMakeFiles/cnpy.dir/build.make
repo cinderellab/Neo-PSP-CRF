@@ -46,4 +46,15 @@ include CMakeFiles/cnpy.dir/depend.make
 # Include the progress variables for this target.
 include CMakeFiles/cnpy.dir/progress.make
 
-# Include the compile flags for this target's obje
+# Include the compile flags for this target's objects.
+include CMakeFiles/cnpy.dir/flags.make
+
+CMakeFiles/cnpy.dir/cnpy.cpp.o: CMakeFiles/cnpy.dir/flags.make
+CMakeFiles/cnpy.dir/cnpy.cpp.o: ../cnpy.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/xduser/lihuan/cnpy-master/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/cnpy.dir/cnpy.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cnpy.dir/cnpy.cpp.o -c /home/xduser/lihuan/cnpy-master/cnpy.cpp
+
+CMakeFiles/cnpy.dir/cnpy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cnpy.dir/cnpy.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/xduser/lihuan/cnpy-mast
