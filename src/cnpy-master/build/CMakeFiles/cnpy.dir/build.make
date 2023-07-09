@@ -94,4 +94,9 @@ CMakeFiles/cnpy.dir/requires: CMakeFiles/cnpy.dir/cnpy.cpp.o.requires
 
 CMakeFiles/cnpy.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/cnpy.dir/cmake_clean.cmake
-.PH
+.PHONY : CMakeFiles/cnpy.dir/clean
+
+CMakeFiles/cnpy.dir/depend:
+	cd /home/xduser/lihuan/cnpy-master/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xduser/lihuan/cnpy-master /home/xduser/lihuan/cnpy-master /home/xduser/lihuan/cnpy-master/build /home/xduser/lihuan/cnpy-master/build /home/xduser/lihuan/cnpy-master/build/CMakeFiles/cnpy.dir/DependInfo.cmake --color=$(COLOR)
+.PHONY : CMakeFiles/cnpy.dir/depend
+
