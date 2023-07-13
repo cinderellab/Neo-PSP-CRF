@@ -45,4 +45,17 @@ int main()
     cnpy::NpyArray arr2 = cnpy::npz_load("out.npz","arr1");
 
     //load the entire npz file
-    cnpy::npz_t my_npz = cnpy::npz
+    cnpy::npz_t my_npz = cnpy::npz_load("out.npz");
+    
+    //check that the loaded myVar1 matches myVar1
+    cnpy::NpyArray arr_mv1 = my_npz["myVar1"];
+    double* mv1 = reinterpret_cast<double*>(arr_mv1.data);
+    assert(arr_mv1.shape.size() == 1 && arr_mv1.shape[0] == 1);
+    assert(mv1[0] == myVar1);
+
+    //cleanup: note that we are responsible for deleting all loaded data
+    delete[] data;
+    delete[] loaded_data;
+    arr2.destruct();
+    my_npz.destruct();
+}
