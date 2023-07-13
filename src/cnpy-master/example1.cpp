@@ -29,4 +29,20 @@ int main()
     for(int i = 0; i < Nx*Ny*Nz;i++) assert(data[i] == loaded_data[i]);
 
     //append the same data to file
-    //npy array 
+    //npy array on file now has shape (Nz+Nz,Ny,Nx)
+    cnpy::npy_save("arr1.npy",data,shape,3,"a");
+
+    //now write to an npz file
+    //non-array variables are treated as 1D arrays with 1 element
+    double myVar1 = 1.2;
+    char myVar2 = 'a';
+    unsigned int shape2[] = {1};
+    cnpy::npz_save("out.npz","myVar1",&myVar1,shape2,1,"w"); //"w" overwrites any existing file
+    cnpy::npz_save("out.npz","myVar2",&myVar2,shape2,1,"a"); //"a" appends to the file we created above
+    cnpy::npz_save("out.npz","arr1",data,shape,3,"a"); //"a" appends to the file we created above
+
+    //load a single var from the npz file
+    cnpy::NpyArray arr2 = cnpy::npz_load("out.npz","arr1");
+
+    //load the entire npz file
+    cnpy::npz_t my_npz = cnpy::npz
