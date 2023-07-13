@@ -133,3 +133,134 @@ preinstall: all
 # Prepare targets for installation.
 preinstall/fast:
 	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+.PHONY : preinstall/fast
+
+# clear depends
+depend:
+	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+.PHONY : depend
+
+#=============================================================================
+# Target rules for targets named cnpy
+
+# Build rule for target.
+cnpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cnpy
+.PHONY : cnpy
+
+# fast build rule for target.
+cnpy/fast:
+	$(MAKE) -f CMakeFiles/cnpy.dir/build.make CMakeFiles/cnpy.dir/build
+.PHONY : cnpy/fast
+
+#=============================================================================
+# Target rules for targets named cnpy-static
+
+# Build rule for target.
+cnpy-static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cnpy-static
+.PHONY : cnpy-static
+
+# fast build rule for target.
+cnpy-static/fast:
+	$(MAKE) -f CMakeFiles/cnpy-static.dir/build.make CMakeFiles/cnpy-static.dir/build
+.PHONY : cnpy-static/fast
+
+#=============================================================================
+# Target rules for targets named example1
+
+# Build rule for target.
+example1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 example1
+.PHONY : example1
+
+# fast build rule for target.
+example1/fast:
+	$(MAKE) -f CMakeFiles/example1.dir/build.make CMakeFiles/example1.dir/build
+.PHONY : example1/fast
+
+cnpy.o: cnpy.cpp.o
+.PHONY : cnpy.o
+
+# target to build an object file
+cnpy.cpp.o:
+	$(MAKE) -f CMakeFiles/cnpy.dir/build.make CMakeFiles/cnpy.dir/cnpy.cpp.o
+	$(MAKE) -f CMakeFiles/cnpy-static.dir/build.make CMakeFiles/cnpy-static.dir/cnpy.cpp.o
+.PHONY : cnpy.cpp.o
+
+cnpy.i: cnpy.cpp.i
+.PHONY : cnpy.i
+
+# target to preprocess a source file
+cnpy.cpp.i:
+	$(MAKE) -f CMakeFiles/cnpy.dir/build.make CMakeFiles/cnpy.dir/cnpy.cpp.i
+	$(MAKE) -f CMakeFiles/cnpy-static.dir/build.make CMakeFiles/cnpy-static.dir/cnpy.cpp.i
+.PHONY : cnpy.cpp.i
+
+cnpy.s: cnpy.cpp.s
+.PHONY : cnpy.s
+
+# target to generate assembly for a file
+cnpy.cpp.s:
+	$(MAKE) -f CMakeFiles/cnpy.dir/build.make CMakeFiles/cnpy.dir/cnpy.cpp.s
+	$(MAKE) -f CMakeFiles/cnpy-static.dir/build.make CMakeFiles/cnpy-static.dir/cnpy.cpp.s
+.PHONY : cnpy.cpp.s
+
+example1.o: example1.cpp.o
+.PHONY : example1.o
+
+# target to build an object file
+example1.cpp.o:
+	$(MAKE) -f CMakeFiles/example1.dir/build.make CMakeFiles/example1.dir/example1.cpp.o
+.PHONY : example1.cpp.o
+
+example1.i: example1.cpp.i
+.PHONY : example1.i
+
+# target to preprocess a source file
+example1.cpp.i:
+	$(MAKE) -f CMakeFiles/example1.dir/build.make CMakeFiles/example1.dir/example1.cpp.i
+.PHONY : example1.cpp.i
+
+example1.s: example1.cpp.s
+.PHONY : example1.s
+
+# target to generate assembly for a file
+example1.cpp.s:
+	$(MAKE) -f CMakeFiles/example1.dir/build.make CMakeFiles/example1.dir/example1.cpp.s
+.PHONY : example1.cpp.s
+
+# Help Target
+help:
+	@echo "The following are some of the valid targets for this Makefile:"
+	@echo "... all (the default if no target is provided)"
+	@echo "... clean"
+	@echo "... depend"
+	@echo "... cnpy"
+	@echo "... cnpy-static"
+	@echo "... edit_cache"
+	@echo "... example1"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
+	@echo "... rebuild_cache"
+	@echo "... cnpy.o"
+	@echo "... cnpy.i"
+	@echo "... cnpy.s"
+	@echo "... example1.o"
+	@echo "... example1.i"
+	@echo "... example1.s"
+.PHONY : help
+
+
+
+#=============================================================================
+# Special targets to cleanup operation of make.
+
+# Special rule to run CMake to check the build system integrity.
+# No rule that depends on this can have commands that come from listfiles
+# because they might be regenerated.
+cmake_check_build_system:
+	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+.PHONY : cmake_check_build_system
