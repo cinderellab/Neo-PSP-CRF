@@ -35,4 +35,19 @@ Windows
 How to run the example
 ----------------------
 An example on how to use the DenseCRF can be found in
-examples/dense_inference.cpp. The example loads an image and some annotation
+examples/dense_inference.cpp. The example loads an image and some annotations.
+It then uses a very simple classifier to compute a unary term based on those
+annotations. A dense CRF with both color dependent and color independent terms
+find the final accurate labeling.
+
+Linux, Mac OS X and Windows (cygwin):
+ build/examples/dense_inference input_image.ppm annotations.ppm output.ppm
+
+For example:
+ build/examples/dense_inference examples/im1.ppm examples/anno1.ppm output1.ppm
+
+
+Please note that this implementation is slightly slower than the one used to
+in our NIPS 2011 paper. Mainly because I tried to keep the code clean and easy
+to understand.
+
