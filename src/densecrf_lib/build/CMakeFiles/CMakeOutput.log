@@ -45,4 +45,14 @@ Change Dir: /home/xduser/lihuan/densecrf_lib/build/CMakeFiles/CMakeTmp
 
 Run Build Command:/usr/bin/make "cmTryCompileExec3481301830/fast"
 /usr/bin/make -f CMakeFiles/cmTryCompileExec3481301830.dir/build.make CMakeFiles/cmTryCompileExec3481301830.dir/build
-make[1]: 正在进入目录 `/h
+make[1]: 正在进入目录 `/home/xduser/lihuan/densecrf_lib/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/xduser/lihuan/densecrf_lib/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3481301830.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3481301830.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec3481301830
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3481301830.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTryCompileExec3481301830.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec3481301830 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
+Target: 
