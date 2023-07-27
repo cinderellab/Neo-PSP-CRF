@@ -33,4 +33,16 @@ Run Build Command:/usr/bin/make "cmTryCompileExec1394036662/fast"
 make[1]: 正在进入目录 `/home/xduser/lihuan/densecrf_lib/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/xduser/lihuan/densecrf_lib/build/CMakeFiles/CMakeTmp/CMakeFiles 1
 Building C object CMakeFiles/cmTryCompileExec1394036662.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1394036662.dir/testCCompil
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1394036662.dir/testCCompiler.c.o   -c /home/xduser/lihuan/densecrf_lib/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec1394036662
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1394036662.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1394036662.dir/testCCompiler.c.o  -o cmTryCompileExec1394036662 -rdynamic 
+make[1]:正在离开目录 `/home/xduser/lihuan/densecrf_lib/build/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/xduser/lihuan/densecrf_lib/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3481301830/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3481301830.dir/build.make CMakeFiles/cmTryCompileExec3481301830.dir/build
+make[1]: 正在进入目录 `/h
