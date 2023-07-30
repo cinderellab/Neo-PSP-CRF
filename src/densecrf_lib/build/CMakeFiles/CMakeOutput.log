@@ -93,4 +93,19 @@ Parsed C implicit link information from above output:
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
     arg [--sysroot=/] ==> ignore
     arg [--build-id] ==> ignore
-    arg 
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec3481301830] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8]
+    arg [-L/usr/lib/gcc/x86_64-lin
