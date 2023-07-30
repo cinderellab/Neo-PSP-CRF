@@ -67,4 +67,12 @@ make[1]:正在离开目录 `/home/xduser/lihuan/densecrf_lib/build/CMakeFiles/CM
 
 
 Parsed C implicit link information from above output:
- 
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/xduser/lihuan/densecrf_lib/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec3481301830/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec3481301830.dir/build.make CMakeFiles/cmTryCompileExec3481301830.dir/build]
+  ignore line: [make[1]: 正在进入目录 `/home/xduser/lihuan/densecrf_lib/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/xduser/lihuan/densecrf_lib/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec3481301830.dir/CMakeCCompilerABI.c.o]
+  ignore line
