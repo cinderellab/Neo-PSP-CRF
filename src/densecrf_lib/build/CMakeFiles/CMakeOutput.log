@@ -75,4 +75,12 @@ Parsed C implicit link information from above output:
   ignore line: [make[1]: 正在进入目录 `/home/xduser/lihuan/densecrf_lib/build/CMakeFiles/CMakeTmp']
   ignore line: [/usr/bin/cmake -E cmake_progress_report /home/xduser/lihuan/densecrf_lib/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
   ignore line: [Building C object CMakeFiles/cmTryCompileExec3481301830.dir/CMakeCCompilerABI.c.o]
-  ignore line
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3481301830.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec3481301830]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3481301830.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTryCompileExec3481301830.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec3481301830 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubu
