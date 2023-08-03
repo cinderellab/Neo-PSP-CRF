@@ -167,4 +167,12 @@ Run Build Command:/usr/bin/make "cmTryCompileExec1934171227/fast"
 make[1]: 正在进入目录 `/home/xduser/lihuan/densecrf_lib/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/xduser/lihuan/densecrf_lib/build/CMakeFiles/CMakeTmp/CMakeFiles 1
 Building CXX object CMakeFiles/cmTryCompileExec1934171227.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CM
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec1934171227.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec1934171227
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1934171227.dir/link.txt --verbose=1
+/usr/bin/c++      -v CMakeFiles/cmTryCompileExec1934171227.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec1934171227 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04.3' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8
