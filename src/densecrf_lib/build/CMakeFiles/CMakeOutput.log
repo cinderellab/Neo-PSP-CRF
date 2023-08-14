@@ -190,4 +190,11 @@ Parsed CXX implicit link information from above output:
   ignore line: [Change Dir: /home/xduser/lihuan/densecrf_lib/build/CMakeFiles/CMakeTmp]
   ignore line: []
   ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec1934171227/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec1934171227.dir/build.make CMakeFiles/cmTryCompileExec1934171227.dir/bu
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec1934171227.dir/build.make CMakeFiles/cmTryCompileExec1934171227.dir/build]
+  ignore line: [make[1]: 正在进入目录 `/home/xduser/lihuan/densecrf_lib/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/xduser/lihuan/densecrf_lib/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec1934171227.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec1934171227.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec1934171227]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1934171227.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTryCompileExec1934171227.dir/CMakeCXXCompil
