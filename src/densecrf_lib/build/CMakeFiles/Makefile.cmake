@@ -63,4 +63,10 @@ SET(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/2.8.12.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "examples/CMakeFiles/CMakeDirector
+  "examples/CMakeFiles/CMakeDirectoryInformation.cmake"
+  )
+
+# Dependency information for all targets:
+SET(CMAKE_DEPEND_INFO_FILES
+  "src/CMakeFiles/densecrf.dir/DependInfo.cmake"
+  )
