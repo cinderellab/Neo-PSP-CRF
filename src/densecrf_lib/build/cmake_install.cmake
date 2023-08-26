@@ -46,4 +46,6 @@ ELSE(CMAKE_INSTALL_COMPONENT)
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
 FILE(WRITE "/home/xduser/lihuan/densecrf_lib/build/${CMAKE_INSTALL_MANIFEST}" "")
-FOREACH(fil
+FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
+  FILE(APPEND "/home/xduser/lihuan/densecrf_lib/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+ENDFOREACH(file)
