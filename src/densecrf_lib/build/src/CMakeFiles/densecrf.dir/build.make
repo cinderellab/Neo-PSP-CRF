@@ -60,4 +60,16 @@ src/CMakeFiles/densecrf.dir/util.cpp.i: cmake_force
 	cd /home/xduser/lihuan/densecrf_lib/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/xduser/lihuan/densecrf_lib/src/util.cpp > CMakeFiles/densecrf.dir/util.cpp.i
 
 src/CMakeFiles/densecrf.dir/util.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/densecrf.dir/util.cpp.s"
+	cd /home/xduser/lihuan/densecrf_lib/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/xduser/lihuan/densecrf_lib/src/util.cpp -o CMakeFiles/densecrf.dir/util.cpp.s
+
+src/CMakeFiles/densecrf.dir/util.cpp.o.requires:
+.PHONY : src/CMakeFiles/densecrf.dir/util.cpp.o.requires
+
+src/CMakeFiles/densecrf.dir/util.cpp.o.provides: src/CMakeFiles/densecrf.dir/util.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/densecrf.dir/build.make src/CMakeFiles/densecrf.dir/util.cpp.o.provides.build
+.PHONY : src/CMakeFiles/densecrf.dir/util.cpp.o.provides
+
+src/CMakeFiles/densecrf.dir/util.cpp.o.provides.build: src/CMakeFiles/densecrf.dir/util.cpp.o
+
+src/CMakeFiles/densecr
