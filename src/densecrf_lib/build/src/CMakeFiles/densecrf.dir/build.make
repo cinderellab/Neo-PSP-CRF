@@ -79,4 +79,11 @@ src/CMakeFiles/densecrf.dir/bipartitedensecrf.cpp.o: ../src/bipartitedensecrf.cp
 	cd /home/xduser/lihuan/densecrf_lib/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/densecrf.dir/bipartitedensecrf.cpp.o -c /home/xduser/lihuan/densecrf_lib/src/bipartitedensecrf.cpp
 
 src/CMakeFiles/densecrf.dir/bipartitedensecrf.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/densecrf.dir/bipartitedensecrf.cpp.i"
+	cd /home/xduser/lihuan/densecrf_lib/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/xduser/lihuan/densecrf_lib/src/bipartitedensecrf.cpp > CMakeFiles/densecrf.dir/bipartitedensecrf.cpp.i
+
+src/CMakeFiles/densecrf.dir/bipartitedensecrf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/densecrf.dir/bipartitedensecrf.cpp.s"
+	cd /home/xduser/lihuan/densecrf_lib/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/xduser/lihuan/densecrf_lib/src/bipartitedensecrf.cpp -o CMakeFiles/densecrf.dir/bipartitedensecrf.cpp.s
+
+s
