@@ -86,4 +86,15 @@ src/CMakeFiles/densecrf.dir/bipartitedensecrf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/densecrf.dir/bipartitedensecrf.cpp.s"
 	cd /home/xduser/lihuan/densecrf_lib/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/xduser/lihuan/densecrf_lib/src/bipartitedensecrf.cpp -o CMakeFiles/densecrf.dir/bipartitedensecrf.cpp.s
 
-s
+src/CMakeFiles/densecrf.dir/bipartitedensecrf.cpp.o.requires:
+.PHONY : src/CMakeFiles/densecrf.dir/bipartitedensecrf.cpp.o.requires
+
+src/CMakeFiles/densecrf.dir/bipartitedensecrf.cpp.o.provides: src/CMakeFiles/densecrf.dir/bipartitedensecrf.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/densecrf.dir/build.make src/CMakeFiles/densecrf.dir/bipartitedensecrf.cpp.o.provides.build
+.PHONY : src/CMakeFiles/densecrf.dir/bipartitedensecrf.cpp.o.provides
+
+src/CMakeFiles/densecrf.dir/bipartitedensecrf.cpp.o.provides.build: src/CMakeFiles/densecrf.dir/bipartitedensecrf.cpp.o
+
+src/CMakeFiles/densecrf.dir/permutohedral.cpp.o: src/CMakeFiles/densecrf.dir/flags.make
+src/CMakeFiles/densecrf.dir/permutohedral.cpp.o: ../src/permutohedral.cpp
+	$(CMAKE_COMMAND)
