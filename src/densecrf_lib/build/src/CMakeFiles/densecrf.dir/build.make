@@ -35,4 +35,21 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xduser/lihuan/dense
+CMAKE_SOURCE_DIR = /home/xduser/lihuan/densecrf_lib
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/xduser/lihuan/densecrf_lib/build
+
+# Include any dependencies generated for this target.
+include src/CMakeFiles/densecrf.dir/depend.make
+
+# Include the progress variables for this target.
+include src/CMakeFiles/densecrf.dir/progress.make
+
+# Include the compile flags for this target's objects.
+include src/CMakeFiles/densecrf.dir/flags.make
+
+src/CMakeFiles/densecrf.dir/util.cpp.o: src/CMakeFiles/densecrf.dir/flags.make
+src/CMakeFiles/densecrf.dir/util.cpp.o: ../src/util.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/xduser/lihuan/densecrf_lib/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --g
