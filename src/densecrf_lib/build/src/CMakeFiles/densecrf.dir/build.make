@@ -72,4 +72,11 @@ src/CMakeFiles/densecrf.dir/util.cpp.o.provides: src/CMakeFiles/densecrf.dir/uti
 
 src/CMakeFiles/densecrf.dir/util.cpp.o.provides.build: src/CMakeFiles/densecrf.dir/util.cpp.o
 
-src/CMakeFiles/densecr
+src/CMakeFiles/densecrf.dir/bipartitedensecrf.cpp.o: src/CMakeFiles/densecrf.dir/flags.make
+src/CMakeFiles/densecrf.dir/bipartitedensecrf.cpp.o: ../src/bipartitedensecrf.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/xduser/lihuan/densecrf_lib/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/densecrf.dir/bipartitedensecrf.cpp.o"
+	cd /home/xduser/lihuan/densecrf_lib/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/densecrf.dir/bipartitedensecrf.cpp.o -c /home/xduser/lihuan/densecrf_lib/src/bipartitedensecrf.cpp
+
+src/CMakeFiles/densecrf.dir/bipartitedensecrf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch
