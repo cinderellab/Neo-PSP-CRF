@@ -52,4 +52,12 @@ include src/CMakeFiles/densecrf.dir/flags.make
 src/CMakeFiles/densecrf.dir/util.cpp.o: src/CMakeFiles/densecrf.dir/flags.make
 src/CMakeFiles/densecrf.dir/util.cpp.o: ../src/util.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/xduser/lihuan/densecrf_lib/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --g
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/densecrf.dir/util.cpp.o"
+	cd /home/xduser/lihuan/densecrf_lib/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/densecrf.dir/util.cpp.o -c /home/xduser/lihuan/densecrf_lib/src/util.cpp
+
+src/CMakeFiles/densecrf.dir/util.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/densecrf.dir/util.cpp.i"
+	cd /home/xduser/lihuan/densecrf_lib/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/xduser/lihuan/densecrf_lib/src/util.cpp > CMakeFiles/densecrf.dir/util.cpp.i
+
+src/CMakeFiles/densecrf.dir/util.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$
