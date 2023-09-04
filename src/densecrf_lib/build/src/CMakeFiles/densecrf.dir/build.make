@@ -122,4 +122,12 @@ src/CMakeFiles/densecrf.dir/densecrf.cpp.o: src/CMakeFiles/densecrf.dir/flags.ma
 src/CMakeFiles/densecrf.dir/densecrf.cpp.o: ../src/densecrf.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/xduser/lihuan/densecrf_lib/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/densecrf.dir/densecrf.cpp.o"
-	cd /h
+	cd /home/xduser/lihuan/densecrf_lib/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/densecrf.dir/densecrf.cpp.o -c /home/xduser/lihuan/densecrf_lib/src/densecrf.cpp
+
+src/CMakeFiles/densecrf.dir/densecrf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/densecrf.dir/densecrf.cpp.i"
+	cd /home/xduser/lihuan/densecrf_lib/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/xduser/lihuan/densecrf_lib/src/densecrf.cpp > CMakeFiles/densecrf.dir/densecrf.cpp.i
+
+src/CMakeFiles/densecrf.dir/densecrf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/densecrf.dir/densecrf.cpp.s"
+	cd /home/xduser/lihuan/densecrf_lib/build/src && /usr/bi
