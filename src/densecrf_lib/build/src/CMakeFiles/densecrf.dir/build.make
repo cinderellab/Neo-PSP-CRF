@@ -142,4 +142,11 @@ src/CMakeFiles/densecrf.dir/densecrf.cpp.o.provides: src/CMakeFiles/densecrf.dir
 src/CMakeFiles/densecrf.dir/densecrf.cpp.o.provides.build: src/CMakeFiles/densecrf.dir/densecrf.cpp.o
 
 src/CMakeFiles/densecrf.dir/filter.cpp.o: src/CMakeFiles/densecrf.dir/flags.make
-src/CMakeFiles
+src/CMakeFiles/densecrf.dir/filter.cpp.o: ../src/filter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/xduser/lihuan/densecrf_lib/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/densecrf.dir/filter.cpp.o"
+	cd /home/xduser/lihuan/densecrf_lib/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/densecrf.dir/filter.cpp.o -c /home/xduser/lihuan/densecrf_lib/src/filter.cpp
+
+src/CMakeFiles/densecrf.dir/filter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/densecrf.dir/filter.cpp.i"
+	cd /home/xduser/lihuan/densecrf_lib/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -
