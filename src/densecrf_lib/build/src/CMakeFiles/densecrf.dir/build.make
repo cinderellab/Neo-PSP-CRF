@@ -112,4 +112,14 @@ src/CMakeFiles/densecrf.dir/permutohedral.cpp.s: cmake_force
 src/CMakeFiles/densecrf.dir/permutohedral.cpp.o.requires:
 .PHONY : src/CMakeFiles/densecrf.dir/permutohedral.cpp.o.requires
 
-src/CMakeFiles/densecrf.dir/permutohedral.cpp.o.provides: src/CMakeFiles/densecrf.dir/permutohedral.cpp.o
+src/CMakeFiles/densecrf.dir/permutohedral.cpp.o.provides: src/CMakeFiles/densecrf.dir/permutohedral.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/densecrf.dir/build.make src/CMakeFiles/densecrf.dir/permutohedral.cpp.o.provides.build
+.PHONY : src/CMakeFiles/densecrf.dir/permutohedral.cpp.o.provides
+
+src/CMakeFiles/densecrf.dir/permutohedral.cpp.o.provides.build: src/CMakeFiles/densecrf.dir/permutohedral.cpp.o
+
+src/CMakeFiles/densecrf.dir/densecrf.cpp.o: src/CMakeFiles/densecrf.dir/flags.make
+src/CMakeFiles/densecrf.dir/densecrf.cpp.o: ../src/densecrf.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/xduser/lihuan/densecrf_lib/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/densecrf.dir/densecrf.cpp.o"
+	cd /h
