@@ -149,4 +149,14 @@ src/CMakeFiles/densecrf.dir/filter.cpp.o: ../src/filter.cpp
 
 src/CMakeFiles/densecrf.dir/filter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/densecrf.dir/filter.cpp.i"
-	cd /home/xduser/lihuan/densecrf_lib/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -
+	cd /home/xduser/lihuan/densecrf_lib/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/xduser/lihuan/densecrf_lib/src/filter.cpp > CMakeFiles/densecrf.dir/filter.cpp.i
+
+src/CMakeFiles/densecrf.dir/filter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/densecrf.dir/filter.cpp.s"
+	cd /home/xduser/lihuan/densecrf_lib/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/xduser/lihuan/densecrf_lib/src/filter.cpp -o CMakeFiles/densecrf.dir/filter.cpp.s
+
+src/CMakeFiles/densecrf.dir/filter.cpp.o.requires:
+.PHONY : src/CMakeFiles/densecrf.dir/filter.cpp.o.requires
+
+src/CMakeFiles/densecrf.dir/filter.cpp.o.provides: src/CMakeFiles/densecrf.dir/filter.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/densecrf.dir/build.make src/CMakeFiles/densecrf.dir/filter.
