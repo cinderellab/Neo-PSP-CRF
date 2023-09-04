@@ -103,4 +103,13 @@ src/CMakeFiles/densecrf.dir/permutohedral.cpp.o: ../src/permutohedral.cpp
 
 src/CMakeFiles/densecrf.dir/permutohedral.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/densecrf.dir/permutohedral.cpp.i"
-	cd /home/xduser/lihuan/densecrf_lib/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FL
+	cd /home/xduser/lihuan/densecrf_lib/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/xduser/lihuan/densecrf_lib/src/permutohedral.cpp > CMakeFiles/densecrf.dir/permutohedral.cpp.i
+
+src/CMakeFiles/densecrf.dir/permutohedral.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/densecrf.dir/permutohedral.cpp.s"
+	cd /home/xduser/lihuan/densecrf_lib/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/xduser/lihuan/densecrf_lib/src/permutohedral.cpp -o CMakeFiles/densecrf.dir/permutohedral.cpp.s
+
+src/CMakeFiles/densecrf.dir/permutohedral.cpp.o.requires:
+.PHONY : src/CMakeFiles/densecrf.dir/permutohedral.cpp.o.requires
+
+src/CMakeFiles/densecrf.dir/permutohedral.cpp.o.provides: src/CMakeFiles/densecrf.dir/permutohedral.cpp.o
