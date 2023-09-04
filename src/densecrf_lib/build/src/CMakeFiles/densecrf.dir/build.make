@@ -97,4 +97,10 @@ src/CMakeFiles/densecrf.dir/bipartitedensecrf.cpp.o.provides.build: src/CMakeFil
 
 src/CMakeFiles/densecrf.dir/permutohedral.cpp.o: src/CMakeFiles/densecrf.dir/flags.make
 src/CMakeFiles/densecrf.dir/permutohedral.cpp.o: ../src/permutohedral.cpp
-	$(CMAKE_COMMAND)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/xduser/lihuan/densecrf_lib/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/densecrf.dir/permutohedral.cpp.o"
+	cd /home/xduser/lihuan/densecrf_lib/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/densecrf.dir/permutohedral.cpp.o -c /home/xduser/lihuan/densecrf_lib/src/permutohedral.cpp
+
+src/CMakeFiles/densecrf.dir/permutohedral.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/densecrf.dir/permutohedral.cpp.i"
+	cd /home/xduser/lihuan/densecrf_lib/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FL
