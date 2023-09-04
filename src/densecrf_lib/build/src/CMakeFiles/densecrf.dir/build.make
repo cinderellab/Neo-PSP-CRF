@@ -159,4 +159,23 @@ src/CMakeFiles/densecrf.dir/filter.cpp.o.requires:
 .PHONY : src/CMakeFiles/densecrf.dir/filter.cpp.o.requires
 
 src/CMakeFiles/densecrf.dir/filter.cpp.o.provides: src/CMakeFiles/densecrf.dir/filter.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/densecrf.dir/build.make src/CMakeFiles/densecrf.dir/filter.
+	$(MAKE) -f src/CMakeFiles/densecrf.dir/build.make src/CMakeFiles/densecrf.dir/filter.cpp.o.provides.build
+.PHONY : src/CMakeFiles/densecrf.dir/filter.cpp.o.provides
+
+src/CMakeFiles/densecrf.dir/filter.cpp.o.provides.build: src/CMakeFiles/densecrf.dir/filter.cpp.o
+
+# Object files for target densecrf
+densecrf_OBJECTS = \
+"CMakeFiles/densecrf.dir/util.cpp.o" \
+"CMakeFiles/densecrf.dir/bipartitedensecrf.cpp.o" \
+"CMakeFiles/densecrf.dir/permutohedral.cpp.o" \
+"CMakeFiles/densecrf.dir/densecrf.cpp.o" \
+"CMakeFiles/densecrf.dir/filter.cpp.o"
+
+# External object files for target densecrf
+densecrf_EXTERNAL_OBJECTS =
+
+src/libdensecrf.a: src/CMakeFiles/densecrf.dir/util.cpp.o
+src/libdensecrf.a: src/CMakeFiles/densecrf.dir/bipartitedensecrf.cpp.o
+src/libdensecrf.a: src/CMakeFiles/densecrf.dir/permutohedral.cpp.o
+src
