@@ -201,4 +201,7 @@ src/CMakeFiles/densecrf.dir/clean:
 	cd /home/xduser/lihuan/densecrf_lib/build/src && $(CMAKE_COMMAND) -P CMakeFiles/densecrf.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/densecrf.dir/clean
 
-src/CMakeFiles/densecrf.dir/
+src/CMakeFiles/densecrf.dir/depend:
+	cd /home/xduser/lihuan/densecrf_lib/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xduser/lihuan/densecrf_lib /home/xduser/lihuan/densecrf_lib/src /home/xduser/lihuan/densecrf_lib/build /home/xduser/lihuan/densecrf_lib/build/src /home/xduser/lihuan/densecrf_lib/build/src/CMakeFiles/densecrf.dir/DependInfo.cmake --color=$(COLOR)
+.PHONY : src/CMakeFiles/densecrf.dir/depend
+
