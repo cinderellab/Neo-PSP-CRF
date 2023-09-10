@@ -23,4 +23,30 @@ $(VERBOSE).SILENT:
 cmake_force:
 .PHONY : cmake_force
 
-#=====================================================================
+#=============================================================================
+# Set environment variables for the build.
+
+# The shell in which to execute make rules.
+SHELL = /bin/sh
+
+# The CMake executable.
+CMAKE_COMMAND = /usr/bin/cmake
+
+# The command to remove a file.
+RM = /usr/bin/cmake -E remove -f
+
+# Escaping for special characters.
+EQUALS = =
+
+# The top-level source directory on which CMake was run.
+CMAKE_SOURCE_DIR = /home/xduser/lihuan/densecrf_lib
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/xduser/lihuan/densecrf_lib/build
+
+#=============================================================================
+# Targets provided globally by CMake.
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(CO
