@@ -90,4 +90,23 @@ preinstall: all
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/
+	cd /home/xduser/lihuan/densecrf_lib/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+.PHONY : preinstall/fast
+
+# clear depends
+depend:
+	cd /home/xduser/lihuan/densecrf_lib/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+.PHONY : depend
+
+# Convenience name for target.
+src/CMakeFiles/densecrf.dir/rule:
+	cd /home/xduser/lihuan/densecrf_lib/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/densecrf.dir/rule
+.PHONY : src/CMakeFiles/densecrf.dir/rule
+
+# Convenience name for target.
+densecrf: src/CMakeFiles/densecrf.dir/rule
+.PHONY : densecrf
+
+# fast build rule for target.
+densecrf/fast:
+	cd /home/xduser/lihuan/densecrf_lib/build && $(MAKE) -f src/CMakeFiles/densecrf.dir/build.make
