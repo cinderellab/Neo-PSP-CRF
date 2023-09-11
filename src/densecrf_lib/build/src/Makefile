@@ -69,4 +69,25 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/xduser/lihuan/densecrf_lib/build && $(CMAKE_COMMAND) -E cmake_p
+	cd /home/xduser/lihuan/densecrf_lib/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/xduser/lihuan/densecrf_lib/build/CMakeFiles /home/xduser/lihuan/densecrf_lib/build/src/CMakeFiles/progress.marks
+	cd /home/xduser/lihuan/densecrf_lib/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xduser/lihuan/densecrf_lib/build/CMakeFiles 0
+.PHONY : all
+
+# The main clean target
+clean:
+	cd /home/xduser/lihuan/densecrf_lib/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+.PHONY : clean
+
+# The main clean target
+clean/fast: clean
+.PHONY : clean/fast
+
+# Prepare targets for installation.
+preinstall: all
+	cd /home/xduser/lihuan/densecrf_lib/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+.PHONY : preinstall
+
+# Prepare targets for installation.
+preinstall/fast:
+	cd /home/
