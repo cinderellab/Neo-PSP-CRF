@@ -109,4 +109,24 @@ densecrf: src/CMakeFiles/densecrf.dir/rule
 
 # fast build rule for target.
 densecrf/fast:
-	cd /home/xduser/lihuan/densecrf_lib/build && $(MAKE) -f src/CMakeFiles/densecrf.dir/build.make
+	cd /home/xduser/lihuan/densecrf_lib/build && $(MAKE) -f src/CMakeFiles/densecrf.dir/build.make src/CMakeFiles/densecrf.dir/build
+.PHONY : densecrf/fast
+
+bipartitedensecrf.o: bipartitedensecrf.cpp.o
+.PHONY : bipartitedensecrf.o
+
+# target to build an object file
+bipartitedensecrf.cpp.o:
+	cd /home/xduser/lihuan/densecrf_lib/build && $(MAKE) -f src/CMakeFiles/densecrf.dir/build.make src/CMakeFiles/densecrf.dir/bipartitedensecrf.cpp.o
+.PHONY : bipartitedensecrf.cpp.o
+
+bipartitedensecrf.i: bipartitedensecrf.cpp.i
+.PHONY : bipartitedensecrf.i
+
+# target to preprocess a source file
+bipartitedensecrf.cpp.i:
+	cd /home/xduser/lihuan/densecrf_lib/build && $(MAKE) -f src/CMakeFiles/densecrf.dir/build.make src/CMakeFiles/densecrf.dir/bipartitedensecrf.cpp.i
+.PHONY : bipartitedensecrf.cpp.i
+
+bipartitedensecrf.s: bipartitedensecrf.cpp.s
+.PHON
