@@ -129,4 +129,24 @@ bipartitedensecrf.cpp.i:
 .PHONY : bipartitedensecrf.cpp.i
 
 bipartitedensecrf.s: bipartitedensecrf.cpp.s
-.PHON
+.PHONY : bipartitedensecrf.s
+
+# target to generate assembly for a file
+bipartitedensecrf.cpp.s:
+	cd /home/xduser/lihuan/densecrf_lib/build && $(MAKE) -f src/CMakeFiles/densecrf.dir/build.make src/CMakeFiles/densecrf.dir/bipartitedensecrf.cpp.s
+.PHONY : bipartitedensecrf.cpp.s
+
+densecrf.o: densecrf.cpp.o
+.PHONY : densecrf.o
+
+# target to build an object file
+densecrf.cpp.o:
+	cd /home/xduser/lihuan/densecrf_lib/build && $(MAKE) -f src/CMakeFiles/densecrf.dir/build.make src/CMakeFiles/densecrf.dir/densecrf.cpp.o
+.PHONY : densecrf.cpp.o
+
+densecrf.i: densecrf.cpp.i
+.PHONY : densecrf.i
+
+# target to preprocess a source file
+densecrf.cpp.i:
+	cd /home/xduser/lihuan/densecrf_lib/build && $(MAKE) -f src/CMakeFiles/densecrf.dir/build.make src/CMakeFile
