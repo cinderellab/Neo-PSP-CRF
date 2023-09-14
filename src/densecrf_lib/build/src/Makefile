@@ -149,4 +149,28 @@ densecrf.i: densecrf.cpp.i
 
 # target to preprocess a source file
 densecrf.cpp.i:
-	cd /home/xduser/lihuan/densecrf_lib/build && $(MAKE) -f src/CMakeFiles/densecrf.dir/build.make src/CMakeFile
+	cd /home/xduser/lihuan/densecrf_lib/build && $(MAKE) -f src/CMakeFiles/densecrf.dir/build.make src/CMakeFiles/densecrf.dir/densecrf.cpp.i
+.PHONY : densecrf.cpp.i
+
+densecrf.s: densecrf.cpp.s
+.PHONY : densecrf.s
+
+# target to generate assembly for a file
+densecrf.cpp.s:
+	cd /home/xduser/lihuan/densecrf_lib/build && $(MAKE) -f src/CMakeFiles/densecrf.dir/build.make src/CMakeFiles/densecrf.dir/densecrf.cpp.s
+.PHONY : densecrf.cpp.s
+
+filter.o: filter.cpp.o
+.PHONY : filter.o
+
+# target to build an object file
+filter.cpp.o:
+	cd /home/xduser/lihuan/densecrf_lib/build && $(MAKE) -f src/CMakeFiles/densecrf.dir/build.make src/CMakeFiles/densecrf.dir/filter.cpp.o
+.PHONY : filter.cpp.o
+
+filter.i: filter.cpp.i
+.PHONY : filter.i
+
+# target to preprocess a source file
+filter.cpp.i:
+	c
