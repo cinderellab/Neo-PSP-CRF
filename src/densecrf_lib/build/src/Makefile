@@ -173,4 +173,21 @@ filter.i: filter.cpp.i
 
 # target to preprocess a source file
 filter.cpp.i:
-	c
+	cd /home/xduser/lihuan/densecrf_lib/build && $(MAKE) -f src/CMakeFiles/densecrf.dir/build.make src/CMakeFiles/densecrf.dir/filter.cpp.i
+.PHONY : filter.cpp.i
+
+filter.s: filter.cpp.s
+.PHONY : filter.s
+
+# target to generate assembly for a file
+filter.cpp.s:
+	cd /home/xduser/lihuan/densecrf_lib/build && $(MAKE) -f src/CMakeFiles/densecrf.dir/build.make src/CMakeFiles/densecrf.dir/filter.cpp.s
+.PHONY : filter.cpp.s
+
+permutohedral.o: permutohedral.cpp.o
+.PHONY : permutohedral.o
+
+# target to build an object file
+permutohedral.cpp.o:
+	cd /home/xduser/lihuan/densecrf_lib/build && $(MAKE) -f src/CMakeFiles/densecrf.dir/build.make src/CMakeFiles/densecrf.dir/permutohedral.cpp.o
+.PHONY : permuto
