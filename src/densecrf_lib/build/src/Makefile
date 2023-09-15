@@ -190,4 +190,27 @@ permutohedral.o: permutohedral.cpp.o
 # target to build an object file
 permutohedral.cpp.o:
 	cd /home/xduser/lihuan/densecrf_lib/build && $(MAKE) -f src/CMakeFiles/densecrf.dir/build.make src/CMakeFiles/densecrf.dir/permutohedral.cpp.o
-.PHONY : permuto
+.PHONY : permutohedral.cpp.o
+
+permutohedral.i: permutohedral.cpp.i
+.PHONY : permutohedral.i
+
+# target to preprocess a source file
+permutohedral.cpp.i:
+	cd /home/xduser/lihuan/densecrf_lib/build && $(MAKE) -f src/CMakeFiles/densecrf.dir/build.make src/CMakeFiles/densecrf.dir/permutohedral.cpp.i
+.PHONY : permutohedral.cpp.i
+
+permutohedral.s: permutohedral.cpp.s
+.PHONY : permutohedral.s
+
+# target to generate assembly for a file
+permutohedral.cpp.s:
+	cd /home/xduser/lihuan/densecrf_lib/build && $(MAKE) -f src/CMakeFiles/densecrf.dir/build.make src/CMakeFiles/densecrf.dir/permutohedral.cpp.s
+.PHONY : permutohedral.cpp.s
+
+util.o: util.cpp.o
+.PHONY : util.o
+
+# target to build an object file
+util.cpp.o:
+	cd /home/xduser/lihuan/densecrf_li
