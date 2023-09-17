@@ -235,4 +235,33 @@ util.cpp.s:
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
-	@echo "... all (the default if no target is provid
+	@echo "... all (the default if no target is provided)"
+	@echo "... clean"
+	@echo "... depend"
+	@echo "... densecrf"
+	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... bipartitedensecrf.o"
+	@echo "... bipartitedensecrf.i"
+	@echo "... bipartitedensecrf.s"
+	@echo "... densecrf.o"
+	@echo "... densecrf.i"
+	@echo "... densecrf.s"
+	@echo "... filter.o"
+	@echo "... filter.i"
+	@echo "... filter.s"
+	@echo "... permutohedral.o"
+	@echo "... permutohedral.i"
+	@echo "... permutohedral.s"
+	@echo "... util.o"
+	@echo "... util.i"
+	@echo "... util.s"
+.PHONY : help
+
+
+
+#=============================================================================
+# Special targets to cleanup operation of make.
+
+# Special rule to run CMake to check the build system integrity.
+# No rule that depends on this can have commands th
