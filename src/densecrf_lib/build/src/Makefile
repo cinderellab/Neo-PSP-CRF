@@ -213,4 +213,26 @@ util.o: util.cpp.o
 
 # target to build an object file
 util.cpp.o:
-	cd /home/xduser/lihuan/densecrf_li
+	cd /home/xduser/lihuan/densecrf_lib/build && $(MAKE) -f src/CMakeFiles/densecrf.dir/build.make src/CMakeFiles/densecrf.dir/util.cpp.o
+.PHONY : util.cpp.o
+
+util.i: util.cpp.i
+.PHONY : util.i
+
+# target to preprocess a source file
+util.cpp.i:
+	cd /home/xduser/lihuan/densecrf_lib/build && $(MAKE) -f src/CMakeFiles/densecrf.dir/build.make src/CMakeFiles/densecrf.dir/util.cpp.i
+.PHONY : util.cpp.i
+
+util.s: util.cpp.s
+.PHONY : util.s
+
+# target to generate assembly for a file
+util.cpp.s:
+	cd /home/xduser/lihuan/densecrf_lib/build && $(MAKE) -f src/CMakeFiles/densecrf.dir/build.make src/CMakeFiles/densecrf.dir/util.cpp.s
+.PHONY : util.cpp.s
+
+# Help Target
+help:
+	@echo "The following are some of the valid targets for this Makefile:"
+	@echo "... all (the default if no target is provid
