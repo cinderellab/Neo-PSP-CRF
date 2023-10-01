@@ -78,4 +78,37 @@ unsigned char* readPPM ( const char* filename, int& W, int& H )
 		fclose ( fp );
 		return NULL;
 	}
-	unsigned char * r = new unsign
+	unsigned char * r = new unsigned char[W*H*3];
+	if ( n=='6' )
+		fread ( r, 1, W*H*3, fp );
+	else if ( n=='3' )
+	{
+		int c;
+		for ( int i=0; i<W*H*3; i++ )
+		{
+			fscanf ( fp, "%d", &c );
+			r[i] = 255*c / D;
+		}
+	}
+	else
+	{
+		W=H=0;
+		fclose ( fp );
+		return NULL;
+	}
+	fclose ( fp );
+	return r;
+}
+
+//filename打开加个P6开头，然后将data的内容写入filename中
+void writePPM ( const char* filename, int W, int H, unsigned char* data )
+{
+	FILE* fp = fopen ( filename, "wb" );
+	if ( !fp )
+	{
+		printf ( "Failed to open file '%s'!\n", filename );
+	}
+	fprintf ( fp, "P6\n%d %d\n%d\n", W, H, 255 );
+	fwrite ( data, 1, W*H*3, fp );
+	fclose ( fp );
+}
