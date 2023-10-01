@@ -39,4 +39,43 @@ void writePGM ( const char* filename, int W, int H, const char* data )
 		printf ( "Failed to open file '%s'!\n", filename );
 		return;
 	}
-	fprintf ( fp, "P5\n%d %d\n%d\
+	fprintf ( fp, "P5\n%d %d\n%d\n", W, H, 255 );
+	fwrite ( data, 1, W*H, fp );
+	fclose ( fp );
+}
+
+//将filename的内容写入r中，并返回char* r=char[W*H*3]
+unsigned char* readPPM ( const char* filename, int& W, int& H )
+{
+	FILE* fp = fopen ( filename, "rb" );
+	if ( !fp )
+	{
+		printf ( "Failed to open file '%s'!\n", filename );
+	}
+	char hdr[256]={};
+	size_t l=0;
+	// Read the header
+	char p,n;
+	int D;
+
+	//读取fp开头的内容到几个变量中,W和H是引用，值传出
+	while ( sscanf ( hdr, "%c%c %d %d %d", &p, &n, &W, &H, &D ) < 5 )
+	{
+		fgets ( hdr+l, 256-l, fp );
+		char * comment = strchr ( hdr, 'p' );
+		if ( comment ) l = hdr - comment;
+		else l = strlen ( hdr );
+		if ( l>=255 )
+		{
+			W=H=0;
+			fclose ( fp );
+			return NULL;
+		}
+	}
+	if ( p != 'P' )
+	{
+		W=H=0;
+		fclose ( fp );
+		return NULL;
+	}
+	unsigned char * r = new unsign
