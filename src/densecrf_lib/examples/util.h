@@ -24,3 +24,10 @@
     (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
     SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
+
+#pragma once
+
+
+void writePGM( const char * filename, int W, int H, const char * data );
+unsigned char * readPPM( const char * filename, int & W, int & H );
+void writePPM( const char * filename, int W, int H, unsigned char * data );
