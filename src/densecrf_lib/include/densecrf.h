@@ -69,4 +69,18 @@ protected:
 public:
 	// Create a dense CRF model of size N with M labels
 	DenseCRF( int N, int M );
-	virtual ~De
+	virtual ~DenseCRF();
+	// Add  a pairwise potential defined over some feature space
+	// The potential will have the form:    w*exp(-0.5*|f_i - f_j|^2)
+	// The kernel shape should be captured by transforming the
+	// features before passing them into this function
+	void addPairwiseEnergy( const float * features, int D, float w=1.0f, const SemiMetricFunction * function=NULL );
+	
+	// Add your own favorite pairwise potential (ownwership will be transfered to this class)
+	// 增加自定义的二元势能
+	void addPairwiseEnergy( PairwisePotential* potential );
+	
+	// Set the unary potential for all variables and labels (memory order is [x0l0 x0l1 x0l2 .. x1l0 x1l1 ...])
+	void setUnaryEnergy( const float * unary );
+	
+	// Set the unary potential for a specific variable
