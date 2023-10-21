@@ -102,4 +102,22 @@ public: /* Debugging functions */
 	void unaryEnergy( const short * ass, float * result );
 	
 	// Compute the pairwise energy of an assignment (half of each pairwise potential is added to each of it's endpoints)
-	void pairwiseEnergy( const short * ass, float * r
+	void pairwiseEnergy( const short * ass, float * result, int term=-1 );
+};
+
+class DenseCRF2D:public DenseCRF{
+protected:
+	// Width, height of the 2d grid
+	int W_, H_;
+public:
+	// Create a 2d dense CRF model of size W x H with M labels
+	DenseCRF2D( int W, int H, int M );
+	virtual ~DenseCRF2D();
+
+	// Add a Gaussian pairwise potential with standard deviation sx and sy
+	void addPairwiseGaussian( float sx, float sy, float w, const SemiMetricFunction * function=NULL );
+
+	void addPairwiseGaussian_lh(vector<vector<float> > & Features, int Dims, float stddev1, float stddev2, float w, const SemiMetricFunction * function, bool onlyxy);	
+
+	// Add a Bilateral pairwise potential with spacial standard deviations sx, sy and color standard deviations sr,sg,sb
+	void addPairwiseB
