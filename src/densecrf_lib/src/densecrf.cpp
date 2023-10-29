@@ -323,3 +323,52 @@ void DenseCRF::pairwiseEnergy(const short* ass, float* result, int term) {
 		for( unsigned int i=0; i<pairwise_.size(); i++ )
 			pairwise_[i]->apply( next_, current, tmp_, M_ );
 	else
+		pairwise_[ term ]->apply( next_, current, tmp_, M_ );
+	for( int i=0; i<N_; i++ )
+		if ( 0 <= ass[i] && ass[i] < M_ )
+			result[i] =-next_[ i*M_ + ass[i] ];
+		else
+			result[i] = 0;
+	deallocate( current );
+}
+void DenseCRF::startInference(){
+	// Initialize using the unary energies
+	expAndNormalize( current_, unary_, -1 );
+}
+void DenseCRF::stepInference( float relax ){
+#ifdef SSE_DENSE_CRF
+	__m128 * sse_next_ = (__m128*)next_;
+	__m128 * sse_unary_ = (__m128*)unary_;
+	__m128 * sse_additional_unary_ = (__m128*)additional_unary_;
+#endif
+	// Set the unary potential
+#ifdef SSE_DENSE_CRF
+	for( int i=0; i<(N_*M_-1)/4+1; i++ )
+		sse_next_[i] = - sse_unary_[i] - sse_additional_unary_[i];
+#else
+	for( int i=0; i<N_*M_; i++ )
+		next_[i] = -unary_[i] - additional_unary_[i];
+#endif
+	
+	// Add up all pairwise potentials
+	for( unsigned int i=0; i<pairwise_.size(); i++ )
+		pairwise_[i]->apply( next_, current_, tmp_, M_ );
+	
+	// Exponentiate and normalize
+	expAndNormalize( current_, next_, 1.0, relax );
+}
+void DenseCRF::currentMap( short * result ){
+	// Find the map
+	for( int i=0; i<N_; i++ ){
+		const float * p = current_ + i*M_;
+		// Find the max and subtract it so that the exp doesn't explode
+		float mx = p[0];
+		int imx = 0;
+		for( int j=1; j<M_; j++ )
+			if( mx < p[j] ){
+				mx = p[j];
+				imx = j;
+			}
+		result[i] = imx;
+	}
+}
