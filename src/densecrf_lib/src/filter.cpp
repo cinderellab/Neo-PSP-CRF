@@ -19,4 +19,17 @@
     DISCLAIMED. IN NO EVENT SHALL Philipp Krähenbühl BE LIABLE FOR ANY
     DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
     (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
-    LOSS OF USE, DATA, OR PROFITS; O
+    LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+    ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+    (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+    SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+#include "permutohedral.h"
+#include "densecrf.h"
+
+
+Filter::Filter( const float * source_features, int N_source, const float * target_features, int N_target, int feature_dim ):n1_(N_source),o1_(0),n2_(N_target), o2_(N_source){
+    permutohedral_ = new Permutohedral();
+    float * features = new float[ (N_source+N_target)*feature_dim ];
+    memcpy( features, source_features, N_source*feature_dim*sizeof(float) );
+    memcpy( features+N_source*feature_dim, target_features, N_target*feature_dim
