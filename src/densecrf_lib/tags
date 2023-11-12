@@ -1,0 +1,39 @@
+
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARCHITECTURE_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	193;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	196;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	199;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	202;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	206;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	181;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	184;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	187;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	190;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	194;"	d	file:
+BPPottsPotential	src/bipartitedensecrf.cpp	/^	BPPottsPotential( const BPPottsPotential&o ){}$/;"	f	class:BPPottsPotential
+BPPottsPotential	src/bipartitedensecrf.cpp	/^	BPPottsPotential(const float* features1, const float* features2, int D, int N1, int N2, float w, bool per_pixel_normalization=true) :N1_(N1), N2_(N2), w_(w) {$/;"	f	class:BPPottsPotential
+BPPottsPotential	src/bipartitedensecrf.cpp	/^class BPPottsPotential: public PairwisePotential{$/;"	c	file:
+BPSemiMetricPotential	src/bipartitedensecrf.cpp	/^	BPSemiMetricPotential(const float* features1, const float* features2, int D, int N1, int N2, float w, const SemiMetricFunction* function, bool per_pixel_normalization=true) :BPPottsPotential( features1, features2, D, N1, N2, w, per_pixel_normalization ),function_(function) {$/;"	f	class:BPSemiMetricPotential
+BPSemiMetricPotential	src/bipartitedensecrf.cpp	/^class BPSemiMetricPotential: public BPPottsPotential{$/;"	c	file:
+BipartiteDenseCRF	include/densecrf.h	/^	BipartiteDenseCRF( BipartiteDenseCRF & o ){}$/;"	f	class:BipartiteDenseCRF
+BipartiteDenseCRF	include/densecrf.h	/^class BipartiteDenseCRF{$/;"	c
+BipartiteDenseCRF	src/bipartitedensecrf.cpp	/^BipartiteDenseCRF::BipartiteDenseCRF(int N1, int N2, int M): M_(M) {$/;"	f	class:BipartiteDenseCRF
+CMAKE_BINARY_DIR	build/Makefile	/^CMAKE_BINARY_DIR = \/home\/xduser\/LiHuan\/densecrf\/build$/;"	m
+CMAKE_BINARY_DIR	build/examples/Makefile	/^CMAKE_BINARY_DIR = \/home\/xduser\/LiHuan\/densecrf\/build$/;"	m
+CMAKE_BINARY_DIR	build/src/Makefile	/^CMAKE_BINARY_DIR = \/home\/xduser\/LiHuan\/densecrf\/build$/;"	m
+CMAKE_COMMAND	build/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMMAND	build/examples/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMMAND	build/src/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_SOURCE_DIR	build/Makefile	/^CMAKE_SOURCE_DIR = \/home\/xduser\/LiHuan\/densecrf$/;"	m
+CMAKE_SOURCE_DIR	build/examples/Makefile	/^CMAKE_SOURCE_DIR = \/home\/xduser\/LiHuan\/densecrf$/;"	m
+CMAKE_SOURCE_DIR	build/src/Makefile	/^CMAKE_SOURCE_DIR = \/home\/xduser\/LiHuan\/densecrf$/;"	m
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	10;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	13;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	16;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	19;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	22;"	d	file:
