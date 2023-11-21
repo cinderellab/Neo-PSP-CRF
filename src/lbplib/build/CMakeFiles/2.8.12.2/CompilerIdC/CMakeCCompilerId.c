@@ -71,4 +71,29 @@
   /* __HP_cc = VVRRPP */
 # define COMPILER_VERSION_MAJOR DEC(__HP_cc/10000)
 # define COMPILER_VERSION_MINOR DEC(__HP_cc/100 % 100)
-# define COMPILER_VERSION_P
+# define COMPILER_VERSION_PATCH DEC(__HP_cc     % 100)
+
+#elif defined(__DECC)
+# define COMPILER_ID "Compaq"
+  /* __DECC_VER = VVRRTPPPP */
+# define COMPILER_VERSION_MAJOR DEC(__DECC_VER/10000000)
+# define COMPILER_VERSION_MINOR DEC(__DECC_VER/100000  % 100)
+# define COMPILER_VERSION_PATCH DEC(__DECC_VER         % 10000)
+
+#elif defined(__IBMC__)
+# if defined(__COMPILER_VER__)
+#  define COMPILER_ID "zOS"
+# else
+#  if __IBMC__ >= 800
+#   define COMPILER_ID "XL"
+#  else
+#   define COMPILER_ID "VisualAge"
+#  endif
+   /* __IBMC__ = VRP */
+#  define COMPILER_VERSION_MAJOR DEC(__IBMC__/100)
+#  define COMPILER_VERSION_MINOR DEC(__IBMC__/10 % 10)
+#  define COMPILER_VERSION_PATCH DEC(__IBMC__    % 10)
+# endif
+
+#elif defined(__PGI)
+# define COMPILER_ID
