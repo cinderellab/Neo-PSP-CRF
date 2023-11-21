@@ -50,4 +50,25 @@
 # define COMPILER_ID "Watcom"
   /* __WATCOMC__ = VVRR */
 # define COMPILER_VERSION_MAJOR DEC(__WATCOMC__ / 100)
-# define COMPIL
+# define COMPILER_VERSION_MINOR DEC(__WATCOMC__ % 100)
+
+#elif defined(__SUNPRO_C)
+# define COMPILER_ID "SunPro"
+# if __SUNPRO_C >= 0x5100
+   /* __SUNPRO_C = 0xVRRP */
+#  define COMPILER_VERSION_MAJOR HEX(__SUNPRO_C>>12)
+#  define COMPILER_VERSION_MINOR HEX(__SUNPRO_C>>4 & 0xFF)
+#  define COMPILER_VERSION_PATCH HEX(__SUNPRO_C    & 0xF)
+# else
+   /* __SUNPRO_C = 0xVRP */
+#  define COMPILER_VERSION_MAJOR HEX(__SUNPRO_C>>8)
+#  define COMPILER_VERSION_MINOR HEX(__SUNPRO_C>>4 & 0xF)
+#  define COMPILER_VERSION_PATCH HEX(__SUNPRO_C    & 0xF)
+# endif
+
+#elif defined(__HP_cc)
+# define COMPILER_ID "HP"
+  /* __HP_cc = VVRRPP */
+# define COMPILER_VERSION_MAJOR DEC(__HP_cc/10000)
+# define COMPILER_VERSION_MINOR DEC(__HP_cc/100 % 100)
+# define COMPILER_VERSION_P
