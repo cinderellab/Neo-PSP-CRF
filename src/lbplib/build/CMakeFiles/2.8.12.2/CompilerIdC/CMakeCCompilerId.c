@@ -143,4 +143,25 @@
 #   define COMPILER_VERSION_PATCH DEC(_MSC_FULL_VER % 10000)
 #  endif
 # endif
-# if defin
+# if defined(_MSC_BUILD)
+#  define COMPILER_VERSION_TWEAK DEC(_MSC_BUILD)
+# endif
+
+/* Analog VisualDSP++ >= 4.5.6 */
+#elif defined(__VISUALDSPVERSION__)
+# define COMPILER_ID "ADSP"
+  /* __VISUALDSPVERSION__ = 0xVVRRPP00 */
+# define COMPILER_VERSION_MAJOR HEX(__VISUALDSPVERSION__>>24)
+# define COMPILER_VERSION_MINOR HEX(__VISUALDSPVERSION__>>16 & 0xFF)
+# define COMPILER_VERSION_PATCH HEX(__VISUALDSPVERSION__>>8  & 0xFF)
+
+/* Analog VisualDSP++ < 4.5.6 */
+#elif defined(__ADSPBLACKFIN__) || defined(__ADSPTS__) || defined(__ADSP21000__)
+# define COMPILER_ID "ADSP"
+
+/* IAR Systems compiler for embedded systems.
+   http://www.iar.com */
+#elif defined(__IAR_SYSTEMS_ICC__ ) || defined(__IAR_SYSTEMS_ICC)
+# define COMPILER_ID "IAR"
+
+/* sdcc, the small d
