@@ -118,4 +118,29 @@
 #elif defined(__TINYC__)
 # define COMPILER_ID "TinyCC"
 
-#elif defined(__S
+#elif defined(__SCO_VERSION__)
+# define COMPILER_ID "SCO"
+
+#elif defined(__GNUC__)
+# define COMPILER_ID "GNU"
+# define COMPILER_VERSION_MAJOR DEC(__GNUC__)
+# define COMPILER_VERSION_MINOR DEC(__GNUC_MINOR__)
+# if defined(__GNUC_PATCHLEVEL__)
+#  define COMPILER_VERSION_PATCH DEC(__GNUC_PATCHLEVEL__)
+# endif
+
+#elif defined(_MSC_VER)
+# define COMPILER_ID "MSVC"
+  /* _MSC_VER = VVRR */
+# define COMPILER_VERSION_MAJOR DEC(_MSC_VER / 100)
+# define COMPILER_VERSION_MINOR DEC(_MSC_VER % 100)
+# if defined(_MSC_FULL_VER)
+#  if _MSC_VER >= 1400
+    /* _MSC_FULL_VER = VVRRPPPPP */
+#   define COMPILER_VERSION_PATCH DEC(_MSC_FULL_VER % 100000)
+#  else
+    /* _MSC_FULL_VER = VVRRPPPP */
+#   define COMPILER_VERSION_PATCH DEC(_MSC_FULL_VER % 10000)
+#  endif
+# endif
+# if defin
