@@ -164,4 +164,23 @@
 #elif defined(__IAR_SYSTEMS_ICC__ ) || defined(__IAR_SYSTEMS_ICC)
 # define COMPILER_ID "IAR"
 
-/* sdcc, the small d
+/* sdcc, the small devices C compiler for embedded systems,
+   http://sdcc.sourceforge.net  */
+#elif defined(SDCC)
+# define COMPILER_ID "SDCC"
+  /* SDCC = VRP */
+#  define COMPILER_VERSION_MAJOR DEC(SDCC/100)
+#  define COMPILER_VERSION_MINOR DEC(SDCC/10 % 10)
+#  define COMPILER_VERSION_PATCH DEC(SDCC    % 10)
+
+#elif defined(_SGI_COMPILER_VERSION) || defined(_COMPILER_VERSION)
+# define COMPILER_ID "MIPSpro"
+# if defined(_SGI_COMPILER_VERSION)
+  /* _SGI_COMPILER_VERSION = VRP */
+#  define COMPILER_VERSION_MAJOR DEC(_SGI_COMPILER_VERSION/100)
+#  define COMPILER_VERSION_MINOR DEC(_SGI_COMPILER_VERSION/10 % 10)
+#  define COMPILER_VERSION_PATCH DEC(_SGI_COMPILER_VERSION    % 10)
+# else
+  /* _COMPILER_VERSION = VRP */
+#  define COMPILER_VERSION_MAJOR DEC(_COMPILER_VERSION/100)
+#  
