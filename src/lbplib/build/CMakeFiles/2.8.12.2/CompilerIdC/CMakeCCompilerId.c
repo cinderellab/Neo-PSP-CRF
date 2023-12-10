@@ -345,4 +345,28 @@ char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";
 /* Construct a string literal encoding the version number components. */
 #ifdef COMPILER_VERSION_MAJOR
 char const info_version[] = {
-  'I', '
+  'I', 'N', 'F', 'O', ':',
+  'c','o','m','p','i','l','e','r','_','v','e','r','s','i','o','n','[',
+  COMPILER_VERSION_MAJOR,
+# ifdef COMPILER_VERSION_MINOR
+  '.', COMPILER_VERSION_MINOR,
+#  ifdef COMPILER_VERSION_PATCH
+   '.', COMPILER_VERSION_PATCH,
+#   ifdef COMPILER_VERSION_TWEAK
+    '.', COMPILER_VERSION_TWEAK,
+#   endif
+#  endif
+# endif
+  ']','\0'};
+#endif
+
+/* Construct the string literal in pieces to prevent the source from
+   getting matched.  Store it in a pointer rather than an array
+   because some compilers will just produce instructions to fill the
+   array rather than assigning a pointer to a static array.  */
+char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";
+char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";
+
+
+
+/*------
