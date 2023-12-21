@@ -47,4 +47,21 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xduser/
+CMAKE_SOURCE_DIR = /home/xduser/lihuan/lbplib
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/xduser/lihuan/lbplib/build
+
+#=============================================================================
+# Target rules for target CMakeFiles/opencv_lbp.dir
+
+# All Build rule for target.
+CMakeFiles/opencv_lbp.dir/all:
+	$(MAKE) -f CMakeFiles/opencv_lbp.dir/build.make CMakeFiles/opencv_lbp.dir/depend
+	$(MAKE) -f CMakeFiles/opencv_lbp.dir/build.make CMakeFiles/opencv_lbp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/xduser/lihuan/lbplib/build/CMakeFiles  1
+	@echo "Built target opencv_lbp"
+.PHONY : CMakeFiles/opencv_lbp.dir/all
+
+# Include target in all.
+all: CMakeFiles/opencv
