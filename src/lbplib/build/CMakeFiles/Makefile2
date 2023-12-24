@@ -64,4 +64,25 @@ CMakeFiles/opencv_lbp.dir/all:
 .PHONY : CMakeFiles/opencv_lbp.dir/all
 
 # Include target in all.
-all: CMakeFiles/opencv
+all: CMakeFiles/opencv_lbp.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/opencv_lbp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xduser/lihuan/lbplib/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/opencv_lbp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xduser/lihuan/lbplib/build/CMakeFiles 0
+.PHONY : CMakeFiles/opencv_lbp.dir/rule
+
+# Convenience name for target.
+opencv_lbp: CMakeFiles/opencv_lbp.dir/rule
+.PHONY : opencv_lbp
+
+# clean rule for target.
+CMakeFiles/opencv_lbp.dir/clean:
+	$(MAKE) -f CMakeFiles/opencv_lbp.dir/build.make CMakeFiles/opencv_lbp.dir/clean
+.PHONY : CMakeFiles/opencv_lbp.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/opencv_lbp.dir/clean
+.PHO
