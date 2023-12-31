@@ -37,4 +37,20 @@ EQUALS = =
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/xduser/lihuan/lbplib
 
-# The top-level build directory on which CMake was 
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/xduser/lihuan/lbplib/build
+
+# Include any dependencies generated for this target.
+include CMakeFiles/opencv_lbp.dir/depend.make
+
+# Include the progress variables for this target.
+include CMakeFiles/opencv_lbp.dir/progress.make
+
+# Include the compile flags for this target's objects.
+include CMakeFiles/opencv_lbp.dir/flags.make
+
+CMakeFiles/opencv_lbp.dir/test.cpp.o: CMakeFiles/opencv_lbp.dir/flags.make
+CMakeFiles/opencv_lbp.dir/test.cpp.o: ../test.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/xduser/lihuan/lbplib/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/opencv_lbp.dir/test.cpp.o"
+	/usr/bin/c++   $(CXX_DEFIN
