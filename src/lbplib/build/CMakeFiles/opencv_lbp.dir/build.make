@@ -53,4 +53,14 @@ CMakeFiles/opencv_lbp.dir/test.cpp.o: CMakeFiles/opencv_lbp.dir/flags.make
 CMakeFiles/opencv_lbp.dir/test.cpp.o: ../test.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/xduser/lihuan/lbplib/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/opencv_lbp.dir/test.cpp.o"
-	/usr/bin/c++   $(CXX_DEFIN
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/opencv_lbp.dir/test.cpp.o -c /home/xduser/lihuan/lbplib/test.cpp
+
+CMakeFiles/opencv_lbp.dir/test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/opencv_lbp.dir/test.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/xduser/lihuan/lbplib/test.cpp > CMakeFiles/opencv_lbp.dir/test.cpp.i
+
+CMakeFiles/opencv_lbp.dir/test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_lbp.dir/test.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/xduser/lihuan/lbplib/test.cpp -o CMakeFiles/opencv_lbp.dir/test.cpp.s
+
+CMakeFiles
