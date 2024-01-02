@@ -63,4 +63,21 @@ CMakeFiles/opencv_lbp.dir/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/opencv_lbp.dir/test.cpp.s"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/xduser/lihuan/lbplib/test.cpp -o CMakeFiles/opencv_lbp.dir/test.cpp.s
 
-CMakeFiles
+CMakeFiles/opencv_lbp.dir/test.cpp.o.requires:
+.PHONY : CMakeFiles/opencv_lbp.dir/test.cpp.o.requires
+
+CMakeFiles/opencv_lbp.dir/test.cpp.o.provides: CMakeFiles/opencv_lbp.dir/test.cpp.o.requires
+	$(MAKE) -f CMakeFiles/opencv_lbp.dir/build.make CMakeFiles/opencv_lbp.dir/test.cpp.o.provides.build
+.PHONY : CMakeFiles/opencv_lbp.dir/test.cpp.o.provides
+
+CMakeFiles/opencv_lbp.dir/test.cpp.o.provides.build: CMakeFiles/opencv_lbp.dir/test.cpp.o
+
+# Object files for target opencv_lbp
+opencv_lbp_OBJECTS = \
+"CMakeFiles/opencv_lbp.dir/test.cpp.o"
+
+# External object files for target opencv_lbp
+opencv_lbp_EXTERNAL_OBJECTS =
+
+libopencv_lbp.a: CMakeFiles/opencv_lbp.dir/test.cpp.o
+libopencv_lbp.a: CMakeFiles/opencv_lbp.di
