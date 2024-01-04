@@ -95,4 +95,9 @@ CMakeFiles/opencv_lbp.dir/requires: CMakeFiles/opencv_lbp.dir/test.cpp.o.require
 
 CMakeFiles/opencv_lbp.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/opencv_lbp.dir/cmake_clean.cmake
-.PHONY 
+.PHONY : CMakeFiles/opencv_lbp.dir/clean
+
+CMakeFiles/opencv_lbp.dir/depend:
+	cd /home/xduser/lihuan/lbplib/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xduser/lihuan/lbplib /home/xduser/lihuan/lbplib /home/xduser/lihuan/lbplib/build /home/xduser/lihuan/lbplib/build /home/xduser/lihuan/lbplib/build/CMakeFiles/opencv_lbp.dir/DependInfo.cmake --color=$(COLOR)
+.PHONY : CMakeFiles/opencv_lbp.dir/depend
+
