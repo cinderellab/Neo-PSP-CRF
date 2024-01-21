@@ -22,4 +22,20 @@ After completing steps 1-6, you will have 4 .a files. Copy these to the lib dire
 
 If it executed properly, for a single image, the arguments should look like this: ./neo-psp-crf a.jpg a.npy out.png 0 3 30 2 3 2 1 12.
 
-(8) In the root directory, you'll fi
+(8) In the root directory, you'll find the eval.py file which is a Python file used for the automatic execution of many images. Modify the file paths before running.
+
+## Citation
+
+Please cite Neo-PSP-CRF in your relevant publications: 
+
+>     @article{Neo-PSP-CRF,
+>          Author = {Zhang, Liang and Li, Huan and Shen, Peiyi and Zhu, Guangming and Song, Song and Shah, Syed Afaq Ali and Bennamoun, Mohammed and Zhang, Li},
+>          Journal = {IEEE Access},
+>          Title = {Improving Semantic Image Segmentation With a Probabilistic Superpixel-Based Dense Conditional Random Field},
+>          Year = {2018}
+>          volume={6},
+>          Number={1},
+>          Pages={15297-15310},
+>       }
+
+Participate in discussions via Email: 2250611484@qq.com, Li Huan
