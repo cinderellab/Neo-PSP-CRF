@@ -10,4 +10,16 @@ This repository is a new implementation of the system elaborated in this paper: 
 
 (3) Navigate to the cnpy-master directory in src, where you need to obtain **libcnpy.a** using CMakeList.txt. It is used for reading Probability files of CNN into the memory to improve read speeds. The libcnpy.a file can be found in the build directory.
 
-(4) In the densecrf_lib directory, obtain **libdensecrf.a** using CMakeList.txt, this function is used for the CRF A
+(4) In the densecrf_lib directory, obtain **libdensecrf.a** using CMakeList.txt, this function is used for the CRF API.
+
+(5) Likewise, in the lbplib directory, obtain **libopencv_lbp.a** using CMakeList.txt for the LBP API.
+
+(6) Finally, from the SLICO directory in src, obtain **libSLIC.a** by the CMakeList.txt, This function is used for the SLIC API.
+
+After completing steps 1-6, you will have 4 .a files. Copy these to the lib directory. The downloaded code will already have a lib directory, but you need to recompile for your machine.
+
+(7) Now, return to the root directory, open CMakeLists.txt and modify paths according to your environment. Then compile the executable file.
+
+If it executed properly, for a single image, the arguments should look like this: ./neo-psp-crf a.jpg a.npy out.png 0 3 30 2 3 2 1 12.
+
+(8) In the root directory, you'll fi
